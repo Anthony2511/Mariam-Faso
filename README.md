@@ -4,13 +4,31 @@
 
 ## Informations sur l'association
 
-L’association Mariam Faso est née en 2002, installée à Bastogne et soutient des projets au Burkina Faso et au Maroc. Des bénévoles se rendent sur place pour restaurer des écoles (revêtement du sol , toitures, ...). Leurs actions permettent de réduire le coût de moitié.  Depuis le début de la création de l'association , ils ont déjà rénovés 6 classes à l'heure actuelle. Leurs buts aussi est d'alphabétiser  les jeunes et améliorer l'instruction. **La collecte de dons est importante**.Ils réalisent de temps en temps des vidéos de leurs visites sur place. C'est l'association Roi Baudouin qui va redistribuer tous les dons à pleins de petites associations.
+L’association Mariam Faso est née en 2002 et installée a Bastogne dont le président Mr.Joachim. Elle est composée d'un groupe d'assistants sociaux,et de rhétos qui ont voulu faire un projet humanitaire.Ils ne sont pas très nombreux mais réalisent d'importants projets sur de longues durées comme par exemple le projet actuel qui se répartit sur 3 ans. L'association soutient des projets au Burkina Faso et au Maroc. Des bénévoles se rendent sur place pour restaurer des écoles (revêtement du sol , toitures, ...). Leurs actions permettent de réduire le coût de moitié.  Depuis le début de la création de l'association , ils ont déjà rénovés 6 classes à l'heure actuelle. Leurs buts aussi est d'alphabétiser  les jeunes et améliorer l'instruction. **La collecte de dons est importante**.Ils réalisent de temps en temps des vidéos de leurs visites sur place. C'est l'association Roi Baudouin qui va redistribuer tous les dons à pleins de petites associations.
 
-
-L'association met aussi en oeuvre des mises en enchères d'oeuvres d'art ou autres, données par les artistes eux-mêmes.
+L'association met aussi en oeuvre des mises aux enchères d'oeuvres d'art ou autres, données par les artistes eux-mêmes.
 Ils organisent également des dîners avec comme divertissement des troupes de Burkina Faso, pour permettre aussi d'y découvrir leurs cultures.
 
-Mariam Faso organise 2 activités l'année : une marche au printemps et un repas de rassemblement en automne.
+L'association privilégie **la formation de l'enseignement**, **la pharmacie**. De faire connaitre les projets qu'il ont menés là-bas et elle privilégie aussi l'échange et vont sur place pour les rencontrer. La population local ne bénéficie nullement des bénéfices. C'est un régime de transition en ce moment. Il y a différentes religions et pas de conflits par rapport à certains villlages.**Sensibiliation citoyenne**, population qui n'ont pas la chance de vivre dans de bonnes conditions.
+
+Le village **Lungo** se trouve a 150 km de la capitale et est composé de 1500 habitants.Il y a un respect extrêment important du lien de sang (famille).Ils manquent d'eau, famine. Période de pluie (novembre-février/mars) et de grande chaleur(le reste). Pour les enfants la **seule facon d'évoluer c'est de parler de l'enseignement** donc en intégrant des classes pour les plus jeunes en 1er. 325 enfants actuellement. Souvent les parents ne savent pas mettre leurs enfants à l'école car il faut payer 2 euros par enfants. Il y a 6 classes actuellement qui regroupe l'ensemble des primaires,une bibliothèque et une cantine. Dans les grands villages il y a meme des ecoles secondaires. Mariam a crée un site pour la plantation d'arbre, l'alimentation d'eau. On veut leur apprendre à péréniser les projets. Ils essayent de créer des revenus complémentaires pour les femmes pour leurs permettent de vivre un peu mieux . faire prendre conscience aux femmes qu'elles ont le droit d'avoir des revenus.
+
+Ils travaillent beaucoup avec l'association **Roi Baudouin** car ils ne sont pas reconnus comme association c'est donc roi baudouin qui reçoit les dons et les versent a Mariam Faso tant qu'ils sont utilisés a juste valeur. Puis il y a la donnation directe ( par exemple scolariser un élève pour toute sa scolarité).Par exemple aussi demander des dons pour l'achat de bancs de classe qui sont fait par des artisans locaux. Il faut surtout que ce soit bénéfique pour la population local.
+
+Il y a des appels a projets pour des concours. Mariam s'est inscrit à un concours pour le développement du projet eau qui consiste un forage de puit d'eau , déterminer l'endroit, placement de pompes, et fonctionnement panneaux solaires (mais pas forcement la meilleure solution).Les femmes ont un role très importants dans la construction d'un village.Assure aux village un développement et ils travaillent bcp avec l'antenne local là-bas. ce sont des gens qui veulent donner une chance à la population local.
+
+**Objectifs :**
+- Permettre aux jeunes de là-bas d'avoir un meilleur milieu de vie.
+- Mettre en avant la qualité des projets.
+- La personne doit pouvoir voir les projets qui ont été réalisés là-bas.
+- Ils ont besoin de financement.
+- Ils veulent faire connaitre leurs activités ( activités ponctuelles (animations ex : buvette,...) et marche adeps(via toute la     publicité adeps, gestionnaire de cafétaria). -> revenus annuels +- 5000 euros.
+- Un lien qui permet de s'inscrire directement aux évenements.
+- constitution de l'ASBL et la façon dont elle fonctionne.
+- Informations concernant les conseils d'admininistration.
+
+
+
 
 
 ### Sources
@@ -85,3 +103,8 @@ Beaucoup de **call to action** pour augmenter l'efficacité.
       campagne près de la nature.
 
       - Buts : Elle soutient des causes qui lui tienne à coeur.
+
+## Présentation :
+
+
+-
