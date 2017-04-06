@@ -103,8 +103,3 @@ Beaucoup de **call to action** pour augmenter l'efficacité.
       campagne près de la nature.
 
       - Buts : Elle soutient des causes qui lui tienne à coeur.
-
-## Présentation :
-
-
--
