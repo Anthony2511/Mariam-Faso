@@ -1,0 +1,293 @@
+.nav
+  &__title
+    hidden()
+.menu
+  display block
+  position relative
+  list-style none
+  margin 0
+  padding 0
+  z-index 15
+  &__item
+    list-style none
+    display inline-block
+    padding 0
+    margin 0
+    &:after
+      content ''
+      display: inline-block
+      position relative
+      right: 0
+      top: 47%
+      width 1px
+      height s(12,16)
+      background-color rgba(255,255,255,0.5)
+    &:nth-child(n+5):after
+      display: none
+  &__link
+    position relative
+    display inline-block
+    padding s(10,$sz-menu) s(20,$sz-menu)
+    border 1px solid transparent
+    Catamaran($sz-menu, 16, 400, 1)
+    letter-spacing s(0.2, $sz-menu)
+    color $cWhite
+    transition .2s ease opacity
+    &:hover
+    &:focus
+      opacity 0.75
+      transition .3s ease opacity
+    &--cta
+      position: relative
+      margin-left s(20, $sz-menu)
+      padding s(14,$sz-menu) s(32, $sz-menu) s(21,$sz-menu)
+      background-color rgba(255,255,255,0.10)
+      Catamaran($sz-menu, 16, 500, 1)
+      letter-spacing 0.3px
+      border 1px solid $cWhite
+      border-radius s(5, $sz-menu)
+      &:hover
+      &:focus
+        opacity 1
+      &:before
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255,255,255,0.2);
+        z-index: -1;
+        transition .3s width;
+      &:hover:before
+      &:focus:before
+        width 100%
+
+
+  &__item > a:focus,
+  &__item > a.open,
+  &__item > a.open
+    z-index 1
+.subnav
+  position: absolute;
+  visibility hidden
+  top: s(58, 16)
+  margin-top: -1px;
+  padding s(45,16) s(50, 16) s(20, 16)
+  border-radius 5px
+  background-color: $cWhite
+  background $cWhite
+  &:before
+    content ''
+    position: absolute;
+    display: block
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    transform: rotate(45deg);
+    border-radius: 2px 0 0 0;
+    background: $cWhite;
+  &__group
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 0;
+    padding: 0;
+  &__li
+    position: relative
+    display: inline-block;
+    padding-right s(14, $sz-menu)
+    color $cBlueCiel
+  &__li + li
+    padding-left s(14, $sz-menu)
+  &__li:last-child .subnav__jobs__link:after
+    display: none
+  &__li span
+    hidden()
+  &__group
+    display: block
+    margin-bottom s(30, 16)
+    &:last-child
+      margin-bottom 0
+  &__link-wrapper
+    margin-top s(2,16)
+    clear left
+  &__jobs
+    box-shadow: 0 s(50, 16) s(100, 16) rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 s(5, 16) s(15, 16) rgba(0,0,0,.1);
+    &__job
+      display: inline-block
+      &__title
+        display: inline-block
+        Catamaran($text-L,16, 500, 1.2)
+        color $cBlueWeb
+        letter-spacing .2px
+        text-transform: uppercase
+        float left
+        &--DG
+          color $cPinkDG
+        &--3D
+          color $cGreen3D
+      &:hover span
+      &:focus span
+        color $cBlack
+        transition .2s ease color
+      &:hover > img
+      &:focus > img
+        filter: grayscale(100%) contrast(200%);
+        transition .2s ease filter
+    &__menuicon
+      position relative
+      top s(-1,16)
+      left s(15,16)
+    &__link
+      display: inline-block
+      Catamaran(19,$sz-menu, 400, 1.2)
+      &:after
+        content ''
+        display: inline-block
+        position absolute
+        right: 0
+        top: 46%
+        width 1px
+        height 7px
+        background-color $cGrey-lineMenu
+      &:hover
+      &:focus
+        text-decoration underline
+
+/*.subnav.open
+  display: block;*/
+
+/************************************\
+  ANIMATION DU MENU & DECOR
+\************************************/
+
+.subnav
+  transform translateX(s(-216, 16)) translateY(s(-20, 16))  translate3D(0,0,0) scaleX(0.93) // -216px pour centrer
+  opacity 0
+  transition .1s ease all
+  &:before
+    transform translateY(s(8, 16)) rotate(45deg)
+    transition .1s .1s ease transform
+  &__group
+    transform translateY(s(-20, 16))
+    transition .2s ease transform
+  &.open
+    visibility visible
+    transform translateX(s(-216, 16)) translateY(0px) scale(1)
+    transition .2s ease all
+    opacity 1;
+    transition-property transform, opacity
+    &:before
+      transform translateY(0) rotate(45deg)
+      transition .1s .1s ease-in transform
+  &.open .subnav__group
+    transform translateY(0) translate3D(0,0,0)
+    transition .4s ease transform
+  &__jobs__cloud
+    position: absolute
+    top s(20, 16)
+    right s(80, 16)
+    transform translateX(s(-80, 16))
+    opacity 0
+    transition .3s ease-in all
+    transition-property transform, opacity
+  &__jobs.open .subnav__jobs__cloud
+    transform translateX(0px)
+    opacity 1
+    transition .4s ease-out all
+    transition-property transform, opacity
+  &__jobs__town
+    overflow: hidden
+    position: absolute
+    bottom: 0
+    left 0
+    right 0
+    z-index -1
+    border-radius 5px
+    & svg
+      transform translateY(s(120, 16))
+      transition .5s $ease-out-quart transform
+  &__jobs.open .subnav__jobs__town svg
+    transform translateY(10px)
+    transition .5s $ease-out-quart transform
+
+
+/************************************\
+  DROPDOWN L’ECOLE & ANIMATION
+\************************************/
+
+.subnav
+  &__school
+    padding-right s(60, 16)
+    padding-bottom 0
+    left s(211, 16)
+    border-bottom s(14, 16) inset $cBlueGreyLight
+    & a
+      Catamaran(17, 16, 500, 1.2)
+      color $cBlueCiel
+      text-transform uppercase
+      letter-spacing 0.4px
+      &:after
+        display: inline-block
+        icon('arrow-right')
+        font-size s(13, 17)
+        transform translateX(8px)
+        transition .2s ease transform
+      &:hover
+      &:focus
+        color $cBlack
+      &:hover:after
+      &:focus:after
+        transform translateX(12px)
+        transition .3s ease transform
+
+    & li
+      margin-bottom s(25, 16)
+    &__cloud
+      position absolute
+      top s(26,16)
+      right s(50,16)
+      transform translateX(s(45, 16)) scale(1.4)
+    &__svg-wrapper
+      position: absolute
+      height s(80, 16)
+      bottom: 0
+      left: 0
+      right 0
+      overflow hidden
+      z-index -1
+    &__building
+      position absolute
+      bottom 0
+      z-index -1
+      left: 0
+      transform translateX(s(-40, 16))
+    &__trees1
+    &__trees2
+      position: absolute
+      bottom: 1px
+      z-index -1
+    &__trees1
+      left s(230, 16)
+      transform translateY(s(18,16)) scale(1.4)
+    &__trees2
+      left s(180,16)
+      transform translateY(s(28,16)) scale(1.4)
+  &__school.open .subnav__school__cloud
+    transform translateX(0) scale(1.4)
+    transition .4s ease-out transform
+  &__school.open .subnav__school
+    &__building
+      transform translateX(0)
+      transition .3s $ease-out-cubic transform
+    &__trees1
+      transform translateY(0px) scale(1.4)
+      transition .5s $ease-out-quint transform
+    &__trees2
+      transform translateY(-1px) scale(1.4)
+      transition .3s ease transform
+

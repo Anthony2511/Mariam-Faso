@@ -1,0 +1,118 @@
+html *
+{
+    font-size: 16px;
+}
+@font-face
+{
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+h1
+{
+    font-size: 2.5em;
+
+    color: #f00;
+    background-color: #00f;
+}
+h1::before
+{
+    line-height: 0;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-width: 0 50px 20px 50px;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+}
+h1:hover
+{
+    -webkit-transition: cubic-bezier(.215, .61, .355, 1) .7s color;
+            transition: cubic-bezier(.215, .61, .355, 1) .7s color;
+
+    color: #00f;
+}
+span:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+ul
+{
+    padding-bottom: 100px;
+}
+li
+{
+    display: block;
+}
+li:after
+{
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\f0a9';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+main
+{
+    overflow: hidden;
+}
+p
+{
+    margin: 0;
+    margin-bottom: 1.25em;
+}
+p:last-child
+{
+    margin-bottom: 0;
+}
+.kaduk-test
+{
+    position: relative;
+
+    width: 48.046875%;
+    margin: 0 3.90625% 0 3.90625%;
+
+    background: #d3d3d3;
+}
+.kaduk-test:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -50%;
+
+    display: block;
+
+    width: 200%;
+    height: 0;
+    margin-top: .06853895%;
+    padding-bottom: 200%;
+
+    content: '';
+    -webkit-transform: rotateZ(-4.5deg);
+        -ms-transform: rotate(-4.5deg);
+            transform: rotateZ(-4.5deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+
+    background: #d3d3d3;
+}
