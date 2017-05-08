@@ -1,3 +1,4 @@
+{
 "name": "Mariam-Faso",
 "version": "1.0.0",
 "private": true,
@@ -18,12 +19,11 @@
     "gulp-minify": "0.0.14",
     "gulp-newer": "^1.2.0",
     "gulp-preprocess": "^2.0.0",
-    "gulp-pug": "^3.0.4",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.5.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-tinypng-nokey": "^1.0.4",
     "kouto-swiss": "^0.12.0"
-}
+  }
 }

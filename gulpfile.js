@@ -15,7 +15,6 @@ var
     preprocess = require('gulp-preprocess'),
     pkg = require('./package.json'),
     browserSync = require('browser-sync'),
-    pug = require('gulp-pug'), // Préprocesseur html
     minify = require('gulp-minify'),
     concat = require('gulp-concat'), // Minificateur JS et COMB
     sourcemaps = require('gulp-sourcemaps'),
@@ -60,16 +59,6 @@ var
         out: dest + "scripts",
         context: {
             devBuild: devBuild
-        }
-    },
-
-    pugOpts = {
-        in: source + '*.pug',
-        watch: [source + '*.pug', source + 'template/**/*'],
-        out: dest,
-        context: {
-            devBuild: devBuild,
-            author: pkg.author
         }
     },
 
@@ -145,20 +134,6 @@ gulp.task('stylus', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('pug', function () {
-    var page = gulp.src(pugOpts.in)
-                .pipe(pug({pretty: true}))
-                .pipe(preprocess({context: pugOpts.context}));
-
-        if (!devBuild) {
-            page = page
-                .pipe(size({title:'HTML avant minification:'}))
-                .pipe(htmlclean())
-                .pipe(size({title:'HTML après minification:'}));
-        }
-        return page.pipe(gulp.dest(pugOpts.out));
-});
-
 gulp.task('concat', function () {
            var jsConcat = gulp.src(jsOpts.in)
 
@@ -178,8 +153,7 @@ gulp.task('browserSync', function() {
 });
 
 // Tâche par défaut exécutée lorsqu’on tape juste *gulp* dans le terminal
-gulp.task('default', ['images', 'stylus', 'pug', 'browserSync', 'concat', 'svg'], function () {
-    gulp.watch(pugOpts.watch, ['pug', browserSync.reload]);
+gulp.task('default', ['images', 'stylus','browserSync', 'concat', 'svg'], function () {
     gulp.watch(jsOpts.watch, ['concat', browserSync.reload]);
     gulp.watch(imagesOpts.watch, ['images']);
     gulp.watch(svgOpts.watch, ['svg']);

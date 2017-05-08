@@ -1,118 +1,226 @@
+html
+{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font: inherit;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+body
+{
+    line-height: 1;
+}
+ol,
+ul
+{
+    list-style: none;
+}
+blockquote,
+q
+{
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+html
+{
+    overflow-x: hidden;
+}
 html *
 {
+    font-family: CatamaranStack;
+    font-family: 'lato';
     font-size: 16px;
+
+    box-sizing: border-box;
+
+    color: $cText-greyblue;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-image url("../images/grid.png")
+  background-repeat repeat-y
+  background-position center center
+  background-size 1140px
+  opacity 0.90*/
+}
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+form input
+{
+    border: 0;
+    outline: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
 }
 @font-face
 {
-    font-family: 'FontAwesome';
-    font-weight: normal;
+    font-family: 'lato';
+    font-weight: 300;
     font-style: normal;
 
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('fonts/lato-light-webfont.woff2') format('woff2'), url('fonts/lato-light-webfont.woff') format('woff');
 }
-h1
+@font-face
 {
-    font-size: 2.5em;
-
-    color: #f00;
-    background-color: #00f;
-}
-h1::before
-{
-    line-height: 0;
-
-    display: block;
-
-    width: 0;
-    height: 0;
-
-    content: '';
-
-    border-width: 0 50px 20px 50px;
-    border-style: solid;
-    border-color: transparent transparent #000 transparent;
-}
-h1:hover
-{
-    -webkit-transition: cubic-bezier(.215, .61, .355, 1) .7s color;
-            transition: cubic-bezier(.215, .61, .355, 1) .7s color;
-
-    color: #00f;
-}
-span:after
-{
-    display: block;
-    clear: both;
-
-    content: '';
-}
-ul
-{
-    padding-bottom: 100px;
-}
-li
-{
-    display: block;
-}
-li:after
-{
-    font-family: 'FontAwesome';
-    font-weight: normal;
+    font-family: 'lato';
+    font-weight: 400;
     font-style: normal;
-    font-variant: normal;
-    line-height: 1;
 
-    content: '\f0a9';
-    text-transform: none;
-
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'), url('fonts/lato-regular-webfont.woff') format('woff');
 }
-main
+@font-face
 {
-    overflow: hidden;
+    font-family: 'lato';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('fonts/lato-semibold-webfont.woff2') format('woff2'), url('fonts/lato-semibold-webfont.woff') format('woff');
 }
-p
+@font-face
 {
-    margin: 0;
-    margin-bottom: 1.25em;
+    font-family: 'lato';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('fonts/lato-heavy-webfont.woff2') format('woff2'), url('fonts/lato-heavy-webfont.woff') format('woff');
 }
-p:last-child
+@font-face
 {
-    margin-bottom: 0;
-}
-.kaduk-test
-{
-    position: relative;
+    font-family: 'lato';
+    font-weight: 700;
+    font-style: normal;
 
-    width: 48.046875%;
-    margin: 0 3.90625% 0 3.90625%;
-
-    background: #d3d3d3;
-}
-.kaduk-test:before
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: -50%;
-
-    display: block;
-
-    width: 200%;
-    height: 0;
-    margin-top: .06853895%;
-    padding-bottom: 200%;
-
-    content: '';
-    -webkit-transform: rotateZ(-4.5deg);
-        -ms-transform: rotate(-4.5deg);
-            transform: rotateZ(-4.5deg);
-    -webkit-transform-origin: 0 0;
-        -ms-transform-origin: 0 0;
-            transform-origin: 0 0;
-
-    background: #d3d3d3;
+    src: url('fonts/lato-bold-webfont.woff2') format('woff2'), url('fonts/lato-bold-webfont.woff') format('woff');
 }
