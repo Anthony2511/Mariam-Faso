@@ -238,6 +238,8 @@ img
 }
 .nav
 {
+    position: relative;
+
     padding: .9375em 0;
 
     opacity: .9;
@@ -303,4 +305,117 @@ img
 
     border-color: #f1c40f;
     background: none;
+}
+.nav__button
+{
+    top: -4em;
+    right: 3em;
+
+    width: 4.6875em;
+    height: 5em;
+}
+.nav__button-wrap
+{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.nav__icon
+{
+    position: relative;
+
+    width: 2.1875em;
+    height: 2.8125em;
+    margin: .3125em auto;
+
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+.nav__icon span:nth-child(1)
+{
+    top: .5em;
+}
+.nav__icon span:nth-child(2)
+{
+    top: 1.125em;
+}
+.nav__icon span:nth-child(3)
+{
+    top: 1.125em;
+}
+.nav__icon span:nth-child(4)
+{
+    top: 1.75em;
+}
+.nav__icon span
+{
+    position: absolute;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: .25em;
+
+    -webkit-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+
+    opacity: 1;
+    border-radius: .5625em;
+    background: #fff;
+}
+@media only screen and (max-width: 1024px)
+{
+    .nav__list
+    {
+        opacity: 0;
+    }
+}
+.bloc-header
+{
+    padding-top: 15.625em;
+
+    text-align: center;
+
+    color: #fff;
+}
+.bloc-header__title
+{
+    font-size: 3.125em;
+    font-weight: 600;
+
+    margin-bottom: 1em;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.bloc-header__text
+{
+    font-size: 1.5625em;
+    font-weight: 300;
+
+    margin-bottom: 2.8em;
+}
+.bloc-header__button
+{
+    font-size: 1.375em;
+
+    padding: .681818181818182em 3.181818181818182em;
+
+    color: #fff;
+    background-color: #34495e;
+}
+.bloc-header__button:hover
+{
+    -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+
+    background-color: #3e586d;
 }
