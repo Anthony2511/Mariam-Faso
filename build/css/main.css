@@ -149,7 +149,6 @@ html *
 {
     font-family: CatamaranStack;
     font-family: 'lato';
-    font-size: 16px;
 
     box-sizing: border-box;
 
@@ -184,13 +183,19 @@ img
     max-width: 100%;
     height: auto;
 }
+.hidden
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
 @font-face
 {
     font-family: 'lato';
     font-weight: 300;
     font-style: normal;
 
-    src: url('fonts/lato-light-webfont.woff2') format('woff2'), url('fonts/lato-light-webfont.woff') format('woff');
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -198,7 +203,7 @@ img
     font-weight: 400;
     font-style: normal;
 
-    src: url('fonts/lato-regular-webfont.woff2') format('woff2'), url('fonts/lato-regular-webfont.woff') format('woff');
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -206,7 +211,7 @@ img
     font-weight: 500;
     font-style: normal;
 
-    src: url('fonts/lato-semibold-webfont.woff2') format('woff2'), url('fonts/lato-semibold-webfont.woff') format('woff');
+    src: url('../fonts/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato-semibold-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -214,7 +219,7 @@ img
     font-weight: 600;
     font-style: normal;
 
-    src: url('fonts/lato-heavy-webfont.woff2') format('woff2'), url('fonts/lato-heavy-webfont.woff') format('woff');
+    src: url('../fonts/lato-heavy-webfont.woff2') format('woff2'), url('../fonts/lato-heavy-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -222,5 +227,80 @@ img
     font-weight: 700;
     font-style: normal;
 
-    src: url('fonts/lato-bold-webfont.woff2') format('woff2'), url('fonts/lato-bold-webfont.woff') format('woff');
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato-bold-webfont.woff') format('woff');
+}
+.header
+{
+    height: 100vh;
+
+    background: url('../images/backgroundHeader.jpg') no-repeat top center/cover;
+    background-position: 20%;
+}
+.nav
+{
+    padding: .9375em 0;
+
+    opacity: .9;
+    color: #fff;
+    background-color: #34495e;
+}
+.nav__bloc
+{
+    max-width: 1440px;
+}
+.nav__bloc:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+.nav__list
+{
+    text-align: right;
+}
+.nav__item
+{
+    font-size: 1.25em;
+    font-weight: 300;
+
+    display: inline-block;
+
+    margin-right: 1.25em;
+}
+.nav__item:hover span
+{
+    background-size: 100% .15em;
+}
+.nav__link
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: .5em .75em;
+}
+.nav__span
+{
+    padding-bottom: .25em;
+
+    -webkit-transition: .5s;
+            transition: .5s;
+
+    border: none;
+    border-bottom: solid transparent;
+    background: -webkit-linear-gradient(bottom, #f1c40f, #f1c40f) no-repeat bottom left;
+    background:         linear-gradient(to top, #f1c40f, #f1c40f) no-repeat bottom left;
+    background-position: bottom center;
+    background-size: 0 .15em;
+}
+.nav__span--active
+{
+    padding-bottom: .2em;
+
+    -webkit-transition: none;
+            transition: none;
+
+    border-color: #f1c40f;
+    background: none;
 }

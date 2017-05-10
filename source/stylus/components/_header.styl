@@ -1,1 +1,40 @@
+.header
+  background url('../images/backgroundHeader.jpg') no-repeat top center/cover
+  background-position: 20%
+  height: 100vh
 
+.nav
+    background-color: $darkBlue
+    opacity: 0.9
+    color: $white
+    padding: s(15,16) 0
+    &__bloc
+      max-width: 1440px
+      clearfix()
+    &__list
+      text-align: right
+    &__item
+      font-size: s(20,16)
+      font-weight: 300
+      display: inline-block
+      margin-right: s(25,20)
+      &:hover span
+        background-size:100% s(3,20)
+    &__link
+      padding: s(10,20) s(15,20)
+      display: block
+      width: 100%
+      height: 100%
+    &__span
+      border-bottom:solid transparent
+      transition:0.5s
+      border:none
+      background:linear-gradient(to top, $darkYellow,$darkYellow) no-repeat bottom left
+      background-size:0 s(3,20)
+      padding-bottom: s(5,20)
+      background-position:bottom center
+      &--active
+        border-color:$darkYellow
+        transition: none
+        background: none
+        padding-bottom: s(4,20)

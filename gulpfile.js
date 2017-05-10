@@ -1,6 +1,7 @@
 // Définition des dépendances dont on a besoin pour exécuter les tâches
 var
     gulp = require('gulp'),
+    babel = require('gulp-babel'),
     imagemin = require('gulp-imagemin'), // Minifier for png, jpg, svg
     tiny = require('gulp-tinypng-nokey'), // Autre minifier mieux que imagemin pour JPG and PNG
     svgmin = require('gulp-svgmin'),
@@ -95,6 +96,11 @@ gulp.task('images', function () {
         .pipe(gulp.dest(imagesOpts.out));
 });
 
+gulp.task('js', function () {
+    return gulp.src(jsOpts.in)
+    .pipe( babel() )
+    .pipe( gulp.dest( "scripts") );
+});
 gulp.task('svg', function () {
     return gulp.src(svgOpts.in)
         .pipe(destclean(svgOpts.out))
@@ -153,7 +159,7 @@ gulp.task('browserSync', function() {
 });
 
 // Tâche par défaut exécutée lorsqu’on tape juste *gulp* dans le terminal
-gulp.task('default', ['images', 'stylus','browserSync', 'concat', 'svg'], function () {
+gulp.task('default', ['images','js', 'stylus','browserSync', 'concat', 'svg'], function () {
     gulp.watch(jsOpts.watch, ['concat', browserSync.reload]);
     gulp.watch(imagesOpts.watch, ['images']);
     gulp.watch(svgOpts.watch, ['svg']);
