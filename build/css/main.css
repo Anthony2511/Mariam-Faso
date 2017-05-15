@@ -191,11 +191,19 @@ img
 }
 @font-face
 {
+    font-family: 'crumble';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/crumble/dk_crayon_crumble-webfont.woff2') format('woff2'), url('../fonts/crumble/dk_crayon_crumble-webfont.woff') format('woff');
+}
+@font-face
+{
     font-family: 'lato';
     font-weight: 300;
     font-style: normal;
 
-    src: url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff');
+    src: url('../fonts/lato/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato/lato-light-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -203,7 +211,7 @@ img
     font-weight: 400;
     font-style: normal;
 
-    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff');
+    src: url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato/lato-regular-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -211,7 +219,7 @@ img
     font-weight: 500;
     font-style: normal;
 
-    src: url('../fonts/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato-semibold-webfont.woff') format('woff');
+    src: url('../fonts/lato/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato/lato-semibold-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -219,7 +227,7 @@ img
     font-weight: 600;
     font-style: normal;
 
-    src: url('../fonts/lato-heavy-webfont.woff2') format('woff2'), url('../fonts/lato-heavy-webfont.woff') format('woff');
+    src: url('../fonts/lato/lato-heavy-webfont.woff2') format('woff2'), url('../fonts/lato/lato-heavy-webfont.woff') format('woff');
 }
 @font-face
 {
@@ -227,7 +235,7 @@ img
     font-weight: 700;
     font-style: normal;
 
-    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato-bold-webfont.woff') format('woff');
+    src: url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato/lato-bold-webfont.woff') format('woff');
 }
 .header
 {
@@ -311,6 +319,8 @@ img
     top: -4em;
     right: 3em;
 
+    display: none;
+
     width: 4.6875em;
     height: 5em;
 }
@@ -371,16 +381,40 @@ img
     border-radius: .5625em;
     background: #fff;
 }
-@media only screen and (max-width: 1024px)
+@media screen and (max-width: 1024px)
 {
+    .nav
+    {
+        min-height: 0;
+    }
     .nav__list
     {
-        opacity: 0;
+        overflow: hidden;
+
+        height: 0;
+        margin-top: 1.3em;
+        margin-top: 4em;
+        padding: 1.5em 0;
+        padding: 0;
+
+        -webkit-transition: .5s height ease;
+                transition: .5s height ease;
+    }
+    .nav__button
+    {
+        position: absolute;
+        top: 0;
+        right: 3em;
+
+        display: inline-block;
+
+        cursor: pointer;
+        text-align: right;
     }
 }
 .bloc-header
 {
-    padding-top: 15.625em;
+    padding-top: 12.5em;
 
     text-align: center;
 
@@ -388,24 +422,29 @@ img
 }
 .bloc-header__title
 {
-    font-size: 3.125em;
-    font-weight: 600;
+    font-family: 'crumble';
+    font-size: 5.625em;
+    font-weight: bold;
 
-    margin-bottom: 1em;
+    margin-bottom: .555555555555556em;
 
-    letter-spacing: .1em;
+    letter-spacing: .055555555555556em;
     text-transform: uppercase;
 }
 .bloc-header__text
 {
     font-size: 1.5625em;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.5em;
 
-    margin-bottom: 2.8em;
+    max-width: 36em;
+    margin: 0 auto;
+    padding-bottom: 3em;
 }
 .bloc-header__button
 {
     font-size: 1.375em;
+    font-weight: bold;
 
     padding: .681818181818182em 3.181818181818182em;
 
@@ -418,4 +457,51 @@ img
             transition: .5s ease-in-out;
 
     background-color: #3e586d;
+}
+.who
+{
+    font-size: 1.375em;
+
+    padding: 4.545454545454546em 0;
+
+    text-align: center;
+
+    background: url('../images/backgroundWord.jpg') no-repeat top center/cover;
+}
+.who__title
+{
+    font-family: 'crumble';
+    font-size: 2.272727272727273em;
+    font-weight: bold;
+
+    margin-bottom: .4em;
+
+    color: #f1c40f;
+}
+.who__title-underline
+{
+    max-width: 6.818181818181818em;
+    margin: 0 auto;
+
+    border-bottom: .227272727272727em solid #fff;
+}
+.who__text
+{
+    font-weight: 300;
+    line-height: 1.5em;
+
+    max-width: 43.63636363636363em;
+    margin: 0 auto;
+    padding: 2.272727272727273em 0 3.409090909090909em;
+
+    color: #fff;
+}
+.who__link
+{
+    font-weight: bold;
+
+    padding: .681818181818182em 3.181818181818182em;
+
+    color: #34495e;
+    background-color: #fff;
 }
