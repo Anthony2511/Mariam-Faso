@@ -191,6 +191,15 @@ img
 }
 @font-face
 {
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/icomoon/icomoon.eot?m56agh');
+    src: url('../fonts/icomoon/icomoon.eot?m56agh#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?m56agh') format('truetype'), url('../fonts/icomoon/icomoon.woff?m56agh') format('woff'), url('../fonts/icomoon/icomoon.svg?m56agh#icomoon') format('svg');
+}
+@font-face
+{
     font-family: 'crumble';
     font-weight: normal;
     font-style: normal;
@@ -552,6 +561,49 @@ img
             transition: .5s ease-in-out;
 
     background-color: #3e586d;
+}
+@media screen and (max-width: 1024px)
+{
+    .bloc-header
+    {
+        margin: 0 2em;
+    }
+}
+@media screen and (max-width: 631px)
+{
+    .bloc-header__title
+    {
+        font-size: 4.375em;
+    }
+    .bloc-header__text
+    {
+        font-size: 1.25em;
+    }
+}
+@media screen and (max-width: 509px)
+{
+    .bloc-header__title
+    {
+        font-size: 3.125em;
+    }
+    .bloc-header__text
+    {
+        font-size: 1.125em;
+    }
+}
+@media screen and (max-width: 386px)
+{
+    .bloc-header__title
+    {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 351px)
+{
+    .bloc-header__button
+    {
+        padding: .454545454545455em 2.272727272727273em;
+    }
 }
 .who
 {
