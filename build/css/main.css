@@ -854,7 +854,7 @@ img
 
     width: 60%;
     margin: 0 auto;
-    padding: 3.125em 0 5em;
+    padding: 2.5em 2.5em 5em;
 
     text-align: center;
 
@@ -872,7 +872,7 @@ img
 .event__title-underline
 {
     max-width: 9.375em;
-    margin: 1.25em auto 3.125em;
+    margin: 1.25em auto 2.5em;
 
     border-bottom: .3125em solid #fff;
 }
@@ -895,6 +895,79 @@ img
     color: #34495e;
     border-radius: .227272727272727em;
     background-color: #fff;
+}
+@media screen and (max-width: 952px)
+{
+    .event__title
+    {
+        font-size: 2.5em;
+    }
+    .event__title-underline
+    {
+        margin-bottom: 1.875em;
+    }
+    .event__text
+    {
+        font-size: 1.375em;
+    }
+}
+@media screen and (max-width: 765px)
+{
+    .event__bloc
+    {
+        width: 70%;
+        padding: 1.25em 1.25em 2.5em;
+    }
+    .event__title
+    {
+        font-size: 1.875em;
+    }
+    .event__title-underline
+    {
+        max-width: 7.5em;
+    }
+    .event__text
+    {
+        font-size: 1.25em;
+    }
+    .event__link
+    {
+        font-size: 1.25em;
+
+        padding: .5em 2.5em;
+    }
+}
+@media screen and (max-width: 468px)
+{
+    .event
+    {
+        background-attachment: local;
+    }
+    .event__bloc
+    {
+        width: 80%;
+    }
+    .event__text
+    {
+        font-size: 1.125em;
+    }
+    .event__title
+    {
+        font-size: 1.5625em;
+    }
+    .event__link
+    {
+        font-size: 1.125em;
+
+        padding: .555555555555556em 1.666666666666667em;
+    }
+}
+@media screen and (max-width: 331px)
+{
+    .event__text
+    {
+        font-size: 1em;
+    }
 }
 body
 {
