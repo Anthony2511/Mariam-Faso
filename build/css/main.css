@@ -248,24 +248,21 @@ img
 }
 .header
 {
-    height: 100vh;
+    padding-bottom: 12.5em;
 
     background: url('../images/backgroundHeader.jpg') no-repeat top center/cover;
     background-position: 20%;
 }
 .nav
 {
-    position: relative;
-
     padding: .9375em 0;
 
-    opacity: .9;
     color: #fff;
     background-color: #34495e;
 }
 .nav__bloc
 {
-    max-width: 1440px;
+    max-width: 90em;
 }
 .nav__bloc:after
 {
@@ -739,7 +736,7 @@ img
     font-weight: 300;
     line-height: 1.6em;
 
-    margin: 2.777777777777778em 0 5.555555555555555em;
+    margin: 2.777777777777778em 0 6.666666666666667em;
 
     color: #34495e;
 }
@@ -756,15 +753,19 @@ img
 {
     float: left;
 
-    width: 45%;
+    width: 47.5%;
 }
 .projet__bloc-img
 {
     float: right;
 
-    width: 45%;
+    width: 47.5%;
     height: auto;
     margin-top: 8.125em;
+}
+.event
+{
+    background: url('../images/backgroundEvent.jpg') no-repeat top center/cover;
 }
 body
 {
