@@ -775,6 +775,27 @@ img
     color: #fff;
     background-color: #34495e;
 }
+.projet__link:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .625em;
+
+    content: '\e90b';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.projet__link:hover:before
+{
+    color: #f1c40f;
+}
 .projet__left
 {
     float: left;
@@ -913,7 +934,7 @@ img
 
     display: block;
 
-    margin-bottom: 2.272727272727273em;
+    margin-bottom: 1.818181818181818em;
 
     color: #fff;
 }
