@@ -1307,6 +1307,29 @@ img
 
     background-color: rgba(255,255,255,.7);
 }
+@media screen and (max-width: 1024px)
+{
+    .partenaires
+    {
+        display: block;
+    }
+    .partenaires__bloc--margin
+    {
+        margin: 0 auto;
+    }
+    .partenaires__bloc-img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    .partenaires__title
+    {
+        font-size: 2.1875em;
+    }
+}
 body
 {
     background-color: #f3f3f3;
