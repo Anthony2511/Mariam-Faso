@@ -255,10 +255,19 @@ img
 }
 .nav
 {
+    position: relative;
+
     padding: .9375em 0;
 
     color: #fff;
     background-color: #34495e;
+}
+.nav__logo
+{
+    position: absolute;
+    left: 6.25em;
+
+    max-width: 5em;
 }
 .nav__bloc
 {
@@ -449,6 +458,11 @@ img
     .nav
     {
         min-height: 0;
+    }
+    .nav__logo
+    {
+        top: 1.25em;
+        left: 2.5em;
     }
     .nav__item
     {
