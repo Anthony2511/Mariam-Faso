@@ -1171,7 +1171,7 @@ img
     font-weight: 300;
     line-height: 1.6em;
 
-    margin-bottom: 2.222222222222222em;
+    margin-bottom: 2.777777777777778em;
 }
 .page-event__infos
 {
@@ -1823,6 +1823,11 @@ img
 .header-page--events
 {
     background: url('../images/header-event.jpg') no-repeat top center/cover;
+}
+.header-page--about
+{
+    background: url('../images/header-about.jpg') no-repeat top center/cover;
+    background-position: 50% 30%;
 }
 .header-page__bloc-header
 {
