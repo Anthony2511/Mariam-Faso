@@ -1608,6 +1608,27 @@ img
 
     background-color: rgba(0,0,0,.5);
 }
+@media screen and (max-width: 504px)
+{
+    .header-page__title
+    {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 424px)
+{
+    .header-page__title
+    {
+        font-size: 1.875em;
+    }
+}
+@media screen and (max-width: 348px)
+{
+    .header-page__title
+    {
+        font-size: 1.5625em;
+    }
+}
 .fil-ariane
 {
     position: relative;
@@ -1615,7 +1636,7 @@ img
 
     max-width: 71.25em;
     margin: 0 auto;
-    padding-top: 3.125em;
+    padding: 3.125em 2.5em 0;
 
     color: #fff;
 }
@@ -1636,7 +1657,7 @@ img
     font-variant: normal;
     line-height: 1;
 
-    margin-right: 2.5em;
+    margin-right: 2.777777777777778em;
 
     content: '\e904';
     text-transform: none;
@@ -1653,7 +1674,7 @@ img
     font-variant: normal;
     line-height: 1;
 
-    margin-right: 2.5em;
+    margin-right: 2.777777777777778em;
 
     content: '\e910';
     text-transform: none;
@@ -1661,6 +1682,21 @@ img
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 424px)
+{
+    .fil-ariane__navigation
+    {
+        font-size: 1em;
+    }
+    .fil-ariane__ariane-home:before
+    {
+        margin-right: 1.875em;
+    }
+    .fil-ariane__ariane-link:before
+    {
+        margin-right: 1.875em;
+    }
 }
 body
 {
