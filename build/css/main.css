@@ -1355,11 +1355,15 @@ img
 }
 .about
 {
+    max-width: 100%;
+}
+.about__history
+{
     max-width: 71.25em;
     margin: 0 auto;
     padding: 6.25em 1.25em;
 }
-.about:after
+.about__history:after
 {
     display: block;
     clear: both;
@@ -1434,6 +1438,53 @@ img
     line-height: 1.6em;
 
     color: #34495e;
+}
+.about__quotation
+{
+    margin-bottom: 6.25em;
+    padding: 6.25em 0;
+
+    color: #fff;
+    background-color: #34495e;
+}
+.about__quotation-bloc
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+
+    text-align: right;
+}
+.about__citation
+{
+    font-size: 2.1875em;
+    font-weight: bold;
+
+    margin-bottom: .285714285714286em;
+
+    text-align: center;
+}
+.about__citation:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .857142857142857em;
+
+    content: '\e900';
+    text-transform: none;
+
+    color: #f1c40f;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.about__author
+{
+    color: #f1c40f;
 }
 .footer
 {
