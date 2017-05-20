@@ -1562,7 +1562,9 @@ img
 .header-page
 {
     position: relative;
-
+}
+.header-page--events
+{
     background: url('../images/header-event.jpg') no-repeat top center/cover;
 }
 .header-page__bloc-header
@@ -1577,13 +1579,27 @@ img
     font-size: 3.125em;
     font-weight: bold;
 
+    position: relative;
     z-index: 50;
 
     color: #fff;
 }
+.header-page__title:after
+{
+    display: block;
+
+    width: 3em;
+    height: .1em;
+    margin: .4em auto;
+
+    content: '';
+
+    background-color: #fff;
+}
 .header-page__opacity
 {
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
 
@@ -1591,6 +1607,60 @@ img
     height: 100%;
 
     background-color: rgba(0,0,0,.5);
+}
+.fil-ariane
+{
+    position: relative;
+    z-index: 50;
+
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding-top: 3.125em;
+
+    color: #fff;
+}
+.fil-ariane__navigation
+{
+    font-size: 1.125em;
+    font-weight: 400;
+}
+.fil-ariane__ariane-item
+{
+    display: inline-block;
+}
+.fil-ariane__ariane-home:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 2.5em;
+
+    content: '\e904';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fil-ariane__ariane-link:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 2.5em;
+
+    content: '\e910';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 body
 {
