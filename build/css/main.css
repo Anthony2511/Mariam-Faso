@@ -1592,7 +1592,36 @@ img
 }
 .about__author
 {
+    margin-right: 1.25em;
+
     color: #f1c40f;
+}
+@media screen and (max-width: 1024px)
+{
+    .about__citation
+    {
+        font-size: 1.5625em;
+    }
+}
+@media screen and (max-width: 828px)
+{
+    .about__quotation
+    {
+        padding: 3.125em 0;
+    }
+    .about__citation
+    {
+        font-size: 1.25em;
+        line-height: 1.6em;
+    }
+}
+@media screen and (max-width: 393px)
+{
+    .about__citation
+    {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
 }
 .about__do
 {
