@@ -1220,7 +1220,12 @@ img
 }
 .page-event__page:hover
 {
-    color: #fff;
+    color: #f1c40f;
+    background-color: #34495e;
+}
+.page-event__page--active
+{
+    color: #f1c40f;
     background-color: #34495e;
 }
 .page-event__page--hellip
@@ -2280,6 +2285,11 @@ img
 {
     background: url('../images/header-about.jpg') no-repeat top center/cover;
     background-position: 50% 30%;
+}
+.header-page--actu
+{
+    background: url('../images/imgEvent.jpg') no-repeat top center/cover;
+    background-position: 50% 20%;
 }
 .header-page__bloc-header
 {
