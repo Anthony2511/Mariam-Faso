@@ -1642,6 +1642,14 @@ img
 
     color: #34495e;
 }
+.projets__galerie-link:hover:after
+{
+    -webkit-transition: all .5s cubic-bezier(0, .42, .095, 1.595);
+            transition: all .5s cubic-bezier(0, .42, .095, 1.595);
+    -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+            transform: translateX(15px);
+}
 .projets__galerie-link:after
 {
     font-family: 'icomoon';
@@ -1651,9 +1659,13 @@ img
     font-variant: normal;
     line-height: 1;
 
+    display: inline-block;
+
     margin-left: .8em;
 
     content: '\e910';
+    -webkit-transition: all .5s cubic-bezier(0, .42, .095, 1.595);
+            transition: all .5s cubic-bezier(0, .42, .095, 1.595);
     text-transform: none;
 
     speak: none;
