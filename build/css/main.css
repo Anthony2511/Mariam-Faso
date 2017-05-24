@@ -2483,6 +2483,11 @@ img
     background: url('../images/imgEvent.jpg') no-repeat top center/cover;
     background-position: 50% 20%;
 }
+.header-page--projet
+{
+    background: url('../images/header-projet.jpg') no-repeat top center/cover;
+    background-position: 50% 40%;
+}
 .header-page__bloc-header
 {
     padding: 3.125em;
