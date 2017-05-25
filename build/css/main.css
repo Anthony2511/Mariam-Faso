@@ -2020,7 +2020,7 @@ img
 
     content: '';
 
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.5);
 }
 .about__bloc-info
 {
@@ -2085,6 +2085,10 @@ img
 
     color: #34495e;
 }
+.about__img
+{
+    display: block;
+}
 @media screen and (max-width: 1024px)
 {
     .about__bloc-right,
@@ -2094,6 +2098,10 @@ img
 
         width: 100%;
 
+        text-align: center;
+    }
+    .about__bloc-img
+    {
         text-align: center;
     }
     .about__bloc-info

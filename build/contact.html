@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Mariam Faso</title>
+  <title>Mariam Faso - Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1 class="hidden" aria-level="1" role="heading">Mariam Faso</h1>
+  <h1 class="hidden" aria-level="1" role="heading">Page contact</h1>
   <div id="wrap">
     <nav class="nav">
       <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
@@ -47,10 +47,10 @@
         </a>
         <div class="nav__menu">
           <div class="nav__item">
-            <a class="nav__link" href="index.html"><span class="nav__span nav__span--active">Accueil</span></a>
+            <a class="nav__link" href="index.html"><span class="nav__span">Accueil</span></a>
           </div>
           <div class="nav__item">
-            <a class="nav__link" href="events.html"><span class="nav__span">&Eacute;vènements</span></a>
+            <a class="nav__link" href="events.html"><span class="nav__span ">&Eacute;vènements</span></a>
           </div>
           <div class="nav__item">
             <a class="nav__link" href="dons.html"><span class="nav__span">Dons</span></a>
@@ -62,97 +62,67 @@
             <a class="nav__link" href="projets.html"><span class="nav__span">Projets</span></a>
           </div>
           <div class="nav__item">
-            <a class="nav__link" href="contact.html"><span class="nav__span">Contact</span></a>
+            <a class="nav__link" href="contact.html"><span class="nav__span nav__span--active">Contact</span></a>
           </div>
         </div>
+      </div>
     </nav>
-    <header class="header">
-      <section class="bloc-header">
-        <h2 class="bloc-header__title" aria-level="2" role="heading">Mariam Faso</h2>
-        <p class="bloc-header__text">Association qui réalise et soutient des projets au Burkina Faso et au Maroc</p>
-        <a class="bloc-header__button" href="dons.html"><span class="bloc-header__span">Faites un don</span></a>
+    <header class="header-page header-page--actu">
+      <section class="fil-ariane">
+        <h2 class="hidden" aria-level="2" role="heading">Fil d'ariane</h2>
+        <ul class="fil-ariane__navigation">
+          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="index.html"></a></li>
+          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section class="header-page__bloc-header">
+        <h2 class="header-page__title" aria-level="2" role="heading">Contact</h2>
       </section>
     </header>
-    <section class="who">
-      <h3 class="who__title" aria-level="3" role="heading">Qui sommes-nous ?</h3>
-      <p class="who__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo. </p>
-      <a class="who__link" href="about.html">En savoir plus</a>
-    </section>
-    <div class="projet">
-      <section class="projet__left">
-        <h3 class="projet__title" aria-level="3" role="heading">Participez à notre projet</h3>
-        <p class="projet__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ipsum dolor sit amet, consectetuer adipiscing elit, sed. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-        <a class="projet__link" href="participer.html">Participer</a>
+    <section class="contact">
+      <h3 class="contact__title" aria-level="3" role="heading">Besoin de réponses ?</h3>
+      <p class="contact__text">
+        Nous sommes là pour vous <strong>informez</strong>, vous <strong>aidez</strong>.
+        Vous avez des <strong>questions</strong>, des <strong>envies</strong>, besoin de <strong>réponses</strong> ?
+        Vous pouvez déjà retrouver <a href="faq.htmt">ici</a> les questions les plus fréquentes.
+      </p>
+      <section class="contact__bloc">
+        <h3 class="contact__bloc-title" aria-level="3" role="heading">Envoyez-nous un message</h3>
+        <span class="contact__bloc-text">Les champs accompagnés d'un (*) sont obligatoires</span>
+        <form class="contact__form" action="index.html" method="post">
+          <div class="contact__form-bloc">
+            <div class="contact__form-infos">
+              <label class="contact__form-label" for="name">Votre nom *</label>
+              <input class="contact__form-input"type="text" name="name" id="name" placeholder="Dupont Jean" required>
+            </div>
+            <div class="contact__form-infos">
+              <label class="contact__form-label" for="phone">Votre téléphone</label>
+              <input class="contact__form-input" type="tel" name="phone" id="phone" placeholder="0478 48 86 34">
+            </div>
+            <div class="contact__form-infos">
+              <label class="contact__form-label" for="mail">Votre adresse mail *</label>
+              <input class="contact__form-input" type="email" name="mail" id="mail" placeholder="dupont.myriam@gmail.com" required>
+            </div>
+            <div class="contact__form-infos">
+              <label class="contact__form-label" for="society">Votre société</label>
+              <input class="contact__form-input" type="text" name="society" id="society" placeholder="Haute &Eacute;cole de la Province de Liège">
+            </div>
+          </div>
+          <div class="contact__form-bloc-two">
+            <textarea  class="contact__form-textarea" name="textarea" rows="8" cols="80" placeholder="Votre message"></textarea>
+          </div>
+          <button class="contact__form-button" value="Envoyer">Envoyer</button>
+        </form>
+        <section class="contact__infos">
+          <h4 class="contact__infos-title" aria-level="4" role="heading">Informations</h4>
+          <div class="contact__infos-labels">
+            <p class="contact__infos-text contact__infos-text--lieu">15, Avenue de la Gare à 6600 Bastogne</p>
+            <p class="contact__infos-text contact__infos-text--phone">0479/21.57.44</p>
+            <p class="contact__infos-text contact__infos-text--mail">info@mariam.be</p>
+          </div>
+        </section>
       </section>
-      <figure class="projet__bloc-img">
-        <img class="projet__img" src="./images/participate-projet.jpg" width="756" height="501" alt="Sixième classe de Burkina Faso">
-      </figure>
-    </div>
-    <div class="event">
-      <section class="event__bloc">
-        <h3 class="event__title" aria-level="3" role="heading">Dinner annuel Mariam Faso 24 Mars 2017</h3>
-        <span class="event__text">Notre prochain évènement</span>
-        <a class="event__link" href="events.html">En savoir plus</a>
-      </section>
-    </div>
-    <section class="actu">
-      <h3 class="actu__title" aria-level="3" role="heading">Toute l'actualité</h3>
-      <div class="actu__bloc-gen">
-        <div class="actu__bloc-left">
-          <div class="actu__bloc">
-            <figure class="actu__bloc-img">
-              <img class="actu__img" src="./images/actu1.jpg" width="700" height="464" alt="Lorem ipsum">
-            </figure>
-            <section class="actu__opacity">
-              <h4 class="actu__img-title" aria-level="4" role="heading">Le prochain voyage arrive&hellip;</h4>
-            </section>
-            <a class="actu__bloc-link" href="actu.html"></a>
-          </div>
-          <div class="actu__bloc">
-            <figure class="actu__bloc-img">
-              <img class="actu__img" src="./images/actu1.jpg" width="700" height="464" alt="Lorem ipsum">
-            </figure>
-            <section class="actu__opacity">
-              <h4 class="actu__img-title" aria-level="4" role="heading">Le prochain voyage arrive&hellip;</h4>
-            </section>
-            <a class="actu__bloc-link" href="actu.html"></a>
-          </div>
-        </div>
-        <div class="actu__bloc-right">
-          <div class="actu__bloc">
-            <figure class="actu__bloc-img">
-              <img class="actu__img-right" src="./images/actu2.jpg" width="600" height="757" alt="Lorem ipsum">
-            </figure>
-            <section class="actu__opacity">
-              <h4 class="actu__img-title" aria-level="4" role="heading">Le prochain voyage arrive&hellip;</h4>
-            </section>
-            <a class="actu__bloc-link" href="actu.html"></a>
-          </div>
-        </div>
-      </div>
-      <a class="actu__link" href="actu.html">Voir plus d'articles</a>
     </section>
-    <section class="partenaires">
-      <h3 class="partenaires__title" aria-level="3" role="heading">Nos partenaires</h3>
-      <div class="partenaires__bloc">
-        <figure class="partenaires__bloc-img">
-          <img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
-        </figure>
-        <a class="partenaires__link" href="#"></a>
-      </div>
-      <div class="partenaires__bloc partenaires__bloc--margin">
-        <figure class="partenaires__bloc-img">
-          <img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
-        </figure>
-        <a class="partenaires__link" href="#"></a>
-      </div>
-      <div class="partenaires__bloc">
-        <figure class="partenaires__bloc-img">
-          <img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
-        </figure>
-        <a class="partenaires__link" href="#"></a>
-      </div>
-  </section>
   <footer class="footer">
     <section class="footer__container">
       <h3 class="hidden" aria-level="3" role="heading">Informations supplémentaires</h3>
