@@ -87,9 +87,9 @@
         Vous pouvez déjà retrouver <a class="contact__text-link" href="faq.htmt">ici</a> les questions les plus fréquentes.
       </p>
       <section class="contact__bloc">
-        <h3 class="contact__bloc-title" aria-level="3" role="heading">Envoyez-nous un message</h3>
-        <span class="contact__bloc-text">Les champs accompagnés d'un (*) sont obligatoires</span>
         <form class="contact__form" action="index.html" method="post">
+          <h3 class="contact__bloc-title" aria-level="3" role="heading">Envoyez-nous un message</h3>
+          <span class="contact__bloc-text">Les champs accompagnés d'un (*) sont obligatoires</span>
           <div class="contact__form-bloc">
             <div class="contact__form-infos">
               <label class="contact__form-label" for="name">Votre nom *</label>
@@ -109,7 +109,8 @@
             </div>
           </div>
           <div class="contact__form-bloc-two">
-            <textarea  class="contact__form-textarea" name="textarea" rows="8" cols="80" placeholder="Votre message"></textarea>
+            <label  class="contact__form-label" for="textarea">Votre message</label>
+            <textarea  class="contact__form-textarea" name="textarea" rows="8" cols="80" placeholder="Je suis très content de ce site"></textarea>
           </div>
           <button class="contact__form-button" value="Envoyer">Envoyer</button>
         </form>

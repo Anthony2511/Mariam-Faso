@@ -195,8 +195,8 @@ img
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/icomoon/icomoon.eot?z21yqo');
-    src: url('../fonts/icomoon/icomoon.eot?z21yqo#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?z21yqo') format('truetype'), url('../fonts/icomoon/icomoon.woff?z21yqo') format('woff'), url('../fonts/icomoon/icomoon.svg?z21yqo#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?9bv1l5');
+    src: url('../fonts/icomoon/icomoon.eot?9bv1l5#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?9bv1l5') format('truetype'), url('../fonts/icomoon/icomoon.woff?9bv1l5') format('woff'), url('../fonts/icomoon/icomoon.svg?9bv1l5#icomoon') format('svg');
 }
 @font-face
 {
@@ -1279,7 +1279,6 @@ img
     line-height: 1;
 
     content: '\e90f';
-    content: '\e90f';
     text-transform: none;
 
     speak: none;
@@ -1294,7 +1293,6 @@ img
     font-variant: normal;
     line-height: 1;
 
-    content: '\e90f';
     content: '\e90f';
     text-transform: none;
 
@@ -1627,6 +1625,163 @@ img
     font-weight: bold;
 
     text-decoration: underline;
+}
+.contact__bloc
+{
+    position: relative;
+
+    color: #34495e;
+    background-color: #fff;
+}
+.contact__bloc-title
+{
+    font-size: 2.1875em;
+    font-weight: bold;
+
+    margin-bottom: .285714285714286em;
+}
+.contact__bloc-text
+{
+    display: block;
+
+    margin-bottom: 3.125em;
+}
+.contact__infos
+{
+    background-color: #34495e;
+}
+.contact__form
+{
+    font-size: 1.25em;
+
+    position: relative;
+
+    padding: 2.5em;
+}
+.contact__form-label
+{
+    font-weight: 300;
+
+    display: block;
+}
+.contact__form-infos
+{
+    margin-bottom: 3.125em;
+}
+.contact__form-bloc
+{
+    width: 60%;
+
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 3.125em;
+       -moz-column-gap: 3.125em;
+            column-gap: 3.125em;
+}
+.contact__form-input
+{
+    width: 100%;
+    padding: .625em 0;
+
+    border-bottom: .125em solid #34495e;
+}
+.contact__form-textarea
+{
+    width: 60%;
+    margin-bottom: 3.125em;
+    padding: .625em 0;
+
+    border: none;
+    border-bottom: .125em solid #34495e;
+}
+.contact__infos
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 35%;
+    height: 100%;
+    padding: 3.125em;
+
+    color: #fff;
+}
+.contact__infos-title
+{
+    font-size: 2.1875em;
+    font-weight: bold;
+
+    margin-bottom: 1.428571428571429em;
+}
+.contact__form-button
+{
+    font-size: 1.1em;
+
+    padding: .681818181818182em 3.181818181818182em;
+
+    color: #fff;
+    border: none;
+    background-color: #34495e;
+}
+.contact__infos-text
+{
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+
+    margin-bottom: 2.5em;
+}
+.contact__infos-text--lieu:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 1em;
+
+    content: '\e909';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.contact__infos-text--phone:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 1em;
+
+    content: '\e907';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.contact__infos-text--mail:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 1em;
+
+    content: '\e908';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .projets__bloc
 {
