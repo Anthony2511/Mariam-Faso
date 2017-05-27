@@ -1626,6 +1626,51 @@ img
 
     text-decoration: underline;
 }
+@media screen and (max-width: 1024px)
+{
+    .contact__intro
+    {
+        text-align: center;
+    }
+    .contact__title:after
+    {
+        margin: 0 auto;
+    }
+    .contact__text
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 619px)
+{
+    .contact__title
+    {
+        font-size: 2.5em;
+    }
+    .contact__text
+    {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .contact__title
+    {
+        font-size: 1.875em;
+    }
+    .contact__text
+    {
+        font-size: 1.125em;
+    }
+}
+@media screen and (max-width: 293px)
+{
+    .contact__title
+    {
+        font-size: 1.5625em;
+    }
+}
 .contact__bloc
 {
     position: relative;
@@ -1782,6 +1827,100 @@ img
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 1024px)
+{
+    .contact__infos
+    {
+        position: static;
+
+        width: 100%;
+    }
+    .contact__form:after
+    {
+        display: block;
+        clear: both;
+
+        content: '';
+    }
+    .contact__form-bloc
+    {
+        width: 100%;
+    }
+    .contact__form-textarea
+    {
+        width: 100%;
+    }
+    .contact__form-button
+    {
+        float: right;
+    }
+}
+@media screen and (max-width: 666px)
+{
+    .contact__bloc-title,
+    .contact__infos-title
+    {
+        font-size: 1.875em;
+    }
+    .contact__bloc-text,
+    .contact__infos-labels
+    {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 593px)
+{
+    .contact__bloc-title,
+    .contact__infos-title
+    {
+        font-size: 1.5625em;
+    }
+    .contact__infos
+    {
+        width: 100%;
+    }
+    .contact__form-bloc
+    {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+    .contact__form
+    {
+        padding: 1.5em;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .contact__bloc-title,
+    .contact__infos-title
+    {
+        font-size: 1.25em;
+    }
+    .contact__bloc-text,
+    .contact__infos-labels
+    {
+        font-size: .7em;
+    }
+    .contact__form-label
+    {
+        font-size: .8em;
+    }
+    .contact__form-input
+    {
+        font-size: .6em;
+    }
+    .contact__form-button
+    {
+        font-size: 1em;
+
+        float: none;
+
+        width: 100%;
+        margin: 0 auto;
+        padding: .5em 2.5em;
+    }
 }
 .projets__bloc
 {
