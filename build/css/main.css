@@ -3470,7 +3470,7 @@ img
 {
     display: block;
 
-    width: 25em;
+    max-width: 25em;
     height: .1em;
     margin: 2.5em auto;
 
@@ -3514,6 +3514,32 @@ img
 
     color: #fff;
     background-color: #34495e;
+}
+@media screen and (max-width: 530px)
+{
+    .faq__bloc
+    {
+        line-height: 1.4em;
+    }
+    .faq__term
+    {
+        font-size: 1em;
+    }
+    .faq__contact
+    {
+        font-size: 1.25em;
+    }
+    .faq__link
+    {
+        padding: .5em 2.5em;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .faq__term
+    {
+        font-size: .9em;
+    }
 }
 body
 {
