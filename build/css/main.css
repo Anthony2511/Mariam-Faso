@@ -2433,10 +2433,18 @@ img
 }
 @media screen and (max-width: 400px)
 {
+    .projets__type
+    {
+        padding-bottom: 1.25em;
+    }
     .projets__realize-title
     {
         font-size: 1.125em;
         line-height: 1.4em;
+    }
+    .projets__realize-date
+    {
+        font-size: .888888888888889em;
     }
     .projets__realize-opacity
     {
@@ -3295,7 +3303,7 @@ img
 }
 .with-menu .nav__bloc
 {
-    height: 28.125em;
+    height: 33.75em;
 
     -webkit-transition: height .5s ease;
             transition: height .5s ease;
@@ -3330,6 +3338,15 @@ img
 
     width: 0;
 }
+@media screen and (max-width: 1140px)
+{
+    .nav__item
+    {
+        font-size: .9em;
+
+        margin-right: 1.111111111111111em;
+    }
+}
 @media screen and (max-width: 1024px)
 {
     .nav
@@ -3343,10 +3360,12 @@ img
     }
     .nav__item
     {
+        font-size: 1em;
+
         display: block;
 
         margin-right: 0;
-        padding: .909090909090909em 0;
+        padding: 1em 0;
 
         text-align: center;
     }
