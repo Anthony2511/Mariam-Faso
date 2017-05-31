@@ -1939,7 +1939,7 @@ img
 {
     display: inline-block;
 
-    width: 30%;
+    margin: 0 auto;
 
     text-align: center;
     vertical-align: text-top;
@@ -1948,17 +1948,18 @@ img
 }
 .dons__terms
 {
-    font-size: 1.375em;
+    font-family: 'crumble';
+    font-size: 1.5625em;
     font-weight: bold;
 
-    margin: 2.272727272727273em 0;
+    margin: 2em 0;
 
     text-transform: uppercase;
 }
 .dons__terms--partage:before
 {
     font-family: 'icomoon';
-    font-size: 2.272727272727273em;
+    font-size: 2em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
@@ -1978,7 +1979,7 @@ img
 .dons__terms--solidarite:before
 {
     font-family: 'icomoon';
-    font-size: 2.272727272727273em;
+    font-size: 2em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
@@ -1998,7 +1999,7 @@ img
 .dons__terms--avenir:before
 {
     font-family: 'icomoon';
-    font-size: 2.272727272727273em;
+    font-size: 2em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
@@ -2023,6 +2024,56 @@ img
 
     width: 80%;
     margin: 0 auto;
+}
+.dons__donate
+{
+    padding: 3.125em 3.125em 4.375em;
+
+    text-align: center;
+
+    color: #34495e;
+    background-color: #fff;
+}
+.dons__donate-title
+{
+    font-size: 1.5625em;
+    font-weight: bold;
+}
+.dons__donate-title:after
+{
+    display: block;
+
+    width: 4em;
+    height: .16em;
+    margin: .8em auto 2em;
+
+    content: '';
+
+    background-color: #34495e;
+}
+.dons__donate-text
+{
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6em;
+
+    width: 75%;
+    margin: 0 auto 2.777777777777778em;
+}
+.dons__single-button
+{
+    font-size: 1.25em;
+    font-weight: bold;
+
+    margin-right: 2.5em;
+    padding: .5em 2.5em;
+
+    color: #fff;
+    background-color: #34495e;
+}
+.dons__single-button:last-child
+{
+    margin-right: 0;
 }
 .projets__bloc
 {
