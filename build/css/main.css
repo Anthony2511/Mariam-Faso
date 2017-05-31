@@ -3695,6 +3695,11 @@ img
     background: url('../images/header-faq.jpg') no-repeat top center/cover;
     background-position: 50% 40%;
 }
+.header-page--travel
+{
+    background: url('../images/header-voyages.jpg') no-repeat top center/cover;
+    background-position: 50% 80%;
+}
 .header-page__bloc-header
 {
     padding: 3.125em;
