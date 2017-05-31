@@ -1933,12 +1933,28 @@ img
 }
 .dons__intro
 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
     margin-bottom: 3.125em;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .dons__list
 {
     display: inline-block;
 
+    width: 30%;
     margin: 0 auto;
 
     text-align: center;
@@ -1952,8 +1968,9 @@ img
     font-size: 1.5625em;
     font-weight: bold;
 
-    margin: 2em 0;
+    margin: 2em auto;
 
+    text-align: center;
     text-transform: uppercase;
 }
 .dons__terms--partage:before
@@ -2022,8 +2039,27 @@ img
     font-weight: 300;
     line-height: 1.6em;
 
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width: 806px)
+{
+    .dons__intro
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .dons__list
+    {
+        width: 100%;
+    }
 }
 .dons__donate
 {
@@ -2062,11 +2098,11 @@ img
 }
 .dons__single-button
 {
-    font-size: 1.25em;
+    font-size: 1.125em;
     font-weight: bold;
 
-    margin-right: 2.5em;
-    padding: .5em 2.5em;
+    margin-right: 2.777777777777778em;
+    padding: .555555555555556em 2.777777777777778em;
 
     color: #fff;
     background-color: #34495e;
@@ -2074,6 +2110,64 @@ img
 .dons__single-button:last-child
 {
     margin-right: 0;
+}
+@media screen and (max-width: 1176px)
+{
+    .dons__single-button
+    {
+        font-size: 1em;
+
+        margin-right: 2.5em;
+        padding: .625em 2.5em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .dons__single-button
+    {
+        font-size: 1.125em;
+
+        display: block;
+
+        margin-right: 0;
+        margin-bottom: 1.111111111111111em;
+        padding: .555555555555556em 2.777777777777778em;
+    }
+    .dons__donate-text
+    {
+        width: 100%;
+    }
+    .dons__buttons
+    {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 616px)
+{
+    .dons__donate
+    {
+        padding: 1.875em 1.875em 3.125em;
+    }
+    .dons__donate-title
+    {
+        font-size: 1.25em;
+    }
+    .dons__donate-text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+    }
+    .dons__single-button
+    {
+        font-size: 1em;
+
+        padding: .625em 2.5em;
+    }
+    .dons__buttons
+    {
+        width: 100%;
+    }
 }
 .projets__bloc
 {
