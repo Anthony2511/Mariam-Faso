@@ -2266,6 +2266,85 @@ img
     color: #fff;
     background-color: #34495e;
 }
+.voyages__finish-bloc
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.voyages__finish-list
+{
+    width: 30%;
+
+    text-align: center;
+
+    color: #3e586d;
+}
+.voyages__finish-title
+{
+    font-family: 'crumble';
+    font-size: 1.5625em;
+    font-weight: bold;
+
+    margin: .571428571428571em 0;
+
+    color: #3e586d;
+}
+.voyages__finish-title:after
+{
+    display: block;
+
+    max-width: 4em;
+    height: .04em;
+    margin: .8em auto;
+
+    content: '';
+
+    background-color: #3e586d;
+}
+.voyages__finish-date
+{
+    font-size: .875em;
+    font-weight: 500;
+
+    display: block;
+
+    margin-bottom: 1.428571428571429em;
+}
+.voyages__finish-text
+{
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6em;
+
+    margin-bottom: 2.222222222222222em;
+
+    text-align: left;
+}
+.voyages__finish-link
+{
+    font-size: 1.25em;
+
+    padding: .5em 3em;
+
+    color: #fff;
+    border-radius: 3.5em;
+    background-color: #34495e;
+}
 .projets__bloc
 {
     max-width: 71.25em;
