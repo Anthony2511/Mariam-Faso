@@ -195,8 +195,8 @@ img
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/icomoon/icomoon.eot?9bv1l5');
-    src: url('../fonts/icomoon/icomoon.eot?9bv1l5#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?9bv1l5') format('truetype'), url('../fonts/icomoon/icomoon.woff?9bv1l5') format('woff'), url('../fonts/icomoon/icomoon.svg?9bv1l5#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?hhe9x8');
+    src: url('../fonts/icomoon/icomoon.eot?hhe9x8#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?hhe9x8') format('truetype'), url('../fonts/icomoon/icomoon.woff?hhe9x8') format('woff'), url('../fonts/icomoon/icomoon.svg?hhe9x8#icomoon') format('svg');
 }
 @font-face
 {
@@ -1296,7 +1296,7 @@ img
     font-variant: normal;
     line-height: 1;
 
-    content: '\e90f';
+    content: '\e90a';
     text-transform: none;
 
     speak: none;
@@ -3539,7 +3539,7 @@ img
 .fil-ariane
 {
     position: relative;
-    z-index: 50;
+    z-index: 60;
 
     max-width: 71.25em;
     margin: 0 auto;
