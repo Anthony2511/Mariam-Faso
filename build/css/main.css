@@ -2236,7 +2236,7 @@ img
     font-size: 2.1875em;
     font-weight: bold;
 
-    margin-bottom: .666666666666667em;
+    margin-bottom: .571428571428571em;
 
     color: #3e586d;
 }
@@ -2265,6 +2265,96 @@ img
 
     color: #fff;
     background-color: #34495e;
+}
+@media screen and (max-width: 1024px)
+{
+    .voyages__futur
+    {
+        text-align: center;
+    }
+    .voyages__title:after
+    {
+        margin: .5em auto;
+    }
+    .voyages__futur-figure
+    {
+        float: none;
+
+        width: 100%;
+        margin-bottom: 1.875em;
+    }
+    .voyages__futur-infos
+    {
+        float: none;
+
+        width: 100%;
+    }
+    .voyages__futur-text
+    {
+        width: 55%;
+        margin: 0 auto 2.5em;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .voyages__futur-text
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 614px)
+{
+    .voyages__title
+    {
+        font-size: 2.1875em;
+    }
+    .voyages__futur-title
+    {
+        font-size: 1.875em;
+
+        margin-bottom: 1em;
+    }
+    .voyages__futur-text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+
+        width: 100%;
+    }
+    .voyages__futur-date
+    {
+        font-size: .875em;
+
+        margin-bottom: 2.142857142857143em;
+    }
+    .voyages__futur-link
+    {
+        font-size: 1.125em;
+
+        margin-bottom: .555555555555556em 2.777777777777778em;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .voyages__title
+    {
+        font-size: 1.875em;
+    }
+    .voyages__futur-title
+    {
+        font-size: 1.5625em;
+    }
+}
+@media screen and (max-width: 325px)
+{
+    .voyages__title
+    {
+        font-size: 1.5625em;
+    }
+    .voyages__title__futur-title
+    {
+        font-size: 1.25em;
+    }
 }
 .voyages__finish-bloc
 {
