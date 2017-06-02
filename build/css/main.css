@@ -2319,8 +2319,13 @@ img
 {
     .voyages__futur:hover .voyages__futur-link:before
     {
-        -webkit-animation: span 0s ease-in-out forwards;
-                animation: span 0s ease-in-out forwards;
+        -webkit-animation: link 0s ease-in-out forwards;
+                animation: link 0s ease-in-out forwards;
+    }
+    .voyages__futur:hover .voyages__futur-span
+    {
+        -webkit-animation: span 0s ease-in-out;
+                animation: span 0s ease-in-out;
     }
     .voyages__futur:hover .voyages__futur-span
     {
@@ -2573,6 +2578,57 @@ img
     color: #fff;
     border-radius: 3.5em;
     background-color: #34495e;
+}
+@media screen and (max-width: 1024px)
+{
+    .voyages__finish-bloc
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .voyages__finish-list
+    {
+        width: 100%;
+        margin-top: 3.125em;
+    }
+    .voyages__finish-list:first-child
+    {
+        margin-top: 0;
+    }
+    .voyages__finish-text
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 614px)
+{
+    .voyages__finish-title
+    {
+        font-size: 1.25em;
+    }
+    .voyages__finish-date
+    {
+        font-size: .75em;
+    }
+    .voyages__finish-text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+    }
+    .voyages__finish-link
+    {
+        font-size: 1.125em;
+
+        padding: .555555555555556em 2.222222222222222em;
+    }
 }
 .projets__bloc
 {
@@ -4231,7 +4287,7 @@ img
 .fil-ariane__ariane-link:before
 {
     font-family: 'icomoon';
-    font-size: .7em;
+    font-size: .6em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
