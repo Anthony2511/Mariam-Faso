@@ -4440,6 +4440,47 @@ img
         font-size: .9em;
     }
 }
+.galerie
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+}
+.galerie__bloc-figure
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: .9375em;
+}
+@media screen and (max-width: 1024px)
+{
+    .galerie
+    {
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .galerie
+    {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+    .galerie__bloc-figure
+    {
+        width: 100%;
+        margin: 0 auto .9375em;
+
+        text-align: center;
+    }
+}
 body
 {
     background-color: #f3f3f3;
