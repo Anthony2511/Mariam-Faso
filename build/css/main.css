@@ -2650,6 +2650,180 @@ img
         padding: .555555555555556em 2.222222222222222em;
     }
 }
+.voyage-post
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+}
+.voyage-post__timeline-title
+{
+    font-family: 'crumble';
+    font-size: 1.875em;
+    font-weight: bold;
+
+    margin-bottom: .666666666666667em;
+
+    color: #3e586d;
+}
+.voyage-post__timeline-title:after
+{
+    content: none;
+}
+.voyage-post__timeline-text
+{
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6em;
+
+    width: 70%;
+    margin-bottom: 1.111111111111111em;
+
+    color: #34495e;
+}
+.voyage-post__figure
+{
+    display: inline-block;
+
+    max-width: 21.875em;
+    height: auto;
+    margin-right: 1.25em;
+}
+.voyage-post__figure:last-child
+{
+    margin-right: 0;
+}
+.voyage-post__item
+{
+    position: relative;
+
+    padding-left: 2.5em;
+}
+.voyage-post__item:last-child
+{
+    padding-bottom: 0;
+}
+.voyage-post__item:last-child:after
+{
+    content: none;
+}
+.voyage-post__timeline-info
+{
+    font-size: 1em;
+    font-weight: 500;
+
+    margin: 0 0 1.25em 0;
+
+    white-space: nowrap;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #34495e;
+}
+.voyage-post__timeline-marker
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: .9375em;
+}
+.voyage-post__timeline-marker:before
+{
+    position: absolute;
+    top: .25em;
+    left: 0;
+
+    display: block;
+
+    width: .9375em;
+    height: .9375em;
+
+    content: '';
+    -webkit-transition: background .3s ease-in-out, border .3s ease-in-out;
+            transition: background .3s ease-in-out, border .3s ease-in-out;
+
+    border: .1875em solid transparent;
+    border-radius: 100%;
+    background: #34495e;
+}
+.voyage-post__timeline-marker:after
+{
+    position: absolute;
+    top: 1.5em;
+    bottom: 0;
+    left: .375em;
+
+    display: block;
+
+    width: .125em;
+
+    content: '';
+
+    background: #34495e;
+}
+.voyage-post__content
+{
+    padding-bottom: 2.5em;
+}
+.voyage-post__timeline-text:last-child
+{
+    margin-bottom: 0;
+}
+.voyage-post__item:not(.period):hover .voyage-post__timeline-marker:before
+{
+    border: .125em solid #3e586d;
+    background: transparent;
+}
+.period
+{
+    padding: 0;
+}
+.period .voyage-post__timeline-title
+{
+    font-size: 2.5em;
+
+    padding-top: .75em;
+    padding-bottom: .25em;
+}
+.period .voyage-post__timeline-title:after
+{
+    display: block;
+
+    width: 1.25em;
+    height: .05em;
+    margin-top: .25em;
+
+    content: '';
+
+    background-color: #3e586d;
+}
+.period .voyage-post__timeline-marker:before
+{
+    position: absolute;
+    top: 0;
+    bottom: 1.875em;
+
+    width: .9375em;
+    height: auto;
+
+    content: '';
+
+    border: none;
+    border-top: 3px solid #34495e;
+    border-bottom: 3px solid #34495e;
+    border-radius: 0;
+    background: transparent;
+}
+.period .voyage-post__timeline-marker:after
+{
+    top: auto;
+
+    height: 2em;
+
+    content: '';
+}
 .projets__bloc
 {
     max-width: 71.25em;
