@@ -3176,6 +3176,138 @@ img
         padding: .3125em 0;
     }
 }
+.projet-type
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+
+    color: #34495e;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+}
+.projet-type__figure
+{
+    max-width: 31.25em;
+    height: auto;
+    margin-right: 3.125em;
+}
+.projet-type__title
+{
+    font-family: 'crumble';
+    font-size: 2.5em;
+    font-weight: bold;
+
+    margin-bottom: 1.25em;
+
+    color: #3e586d;
+}
+.projet-type__infos
+{
+    margin-bottom: 1.875em;
+}
+.projet-type__infos:last-child
+{
+    margin-bottom: 0;
+}
+.projet-type__infos-title
+{
+    font-size: 1.375em;
+    font-weight: bold;
+
+    display: inline-block;
+}
+.projet-type__infos-text
+{
+    font-size: 1.25em;
+    font-weight: 300;
+
+    display: inline-block;
+}
+.projet-type
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+
+    color: #34495e;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+}
+.projet-type__figure
+{
+    max-width: 31.25em;
+    height: auto;
+    margin-right: 3.125em;
+}
+.projet-type__title
+{
+    font-family: 'crumble';
+    font-size: 2.5em;
+    font-weight: bold;
+
+    margin-bottom: 1.25em;
+
+    color: #3e586d;
+}
+.projet-type__infos
+{
+    margin-bottom: 1.875em;
+}
+.projet-type__infos:last-child
+{
+    margin-bottom: 0;
+}
+.projet-type__infos-title
+{
+    font-size: 1.375em;
+    font-weight: bold;
+
+    display: inline-block;
+}
+.projet-type__infos-title:before
+{
+    font-family: 'icomoon';
+    font-size: .75em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: 1.666666666666667em;
+
+    content: '\e911';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.projet-type__infos-text
+{
+    font-size: 1.125em;
+    font-weight: 300;
+
+    display: inline-block;
+}
 .about
 {
     max-width: 100%;
