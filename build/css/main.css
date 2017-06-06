@@ -3176,74 +3176,91 @@ img
         padding: .3125em 0;
     }
 }
-.projet-type
+.projet-type__flow
 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-            flex-direction: row;
+            flex-direction: column;
 
-    max-width: 71.25em;
-    margin: 0 auto;
-    padding: 6.25em 1.25em;
+    margin: 6.25em auto;
 
-    color: #34495e;
-
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
 }
-.projet-type__figure
-{
-    max-width: 31.25em;
-    height: auto;
-    margin-right: 3.125em;
-}
-.projet-type__title
+.projet-type__flow-title
 {
     font-family: 'crumble';
     font-size: 2.5em;
     font-weight: bold;
 
-    margin-bottom: 1.25em;
+    width: 50%;
+    margin: 0 auto 1.25em;
+    padding: .5em 0;
+
+    text-align: center;
 
     color: #3e586d;
+    border: .0625em solid #3e586d;
 }
-.projet-type__infos
+.projet-type__flow-text
 {
-    margin-bottom: 1.875em;
-}
-.projet-type__infos:last-child
-{
-    margin-bottom: 0;
-}
-.projet-type__infos-title
-{
-    font-size: 1.375em;
-    font-weight: bold;
-
-    display: inline-block;
-}
-.projet-type__infos-text
-{
-    font-size: 1.25em;
+    font-size: 1.125em;
     font-weight: 300;
+    line-height: 1.6em;
 
-    display: inline-block;
+    color: #34495e;
+
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2.777777777777778em;
+       -moz-column-gap: 2.777777777777778em;
+            column-gap: 2.777777777777778em;
+}
+@media screen and (max-width: 700px)
+{
+    .projet-type__flow-title
+    {
+        font-size: 1.875em;
+
+        width: 100%;
+    }
+    .projet-type__flow-text
+    {
+        font-size: 1em;
+        line-height: 1.45em;
+
+        text-align: center;
+
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .projet-type__flow-title
+    {
+        font-size: 1.5625em;
+    }
 }
 .projet-type
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+}
+.projet-type__history
 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
             flex-direction: row;
-
-    max-width: 71.25em;
-    margin: 0 auto;
-    padding: 6.25em 1.25em;
 
     color: #34495e;
 
@@ -3307,6 +3324,95 @@ img
     font-weight: 300;
 
     display: inline-block;
+}
+@media screen and (max-width: 1024px)
+{
+    .projet-type__history
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+                align-items: center;
+    }
+    .projet-type__title
+    {
+        text-align: center;
+
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+                order: 1;
+    }
+    .projet-type__figure
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+                order: 2;
+    }
+    .projet-type__infos
+    {
+        display: inline-block;
+
+        margin-right: 1.25em;
+
+        text-align: center;
+    }
+    .projet-type__infos:last-child
+    {
+        margin-right: 0;
+    }
+    .projet-type__infos-title
+    {
+        font-size: 1.125em;
+
+        display: block;
+
+        margin-bottom: 1.111111111111111em;
+    }
+    .projet-type__infos-title:before
+    {
+        display: none;
+    }
+    .projet-type__infos-text
+    {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .projet-type__title
+    {
+        font-size: 1.875em;
+    }
+    .projet-type__infos
+    {
+        display: block;
+
+        margin-right: 0;
+    }
+    .projet-type__figure
+    {
+        margin-top: 3.125em;
+    }
 }
 .about
 {
