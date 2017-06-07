@@ -1,4 +1,4 @@
-<header class="header-page header-page--travel">
+<header class="header-page">
   <section class="fil-ariane">
     <h2 class="hidden" aria-level="2" role="heading">Fil d'ariane</h2>
     <ul class="fil-ariane__navigation">
@@ -8,6 +8,6 @@
     </ul>
   </section>
   <section class="header-page__bloc-header">
-    <h2 class="header-page__title" aria-level="2" role="heading">Nos photos</h2>
+    <h2 class="header-page__title" aria-level="2" role="heading"><?php the_title(); ?></h2>
   </section>
 </header>

@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Page d’accueil
+*/
+; ?>
 <?php include('head.php'); ?>
 <body>
   <h1 class="hidden" aria-level="1" role="heading">Mariam Faso</h1>
@@ -84,5 +89,5 @@
 			<a class="partenaires__link" href="#" title="Vers le site Partenaires"></a>
 		</div>
 	</section>
-	
-	<?php include('footer.php'); ?>
+
+	<?php wp_footer(); ?>

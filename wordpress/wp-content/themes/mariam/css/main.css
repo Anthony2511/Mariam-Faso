@@ -4769,6 +4769,11 @@ img
 
     background-color: rgba(0,0,0,.5);
 }
+.about-page .header-page
+{
+    background: url('../images/header-about.jpg') no-repeat top center/cover;
+    background-position: 50% 30%;
+}
 @media screen and (max-width: 504px)
 {
     .header-page__title
