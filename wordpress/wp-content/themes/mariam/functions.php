@@ -45,3 +45,33 @@ function b_get_menu_items( $location )
   }
   return $navItems;
 }
+
+function the_breadcrumb() {
+  echo '<ul class="fil-ariane__navigation">';
+  if (!is_home()) {
+    echo '<li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="';
+    echo get_home_url();
+    echo '"><span class=';
+    echo 'hidden>';
+    echo 'Accueil';
+    echo "</span></a></li>";
+    if (is_category() || is_single()) {
+      echo '<li class="fil-ariane__ariane-item">';
+      echo '<a class="fil-ariane__ariane-link" href="';
+      the_category('</li><li class="fil-ariane__ariane-item">');
+      if (is_single()) {
+        echo '</li><li class=\"fil-ariane__ariane-item">';
+        the_title();
+        echo '</li>';
+      }
+    } elseif (is_page()) {
+        echo '<li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="';
+        echo get_permalink();
+        echo '">';
+        echo the_title();
+        echo '</a>';
+        echo '</li>';
+    }
+  }
+  echo '</ul>';
+}
