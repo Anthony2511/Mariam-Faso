@@ -90,4 +90,4 @@ Template Name: Page d’accueil
 		</div>
 	</section>
 
-	<?php wp_footer(); ?>
+	<?php include('footer.php'); ?>
