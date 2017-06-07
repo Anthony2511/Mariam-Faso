@@ -28,7 +28,7 @@ var
     // export NODE_ENV=production pour définir la variable
     // echo $NODE_ENV pour afficher la valeur de la variable
     source = 'source/',
-    dest = 'build/';
+    dest = 'wordpress/wp-content/themes/mariam/';
 
 // Définition de quelques variables liées à nos tâches (options de tâches)
 var
