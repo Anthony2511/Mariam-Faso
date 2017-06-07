@@ -1,5 +1,8 @@
 <?php
 
+add_theme_support('post-thumbnails');
+add_image_size( 'thumb-about', 523, 523, true );
+
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';
 $images =  get_template_directory_uri() . '/images/';
