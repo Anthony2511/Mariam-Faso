@@ -3,7 +3,9 @@
 Template Name: Page d’accueil
 */
 ; ?>
+
 <?php include('head.php'); ?>
+
 <body>
   <h1 class="hidden" aria-level="1" role="heading">Mariam Faso</h1>
 	<?php include('navigation.php'); ?>
