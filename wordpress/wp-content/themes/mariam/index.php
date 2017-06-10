@@ -12,7 +12,7 @@ Template Name: Page d’accueil
 	<section class="who">
 		<h3 class="who__title" aria-level="3" role="heading">Qui sommes-nous ?</h3>
 		<p class="who__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo. </p>
-		<a class="who__link" href="about.html" title="Vers la page A Propos">En savoir plus</a>
+		<a class="who__link" href="<?php the_permalink('a-propos');?>" title="Vers la page A Propos">En savoir plus</a>
 	</section>
 	<div class="projet">
 		<section class="projet__left">

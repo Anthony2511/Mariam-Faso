@@ -1,5 +1,6 @@
 <?php
 
+add_action('init', 'ma_register_types');
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-about', 523, 523, true );
 
@@ -11,6 +12,20 @@ $scripts =  get_template_directory_uri() . '/scripts/';
 // Retrieves the absolute URI for given asset in this theme.
 function get_images($src = '') {
   return get_template_directory_uri() . '/images/' . trim($src, '/');
+}
+
+function ma_register_types() {
+    register_post_type('voyages', [
+        'label' => 'Voyages',
+        'labels' => [
+            'singular_name' => 'voyage',
+            'add_new_item' => 'Ajouter un nouveau voyage'
+        ],
+        'description' => 'Permet d\'administrer les voyages affichés sur le site.',
+        'public' => true,
+        'menu_position' => 20,
+        'menu_icon' => 'dashicons-palmtree'
+    ]);
 }
 
 // Displays the absolute URI for given asset in this theme.
@@ -46,6 +61,7 @@ function b_get_menu_items( $location )
   return $navItems;
 }
 
+// Generate breadcrumb
 function the_breadcrumb() {
   echo '<ul class="fil-ariane__navigation">';
   if (!is_home()) {
@@ -74,4 +90,23 @@ function the_breadcrumb() {
     }
   }
   echo '</ul>';
+}
+
+// Return a custom excerpt for given length
+function ma_get_the_excerpt($length = null) {
+    $excerpt = get_the_excerpt();
+    if(is_null($length) || strlen($excerpt) <= $length) return $excerpt;
+    $string = '';
+    $words = explode(' ', $excerpt);
+    foreach ($words as $word) {
+        //  + 2 is needed in order to include the next space and the &hellip; in the character count.
+        if((strlen($string) + strlen($word) + 2) > $length) break;
+        $string .= ' ' . $word;
+    }
+    return trim($string) . '&hellip;';
+}
+
+ // Output a custom excerpt for given length
+function ma_the_excerpt($length = null) {
+    echo ma_get_the_excerpt($length);
 }
