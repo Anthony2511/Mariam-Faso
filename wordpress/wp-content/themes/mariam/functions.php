@@ -3,6 +3,7 @@
 add_action('init', 'ma_register_types');
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-about', 523, 523, true );
+add_image_size( 'thumb-voyage', 500, 331, true );
 
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';
@@ -18,13 +19,14 @@ function ma_register_types() {
     register_post_type('voyages', [
         'label' => 'Voyages',
         'labels' => [
-            'singular_name' => 'voyage',
+            'singular_name' => 'single voyage',
             'add_new_item' => 'Ajouter un nouveau voyage'
         ],
         'description' => 'Permet d\'administrer les voyages affichés sur le site.',
         'public' => true,
         'menu_position' => 20,
-        'menu_icon' => 'dashicons-palmtree'
+        'menu_icon' => 'dashicons-palmtree',
+        'has_archive' => true
     ]);
 }
 

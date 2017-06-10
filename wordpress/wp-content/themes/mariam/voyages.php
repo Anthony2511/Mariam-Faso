@@ -4,6 +4,16 @@ Template Name: Page Voyages
 */
 ; ?>
 
+<?php if(is_page()){
+    query_posts([
+        'posts_per_page' => 3,
+        'orderby' => 'date',
+        'order' => 'ASC',
+        'post_type' => 'voyages'
+    ]);
+}
+; ?>
+
 <?php include('head.php'); ?>
 
 <body class="voyages-page">
@@ -31,6 +41,7 @@ Template Name: Page Voyages
     <div class="voyages__finish">
       <h3 class="voyages__title voyages__title--center" aria-level="3" role="heading">Voyages terminés</h3>
       <div class="voyages__finish-bloc">
+        <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="voyages__finish-list">
           <a class="voyages__finish__bloc-link" href="voyage-post.html">
             <figure class="voyages__finish-figure">
@@ -46,36 +57,7 @@ Template Name: Page Voyages
             </section>
           </a>
         </div>
-        <div class="voyages__finish-list">
-          <a class="voyages__finish__bloc-link" href="voyage-post.html">
-            <figure class="voyages__finish-figure">
-              <img class="voyages__finish-img" src="./images/voyage-three.jpg" width="500" height="500" alt="Voyage au Maroc">
-            </figure>
-            <section class="voyages__finish-infos">
-              <h4 class="voyages__finish-title" aria-level="4" role="heading">Voyage au Burkina Faso</h4>
-              <span class="voyages__finish-date">27 Mars 2017 - 14 Avril 2017</span>
-              <p class="voyages__finish-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet
-              </p>
-              <a class="voyages__finish-link" href="voyage-post.html" title="Vers la page du voyage">En savoir plus</a>
-            </section>
-          </a>
-        </div>
-        <div class="voyages__finish-list">
-          <a class="voyages__finish__bloc-link" href="voyage-post.html">
-            <figure class="voyages__finish-figure">
-              <img class="voyages__finish-img" src="./images/voyage-three.jpg" width="500" height="500" alt="Voyage au Maroc">
-            </figure>
-            <section class="voyages__finish-infos">
-              <h4 class="voyages__finish-title" aria-level="4" role="heading">Voyage au Burkina Faso</h4>
-              <span class="voyages__finish-date">27 Mars 2017 - 14 Avril 2017</span>
-              <p class="voyages__finish-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet
-              </p>
-              <a class="voyages__finish-link" href="voyage-post.html" title="Vers la page du voyage">En savoir plus</a>
-            </section>
-          </a>
-        </div>
+        <?php endwhile; endif; ?>
       </div>
     </div>
   </div>

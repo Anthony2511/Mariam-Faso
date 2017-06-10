@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="nav__bloc">
-    <a href="index.html" title="Vers la page d'accueil">
+    <a href="<?= get_home_url(); ?>" title="Vers la page d'accueil">
       <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.21 33.66">
         <defs>
           <style>.cls-1{fill:#fff;}.cls-2{fill:#f0c419;}</style>
