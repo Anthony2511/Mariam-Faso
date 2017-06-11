@@ -7,34 +7,36 @@ Template Name: Page d’accueil
 <?php include('head.php'); ?>
 
 <body>
-  <h1 class="hidden" aria-level="1" role="heading">Mariam Faso</h1>
+  <h1 class="hidden" aria-level="1" role="heading"><?= __('Mariam Faso','ma'); ?></h1>
 	<?php include('navigation.php'); ?>
 	<?php include('header-home.php'); ?>
 
 	<section class="who">
-		<h3 class="who__title" aria-level="3" role="heading">Qui sommes-nous ?</h3>
-		<p class="who__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo. </p>
-		<a class="who__link" href="<?php the_permalink('a-propos');?>" title="Vers la page A Propos">En savoir plus</a>
+		<h3 class="who__title" aria-level="3" role="heading"><?= __('Qui sommes nous ?','ma'); ?></h3>
+		<p class="who__text"><?= get_field('home__text-who'); ?></p>
+		<a class="who__link" href="<?php the_permalink('a-propos');?>" title="Vers la page A Propos"><?= __('En savoir plus','ma'); ?></a>
 	</section>
 	<div class="projet">
 		<section class="projet__left">
-			<h3 class="projet__title" aria-level="3" role="heading">Participez à notre projet</h3>
-			<p class="projet__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ipsum dolor sit amet, consectetuer adipiscing elit, sed. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-			<a class="projet__link" href="projets.html" title="Vers la page Projets">Participer</a>
+			<h3 class="projet__title" aria-level="3" role="heading"><?= __('Participer à notre projet','ma'); ?></h3>
+			<p class="projet__text"><?= get_field('home__text-projet'); ?></p>
+			<a class="projet__link" href="projets.html" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
 		</section>
 		<figure class="projet__bloc-img">
 			<img class="projet__img" src="./images/participate-projet.jpg" width="756" height="501" alt="Sixième classe de Burkina Faso">
 		</figure>
 	</div>
 	<div class="event">
+    <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
 		<section class="event__bloc">
 			<h3 class="event__title" aria-level="3" role="heading">Dinner annuel Mariam Faso 24 Mars 2017</h3>
-			<span class="event__text">Notre prochain évènement</span>
-			<a class="event__link" href="events.html" title="Vers la page évènements">En savoir plus</a>
+			<span class="event__text"><?= __('Notre prochain évènement','ma'); ?></span>
+			<a class="event__link" href="<?php the_permalink(); ?>" title="Vers la page évènements"><?= __('En savoir plus','ma'); ?></a>
 		</section>
+    <?php endwhile; endif; ?>
 	</div>
 	<section class="actu">
-		<h3 class="actu__title" aria-level="3" role="heading">Toute l'actualité</h3>
+		<h3 class="actu__title" aria-level="3" role="heading"><?= __('Toute l\'actulité','ma'); ?></h3>
 		<div class="actu__bloc-gen">
 			<div class="actu__bloc-left">
 				<div class="actu__bloc">
@@ -68,10 +70,10 @@ Template Name: Page d’accueil
 				</div>
 			</div>
 		</div>
-		<a class="actu__link" href="actu.html" title="Vers la page Actualités">Voir plus d'articles</a>
+		<a class="actu__link" href="<?php the_permalink(); ?>" title="Vers la page Actualités"><?= __('Voir plus d\'articles','ma'); ?></a>
 	</section>
 	<section class="partenaires">
-		<h3 class="partenaires__title" aria-level="3" role="heading">Nos partenaires</h3>
+		<h3 class="partenaires__title" aria-level="3" role="heading"><?= __('Nos partenaires','ma'); ?></h3>
 		<div class="partenaires__bloc">
 			<figure class="partenaires__bloc-img">
 				<img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">

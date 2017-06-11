@@ -7,7 +7,7 @@ Template Name: Single Voyage
 <?php include('head.php'); ?>
 
 <body class="voyages-page">
-  <h1 class="hidden" aria-level="1" role="heading">Page Voyage au Burkina Faso</h1>
+  <h1 class="hidden" aria-level="1" role="heading"><?php the__title(); ?></h1>
   <?php include('navigation.php'); ?>
   <?php get_header(); ?>
 

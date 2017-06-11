@@ -17,7 +17,7 @@ Template Name: Page Voyages
 <?php include('head.php'); ?>
 
 <body class="voyages-page">
-  <h1 class="hidden" aria-level="1" role="heading">Page Voyages</h1>
+  <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
   <?php get_header(); ?>
 
@@ -43,17 +43,17 @@ Template Name: Page Voyages
       <div class="voyages__finish-bloc">
         <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="voyages__finish-list">
-          <a class="voyages__finish__bloc-link" href="voyage-post.html">
+          <a class="voyages__finish__bloc-link" href="<?php get_permalink(); ?>">
             <figure class="voyages__finish-figure">
               <img class="voyages__finish-img" src="./images/voyage-two.jpg" width="500" height="500" alt="Voyage au Maroc">
             </figure>
             <section class="voyages__finish-infos">
-              <h4 class="voyages__finish-title" aria-level="4" role="heading">Voyage au Burkina Faso</h4>
+              <h4 class="voyages__finish-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
               <span class="voyages__finish-date">27 Mars 2017 - 14 Avril 2017</span>
               <p class="voyages__finish-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet
               </p>
-              <a class="voyages__finish-link" href="voyage-post.html" title="Vers la page du voyage">En savoir plus</a>
+              <a class="voyages__finish-link" href="<?php get_permalink(); ?>" title="Vers la page du voyage"><?= __('En savoir plus','ma'); ?></a>
             </section>
           </a>
         </div>
