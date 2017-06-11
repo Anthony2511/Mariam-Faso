@@ -4702,11 +4702,6 @@ img
     background: url('../images/header-projet.jpg') no-repeat top center/cover;
     background-position: 50% 40%;
 }
-.header-page--faq
-{
-    background: url('../images/header-faq.jpg') no-repeat top center/cover;
-    background-position: 50% 40%;
-}
 .header-page__bloc-header
 {
     padding: 3.125em;
@@ -4778,6 +4773,11 @@ img
 {
     background: url('../images/backgroundHeader.jpg') no-repeat top center/cover;
     background-position: 50% 30%;
+}
+.faq-page .header-page
+{
+    background: url('../images/header-faq.jpg') no-repeat top center/cover;
+    background-position: 50% 40%;
 }
 @media screen and (max-width: 504px)
 {
