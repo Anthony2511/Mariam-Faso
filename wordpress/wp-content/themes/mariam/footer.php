@@ -3,7 +3,7 @@
     <h3 class="hidden" aria-level="3" role="heading">Informations supplémentaires</h3>
     <section class="footer__bloc">
       <h4 class="footer__title" aria-level="4" role="heading">Aidez-nous</h4>
-      <a class="footer__link-button" href="dons.html" title="Vers la page Dons"><span class="footer__link-span">Faites un don</span></a>
+      <a class="footer__link-button" href="<?php the_permalink(72); ?>" title="Vers la page Dons"><span class="footer__link-span"><?= __('Faites un don','ma'); ?></span></a>
     </section>
     <section class="footer__bloc">
       <h4 class="footer__title" aria-level="4" role="heading">Infos</h4>
@@ -13,7 +13,7 @@
     <section class="footer__bloc">
       <h4 class="footer__title" aria-level="4" role="heading">Contactez-nous</h4>
       <a class="footer__link footer__link--email" href="contact.html" title="Vers la page Contact">Envoyez-nous un mail</a>
-      <a class="footer__link" href="faq.html" title="Vers la page FAQ">FAQ</a>
+      <a class="footer__link" href="<?php the_permalink(83); ?>" title="Vers la page FAQ"><?= __('FAQ','ma'); ?></a>
     </section>
   </section>
 </footer>
