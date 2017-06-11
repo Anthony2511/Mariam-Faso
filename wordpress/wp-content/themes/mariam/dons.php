@@ -28,14 +28,12 @@ Template Name: Page Dons
       <section class="dons__donate">
         <h3 class="dons__donate-title" aria-level="3" role="heading"><?= __('Soutenez nous','ma'); ?></h3>
         <p class="dons__donate-text">
-          Chez Mariam Faso, nous sommes convaincus de l’importance de l’instruction dans
-          la lutte contre la pauvreté. Ce que nous voulons, c’est apporter aux jeunes une
-          perspective d’avenir.
+          <?= get_field('dons__text'); ?>
         </p>
         <div class="dons__buttons">
-          <a class="dons__single-button" href="<?= get_field('dons__link-one'); ?>" title="Vers le site Paypal"><?= __('Faire un don financier','ma'); ?></a>
-          <a class="dons__single-button" href="<?= get_field('dons__link-one'); ?>" title="Vers le site"><?= __('Faire un don matériel','ma'); ?></a>
-          <a class="dons__single-button" href="<?= get_field('dons__link-one'); ?>" title="Vers le site"><?= __('Scolariser un enfant','ma'); ?></a>
+          <a class="dons__single-button" href="<?= get_field('dons__link'); ?>" title="Vers le site Paypal"><?= __('Faire un don financier','ma'); ?></a>
+          <a class="dons__single-button" href="<?= get_field('dons__link'); ?>" title="Vers le site"><?= __('Faire un don matériel','ma'); ?></a>
+          <a class="dons__single-button" href="<?= get_field('dons__link'); ?>" title="Vers le site"><?= __('Scolariser un enfant','ma'); ?></a>
         </div>
       </section>
     </div>
