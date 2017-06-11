@@ -14,7 +14,7 @@ Template Name: Page d’accueil
 	<section class="who">
 		<h3 class="who__title" aria-level="3" role="heading"><?= __('Qui sommes nous ?','ma'); ?></h3>
 		<p class="who__text"><?= get_field('home__text-who'); ?></p>
-		<a class="who__link" href="<?php the_permalink('a-propos');?>" title="Vers la page A Propos"><?= __('En savoir plus','ma'); ?></a>
+		<a class="who__link" href="<?= the_permalink(8);?>" title="Vers la page A Propos"><?= __('En savoir plus','ma'); ?></a>
 	</section>
 	<div class="projet">
 		<section class="projet__left">

@@ -4774,6 +4774,11 @@ img
     background: url('../images/header-voyages.jpg') no-repeat top center/cover;
     background-position: 50% 80%;
 }
+.dons-page .header-page
+{
+    background: url('../images/backgroundHeader.jpg') no-repeat top center/cover;
+    background-position: 50% 30%;
+}
 @media screen and (max-width: 504px)
 {
     .header-page__title
