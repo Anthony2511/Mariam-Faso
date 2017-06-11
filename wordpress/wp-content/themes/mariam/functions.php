@@ -112,3 +112,30 @@ function ma_get_the_excerpt($length = null) {
 function ma_the_excerpt($length = null) {
     echo ma_get_the_excerpt($length);
 }
+
+// ACF PRO Options Page
+if ( function_exists('acf_add_options_page') ) {
+  acf_add_options_page();
+
+  acf_add_options_sub_page('Footer');
+
+  acf_add_options_page( array(
+    'page_title' => 'Theme Options',
+    'menu_title' => 'Theme Options',
+    'menu_slug' => 'Theme Options',
+    'capability' => 'edit_posts',
+    'parent_slug' => '',
+    'position' => false,
+    'icon_url' => false,
+  ));
+
+  acf_add_options_sub_page( array(
+    'page_title' => 'Footer',
+    'menu_title' => 'Footer',
+    'menu_slug' => 'theme-options-footer',
+    'capability' => 'edit_posts',
+    'parent_slug' => 'theme-options',
+    'position' => false,
+    'icon_url' => false,
+  ));
+}
