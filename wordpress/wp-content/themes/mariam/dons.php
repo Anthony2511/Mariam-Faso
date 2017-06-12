@@ -3,9 +3,7 @@
 Template Name: Page Dons
 */
 ; ?>
-Nous sommes là pour vous <strong class="contact__text-strong">informez</strong>, vous <strong class="contact__text-strong">aidez</strong>.
-Vous avez des <strong class="contact__text-strong">questions</strong>, des <strong class="contact__text-strong">envies</strong>, besoin de <strong class="contact__text-strong">réponses</strong> ?
-Vous pouvez déjà retrouver <a class="contact__text-link" href="faq.html">ici</a> les questions les plus fréquentes.
+
 <?php include('head.php'); ?>
 
 <body class="dons-page">

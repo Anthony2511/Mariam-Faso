@@ -1,6 +1,6 @@
 <?php
 
-add_action('init', 'ma_register_types');
+//add_action('init', 'ma_register_types');
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-about', 523, 523, true );
 add_image_size( 'thumb-voyage', 500, 331, true );
@@ -15,20 +15,40 @@ function get_images($src = '') {
   return get_template_directory_uri() . '/images/' . trim($src, '/');
 }
 
-function ma_register_types() {
+/*function ma_register_types() {
     register_post_type('voyages', [
         'label' => 'Voyages',
         'labels' => [
-            'singular_name' => 'single voyage',
+            'singular_name' => 'voyage',
             'add_new_item' => 'Ajouter un nouveau voyage'
         ],
         'description' => 'Permet d\'administrer les voyages affichés sur le site.',
         'public' => true,
         'menu_position' => 20,
         'menu_icon' => 'dashicons-palmtree',
+        'supports' => [
+          'title',
+          'thumbnail'
+        ],
         'has_archive' => true
     ]);
-}
+
+}*/
+
+register_post_type( 'voyages', [
+            'label' => 'Voyages',
+            'labels' => [
+                        'singular_name' => 'voyage',
+                        'add_new' =>'Ajouter un nouveau voyage'
+                  ],
+            'description' => 'Permet d\'administrer les voyages affichés sur le site.',
+            'public' => true,
+            'menu_position' => 20,
+            'menu_icon' => 'dashicons-palmtree',
+            'supports' => ['title','thumbnail']
+      ] );
+
+
 
 // Displays the absolute URI for given asset in this theme.
 function theme_asset($src = '') {

@@ -23,7 +23,7 @@ Template Name: Page FAQ
        <?php endif; ?>
        <div class="faq__contact">
          <p class="faq__contact-line"><?= __('D\'autres questions ?','ma'); ?></p>
-         <a class="faq__link" href="<?php the_permalink(); ?>" title="Vers la page Contact"><?= __('Contactez-nous','ma'); ?></a>
+         <a class="faq__link" href="<?php the_permalink(89); ?>" title="Vers la page Contact"><?= __('Contactez-nous','ma'); ?></a>
        </div>
     </div>
     <?php include('footer.php'); ?>
