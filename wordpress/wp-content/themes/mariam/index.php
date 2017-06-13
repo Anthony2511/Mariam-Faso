@@ -20,7 +20,7 @@ Template Name: Page d’accueil
 		<section class="projet__left">
 			<h3 class="projet__title" aria-level="3" role="heading"><?= __('Participer à notre projet','ma'); ?></h3>
 			<p class="projet__text"><?= get_field('home__text-projet'); ?></p>
-			<a class="projet__link" href="<?php the_permalink(); ?>" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
+			<a class="projet__link" href="<?php the_permalink(111); ?>" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
 		</section>
     <?php $homeProject = get_field('home__project'); ?>
 		<figure class="projet__bloc-img">

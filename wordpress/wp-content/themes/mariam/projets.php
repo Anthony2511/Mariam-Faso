@@ -52,31 +52,31 @@ Template Name: Page Projets
       <div class="projets__participate">
         <div class="projets__participate-bloc">
           <span class="projets__citation">Si tu es intéressé et que tu souhaites nous rejoindre , nous t’invitons à participer à notre cause</span>
-          <a class="projets__link" href="<?php the_permalink(); ?>" title="Vers la page Voyages"><?= __('Voyage avec nous','ma'); ?></a>
+          <a class="projets__link" href="<?php the_permalink(35); ?>" title="Vers la page Voyages"><?= __('Voyage avec nous','ma'); ?></a>
         </div>
       </div>
       <div class="projets__bloc">
         <section class="projets__futur">
-          <h4 class="projets__futur-title" aria-level="4" role="heading">Notre futur projet</h4>
-          <p class="projets__futur-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo.
-          </p>
-          <a class="bloc-header__button" href="dons.html" title="Vers la page Dons"><span class="bloc-header__span">Faites un don</span></a>
+          <h4 class="projets__futur-title" aria-level="4" role="heading"><?= __('Notre futur projet','ma'); ?></h4>
+          <p class="projets__futur-text"><?= get_field('projets__text-futur'); ?></p>
+          <a class="bloc-header__button" href="<?php the_permalink(72); ?>" title="Vers la page Dons"><span class="bloc-header__span"><?= __('Faites un don', 'ma'); ?></span></a>
         </section>
         <section class="projets__realize">
-          <h3 class="projets__title" aria-level="4" role="heading">Nos projets réalisés</h3>
+          <h3 class="projets__title" aria-level="4" role="heading"><?= __('Nos projets réalisés', 'ma'); ?></h3>
           <div class="projets__figure-realize">
             <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="projets__type">
+              <?php $singleProjet = get_field('single__image-projet'); ?>
               <figure class="projets__realize-figure">
-                <img class="projets__realize-img" src="./images/voyage-one.jpg" width="500" height="331" alt="Photo réalisé pendant le voyage au Burkina Faso">
+                <?php if( !empty($singleProjet) ): ?>
+                  <?php $size = 'thumb-project';
+                        $thumb = $singleProjet['sizes'][ $size ]; ?>
+                  <img class="projets__realize-img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $singleProjet['alt']; ?>" />
+                <?php endif; ?>
               </figure>
               <div class="projets__realize-opacity">
-                <h4 class="projets__realize-title" aria-level="4" role="heading">Construction d'un puit</h4>
-                <p class="projets__realize-date">Mars 2017</p>
+                <h4 class="projets__realize-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
+                <p class="projets__realize-date"><?= get_field('single__text-duree'); ?></p>
               </div>
               <a class="projets__realize-link" href="<?php the_permalink(); ?>" title="Vers la page du projet"></a>
             </div>

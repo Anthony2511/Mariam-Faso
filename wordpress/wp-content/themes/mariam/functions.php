@@ -3,8 +3,10 @@
 add_action('init', 'ma_register_types');
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-about', 523, 523, true );
-add_image_size( 'thumb-voyage', 500, 331, true );
-add_image_size( 'thumb-home-project', 756, 501, true );
+add_image_size( 'thumb-voyage', 330, 218, true );
+add_image_size( 'thumb-home-project', 542, 359, true );
+add_image_size( 'thumb-single-project', 500, 375, true );
+add_image_size( 'thumb-project', 350, 232, true );
 
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';
@@ -30,18 +32,18 @@ function ma_register_types() {
               'supports' => ['title','thumbnail']
         ] );
 
-        register_post_type( 'projets', [
-                    'label' => 'Projets',
-                    'labels' => [
-                                'singular_name' => 'projet',
-                                'add_new' =>'Ajouter un nouveau projet'
-                          ],
-                    'description' => 'Permet d\'administrer les projets affichés sur le site.',
-                    'public' => true,
-                    'menu_position' => 21,
-                    'menu_icon' => 'dashicons-hammer',
-                    'supports' => ['title','thumbnail']
-              ] );
+  register_post_type( 'projets', [
+              'label' => 'Projets',
+              'labels' => [
+                          'singular_name' => 'projet',
+                          'add_new' =>'Ajouter un nouveau projet'
+                    ],
+              'description' => 'Permet d\'administrer les projets affichés sur le site.',
+              'public' => true,
+              'menu_position' => 21,
+              'menu_icon' => 'dashicons-hammer',
+              'supports' => ['title','thumbnail']
+        ] );
 
 }
 

@@ -44,7 +44,7 @@ Template Name: Single Voyages
               <?php $voyageImage = get_sub_field('voyage__image'); ?>
               <figure class="voyage-post__figure">
                 <?php if( !empty($voyageImage) ): ?>
-                  <?php $size = 'thumb-voyage';
+                  <?php $size = 'thumb-project';
                         $thumb = $voyageImage['sizes'][ $size ]; ?>
                   <img class="voyage-post__img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $voyageImage['alt']; ?>" />
                 <?php endif; ?>

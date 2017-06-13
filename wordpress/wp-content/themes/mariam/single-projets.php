@@ -7,59 +7,48 @@ Template Name: Single Projets
 <?php include('head.php'); ?>
 
 <body class="projets-page">
-  <h1 class="hidden" aria-level="1" role="heading">Construction d'un puit</h1>
+  <h1 class="hidden" aria-level="1" role="heading">grere</h1>
   <?php include('navigation.php'); ?>
   <?php include('header.php'); ?>
 
+    <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="projet-type">
       <div class="projet-type__history">
+        <?php $singleProjet = get_field('single__image-projet'); ?>
         <figure class="projet-type__figure">
-          <img class="projet-type__img" src="./images/news-actu.jpg" width="960" height="720" alt="Image du projet">
+          <?php if( !empty($singleProjet) ): ?>
+            <?php $size = 'thumb-voyage';
+                  $thumb = $singleProjet['sizes'][ $size ]; ?>
+            <img class="projet-type__img" src="<?= $thumb; ?>" width="960" height="720" alt="<?= $singleProjet['alt']; ?>" />
+          <?php endif; ?>
         </figure>
         <section class="projet-type__details">
-          <h3 class="projet-type__title" aria-level="3" role="heading" >Détails du projet</h3>
+          <h3 class="projet-type__title" aria-level="3" role="heading"><?= __('Détails du projets', 'ma'); ?></h3>
           <div class="projet-type__infos-bloc">
             <dl class="projet-type__infos">
-              <dt class="projet-type__infos-title">Lieu :&nbsp;</dt>
-              <dd class="projet-type__infos-text">Maroc, Burkina</dd>
+              <dt class="projet-type__infos-title"><?= __('Lieu :', 'ma'); ?></dt>
+              <dd class="projet-type__infos-text"><?= get_field('single__text-lieu'); ?></dd>
             </dl>
             <dl class="projet-type__infos">
-              <dt class="projet-type__infos-title">Coût :&nbsp;</dt>
-              <dd class="projet-type__infos-text">100 000 &euro;</dd>
+              <dt class="projet-type__infos-title"><?= __('Coût :', 'ma'); ?></dt>
+              <dd class="projet-type__infos-text"><?= get_field('single__text-cout'); ?> &euro;</dd>
             </dl>
             <dl class="projet-type__infos">
-              <dt class="projet-type__infos-title">Durée :&nbsp;</dt>
-              <dd class="projet-type__infos-text">29 Juin 2014 - 07 Novembre 2016</dd>
+              <dt class="projet-type__infos-title"><?= __('Durée :', 'ma'); ?></dt>
+              <dd class="projet-type__infos-text"><?= get_field('single__text-duree'); ?></dd>
             </dl>
             <dl class="projet-type__infos">
-              <dt class="projet-type__infos-title">But :&nbsp;</dt>
-              <dd class="projet-type__infos-text">Avoir de l'eau potable</dd>
+              <dt class="projet-type__infos-title"><?= __('But :', 'ma'); ?></dt>
+              <dd class="projet-type__infos-text"><?= get_field('single__text-but'); ?></dd>
             </dl>
           </div>
         </section>
       </div>
       <section class="projet-type__flow">
-        <h3 class="projet-type__flow-title" aria-level="3" role="heading" >Déroulement du projet</h3>
-        <p class="projet-type__flow-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum,
-          nisl turpis porta risus, sed iaculi lacus ligula eu augue. Suspendisse id interdum dolor. Integer
-          fermentum a justo a commodo.
-        </p>
+        <h3 class="projet-type__flow-title" aria-level="3" role="heading"><?= __('Déroulement du projet', 'ma'); ?></h3>
+        <p class="projet-type__flow-text"><?= get_field('single__text-deroulement'); ?></p>
       </section>
+
     </div>
+    <?php endwhile; endif; ?>
     <?php include('footer.php'); ?>
