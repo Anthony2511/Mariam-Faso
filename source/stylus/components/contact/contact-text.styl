@@ -1,0 +1,59 @@
+.contact
+  max-width: s(1140,16)
+  padding: s(100,16) s(20,16)
+  margin: 0 auto
+  &__title
+    font-size: s(50,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,50)
+    &:after
+      display: block
+      content: ""
+      width: s(150,50)
+      height: s(4,50)
+      background-color: $lightBlue
+      margin-top: s(20,50)
+  &__text
+    color: $darkBlue
+    font-size: s(22,16)
+    font-weight: 300
+    line-height: 1.6em
+    width: 70%
+    margin-bottom: s(100,22)
+  &__text-strong
+    font-weight: bold
+  &__text-link
+    font-weight: bold
+    text-decoration: underline
+
+@media screen and (max-width:1024px)
+  .contact
+    &__intro
+      text-align: center
+    &__title
+      &:after
+        margin: 0 auto
+    &__text
+      width: 100%
+
+@media screen and (max-width:619px)
+  .contact
+    &__title
+      font-size: s(40,16)
+    &__text
+        font-size: s(20,16)
+        line-height: 1.5em
+
+@media screen and (max-width:400px)
+  .contact
+    &__title
+      font-size: s(30,16)
+    &__text
+        font-size: s(18,16)
+
+@media screen and (max-width:293px)
+  .contact
+    &__title
+      font-size: s(25,16)

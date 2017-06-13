@@ -1,0 +1,41 @@
+.about
+  &__quotation
+    background-color: $darkBlue
+    padding: s(100,16) 0
+    color: $white
+    margin-bottom: s(100,16)
+  &__quotation-bloc
+    max-width: s(1140,16)
+    margin: 0 auto
+    text-align: right
+  &__citation
+    font-size: s(35,16)
+    font-weight: bold
+    margin-bottom: s(10,35)
+    text-align: center
+    &:before
+      icon('iconQuotation')
+      margin-right: s(30,35)
+      color: $darkYellow
+  &__author
+    color: $darkYellow
+    margin-right: s(20,16)
+
+@media screen and (max-width: 1024px)
+  .about
+    &__citation
+      font-size: s(25,16)
+
+@media screen and (max-width: 828px)
+  .about
+    &__quotation
+      padding: s(50,16) 0
+    &__citation
+      font-size: s(20,16)
+      line-height: 1.6em
+
+@media screen and (max-width: 393px)
+  .about
+    &__citation
+      font-size: s(16,16)
+      line-height: 1.5em

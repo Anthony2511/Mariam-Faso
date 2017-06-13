@@ -11,8 +11,8 @@ Template Name: Single Projets
   <?php include('navigation.php'); ?>
   <?php include('header.php'); ?>
 
-    <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="projet-type">
+      <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="projet-type__history">
         <?php $singleProjet = get_field('single__image-projet'); ?>
         <figure class="projet-type__figure">
@@ -48,7 +48,6 @@ Template Name: Single Projets
         <h3 class="projet-type__flow-title" aria-level="3" role="heading"><?= __('Déroulement du projet', 'ma'); ?></h3>
         <p class="projet-type__flow-text"><?= get_field('single__text-deroulement'); ?></p>
       </section>
-
+      <?php endwhile; endif; ?>
     </div>
-    <?php endwhile; endif; ?>
     <?php include('footer.php'); ?>

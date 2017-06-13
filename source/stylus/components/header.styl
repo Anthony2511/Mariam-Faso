@@ -1,0 +1,91 @@
+.header-page
+  position: relative
+  &--events
+    background url('../images/header-event.jpg') no-repeat top center/cover
+  &--about
+    background url('../images/header-about.jpg') no-repeat top center/cover
+    background-position: 50% 30%
+  &--actu
+    background url('../images/imgEvent.jpg') no-repeat top center/cover
+    background-position: 50% 20%
+
+  &__bloc-header
+    text-align: center
+    padding: s(50,16)
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0, 0.5)
+      z-index: 50
+  &__title
+    font-size: s(50,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $white
+    position: relative
+    z-index: 50
+    &:after
+      content: ""
+      display: block
+      width: s(150,50)
+      height: s(5,50)
+      background-color: $white
+      margin: s(20,50) auto
+  &__opacity
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+
+.about-page .header-page
+  background url('../images/header-about.jpg') no-repeat top center/cover
+  background-position: 50% 30%
+
+.voyages-page .header-page
+  background url('../images/header-voyages.jpg') no-repeat top center/cover
+  background-position: 50% 80%
+
+.dons-page .header-page
+  background url('../images/backgroundHeader.jpg') no-repeat top center/cover
+  background-position: 50% 30%
+
+.faq-page .header-page
+  background url('../images/header-faq.jpg') no-repeat top center/cover
+  background-position: 50% 40%
+
+.contact-page .header-page
+  background url('../images/voyage-nine.jpg') no-repeat top center/cover
+  background-position: 50% 30%
+
+.projets-page .header-page
+  background url('../images/header-projet.jpg') no-repeat top center/cover
+  background-position: 50% 40%
+
+@media screen and (max-width: 504px)
+  .header-page
+    &__title
+      font-size: s(40,16)
+
+@media screen and (max-width: 424px)
+  .header-page
+    &__title
+      font-size: s(30,16)
+
+@media screen and (max-width: 348px)
+  .header-page
+    &__title
+      font-size: s(25,16)
+
+@media screen and (max-width: 309px)
+  .header-page
+    &__title
+      font-size: s(20,16)

@@ -1,0 +1,62 @@
+.who
+  background: url(../images/backgroundWord.jpg)no-repeat top center/cover
+  font-size: s(22,16)
+  padding: s(100,22) 0
+  text-align: center
+  &__title
+    font-family: 'crumble'
+    color: $darkYellow
+    font-size: s(50,22)
+    font-weight: bold
+    margin-bottom: s(20,50)
+    &:after
+      content: ""
+      display: block
+      width: s(150,50)
+      height: s(5,50)
+      background-color: $white
+      margin: s(20,50) auto
+  &__text
+    color: $white
+    line-height: 1.5em
+    font-weight: 300
+    max-width: s(960,22)
+    margin: 0 auto
+    padding: s(50,22) 0 s(75,22)
+  &__link
+    padding: s(15,22) s(70,22)
+    background-color: $white
+    color: $darkBlue
+    font-weight: bold
+    transition: 0.3s ease-in-out
+    &:hover
+      background-color: $grey
+      transition: 0.3s ease-in-out
+
+@media screen and ( max-width: 1024px )
+  .who
+    padding: s(100,22) s(20,22)
+
+@media screen and ( max-width: 631px )
+  .who
+    &__text
+      font-size: s(20,22)
+
+@media screen and ( max-width: 484px )
+  .who
+    &__title
+      font-size: s(40,22)
+    &__text
+      font-size: s(18,22)
+      line-height: 1.5em
+
+@media screen and ( max-width: 410px )
+  .who
+    &__title
+      font-size: s(30,22)
+
+@media screen and ( max-width: 386px )
+  .who
+    &__link
+      font-size: s(20,22)
+      padding: s(10,20) s(50,20)

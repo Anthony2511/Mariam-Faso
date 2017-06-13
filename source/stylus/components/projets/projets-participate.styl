@@ -1,0 +1,62 @@
+.projets
+  &__participate
+    background url('../images/header-about.jpg') no-repeat top center/cover
+    background-position: 50% 30%
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(52, 73, 94, 0.9)
+      z-index: 10
+  &__participate-bloc
+    position: relative
+    max-width: s(1140,16)
+    margin: 0 auto
+    padding: s(100,16) s(20,16)
+    z-index: 50
+    color: $white
+    text-align: center
+    font-weight: bold
+  &__citation
+    font-size: s(25,16)
+    line-height: 1.6em
+    margin-bottom: s(70,25)
+    display: block
+  &__link
+    color: $darkBlue
+    background-color: $white
+    font-size: s(22,16)
+    padding: s(15,22) s(70,22)
+
+@media screen and (max-width:901px)
+  .projets
+    &__participate-bloc
+      padding: s(50,16) s(20,16)
+    &__citation
+      font-size: s(20,16)
+      margin-bottom: s(40,20)
+    &__link
+      font-size: s(20,16)
+      padding: s(10,20) s(50,20)
+
+@media screen and (max-width:550px)
+  .projets
+    &__citation
+      font-size: s(18,16)
+      line-height: 1.45em
+    &__link
+      font-size: s(18,16)
+      padding: s(10,18) s(35,18)
+
+@media screen and (max-width:400px)
+  .projets
+    &__citation
+      font-size: s(16,16)
+    &__link
+      font-size: s(16,16)

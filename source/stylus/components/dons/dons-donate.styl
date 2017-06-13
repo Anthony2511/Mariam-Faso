@@ -1,0 +1,67 @@
+.dons
+  &__donate
+    background-color: $white
+    text-align: center
+    padding: s(50,16) s(50,16) s(70,16)
+    color: $darkBlue
+  &__donate-title
+    font-size: s(25,16)
+    font-weight: bold
+    &:after
+      content: ""
+      display: block
+      width: s(100,25)
+      height: s(4,25)
+      background-color: $darkBlue
+      margin: s(20,25) auto s(50,25)
+  &__donate-text
+    font-size: s(18,16)
+    line-height: 1.6em
+    width: 75%
+    margin: 0 auto s(50,18)
+    font-weight: 300
+  &__single-button
+    font-size: s(18,16)
+    padding: s(10,18) s(50,18)
+    color: $white
+    font-weight: bold
+    background-color: $darkBlue
+    margin-right: s(50,18)
+    &:last-child
+      margin-right: 0
+
+@media screen and (max-width: 1176px)
+  .dons
+    &__single-button
+      font-size: s(16,16)
+      padding: s(10,16) s(40,16)
+      margin-right: s(40,16)
+
+@media screen and (max-width: 1024px)
+  .dons
+    &__single-button
+      display: block
+      margin-right: 0
+      font-size: s(18,16)
+      padding: s(10,18) s(50,18)
+      margin-bottom: s(20,18)
+    &__donate-text
+      width: 100%
+    &__buttons
+      margin: 0 auto
+      width: 50%
+
+@media screen and (max-width: 616px)
+  .dons
+    &__donate
+      padding: s(30,16) s(30,16) s(50,16)
+    &__donate-title
+      font-size: s(20,16)
+    &__donate-text
+      font-size: s(16,16)
+      line-height: 1.45em
+    &__single-button
+      font-size: s(16,16)
+      padding: s(10,16) s(40,16)
+    &__buttons
+      width: 100%

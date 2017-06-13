@@ -1,0 +1,133 @@
+.actu
+  padding: s(100,16) s(20,16)
+  max-width: s(960,16)
+  margin: 0 auto
+  text-align: center
+  &__bloc-gen
+    clearfix()
+  &__title
+    font-size: s(50,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,50)
+    &:after
+      content: ""
+      display: block
+      width: s(150,50)
+      height: s(5,50)
+      background-color: $darkBlue
+      margin: s(20,50) auto
+  &__bloc-left
+    float: left
+    width: 47.5%
+  &__bloc-right
+    float: right
+    width: 47.5%
+  &__img-title
+    color: $white
+    font-size: s(22,16)
+    font-weight: bold
+    position: absolute
+    top: 40%
+    left: 20%
+    z-index: 50
+    opacity: 0
+    transition: 0.3s ease-in-out
+    &:after
+      icon('iconMore')
+      display: block
+      margin-top: s(20,16)
+  &__opacity
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    transition: 0.3s ease-in-out
+  &__link
+    font-size: s(22,16)
+    color: $white
+    font-weight: 600
+    display: block
+    max-width: 100%
+    margin-top: s(40,22)
+    padding: s(15,22)
+    background-color: $darkBlue
+    &:hover
+      background-color: $lightBlue
+      transition: 0.3s ease-in-out
+  &__bloc-link
+    position: absolute
+    right: 0
+    left: 0
+    bottom: 0
+    top: 0
+  &__img-right
+    height: s(621,16)
+    display: block
+  &__img
+    display: block
+  &__bloc
+    position: relative
+    cursor: pointer
+
+.actu__bloc-left .actu__bloc:first-child
+  margin-bottom: s(40,16)
+.actu__bloc:hover .actu__opacity
+  background-color: rgba(52, 73, 94, 0.6)
+  transition: 0.3s ease-in-out
+.actu__bloc:hover .actu__img-title
+  opacity: 1
+  transition: 0.3s ease-in-out
+
+@media screen and ( max-width:974px)
+  .actu__bloc-left .actu__bloc:last-child
+    margin-bottom: s(40,16)
+  .actu
+    &__bloc-left
+      float: none
+      width: 100%
+      height: auto
+    &__bloc-right
+      float: none
+      width: 100%
+      height: auto
+    &__img-right
+      height: auto
+@media screen and ( max-width:444px)
+  .actu
+    &__img-title
+      font-size: s(20,16)
+      left: s(50,20)
+      &:after
+        margin-top: s(10,20)
+
+@media screen and ( max-width:395px)
+  .actu
+    &__img-title
+      font-size: s(20,16)
+      left: s(30,20)
+@media screen and ( max-width:375px)  // Iphone 6
+  .actu
+    &__title
+      font-size: s(35,16)
+
+@media screen and ( max-width:369px)
+  .actu
+    &__img-title
+      font-size: s(18,16)
+    &__link
+      font-size: s(20,16)
+
+@media screen and ( max-width:352px)
+  .actu
+    &__img-title
+      font-size: s(16,16)
+      left: s(40,16)
+    &__link
+      font-size: s(18,16)
+
+@media screen and ( max-width:309px)
+  .actu
+    &__img-title
+      font-size: s(14,16)

@@ -1,0 +1,128 @@
+.voyage-post
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  &__timeline-title
+    font-size: s(30,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(20,30)
+  &__timeline-text
+    font-size: s(18,16)
+    color: $darkBlue
+    font-weight: 300
+    line-height: 1.6em
+    width: 70%
+    margin-bottom: s(20,18)
+  &__figure
+    max-width: s(350,16)
+    height: auto
+    display: inline-block
+    margin-right: s(20,16)
+    &:last-child
+      margin-right: 0
+  &__item
+    padding-left: s(40,16)
+    position: relative
+    &:last-child
+      padding-bottom: 0
+      &:after
+        content: none
+  &__timeline-info
+    font-size: s(16,16)
+    font-weight: 500
+    color: $darkBlue
+    text-transform: uppercase
+    letter-spacing: 3px
+    margin: 0 0 s(20,16) 0
+    white-space: nowrap
+  &__timeline-marker
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: s(15,16)
+    &:before
+      background: $darkBlue
+      border: s(3,16) solid transparent
+      border-radius: 100%
+      content: ""
+      display: block
+      height: s(15,16)
+      position: absolute
+      top: s(4,16)
+      left: 0
+      width: s(15,16)
+      transition: background 0.3s ease-in-out, border 0.3s ease-in-out
+    &:after
+      content: ""
+      width: s(2,16)
+      background: $darkBlue
+      display: block
+      position: absolute
+      top: s(24,16)
+      bottom: 0
+      left: s(6,16)
+  &__content
+    padding-bottom: s(40,16)
+  &__timeline-text
+    &:last-child
+      margin-bottom: 0
+
+ .voyage-post__item:not(.period):hover .voyage-post__timeline-marker:before
+  background: transparent
+  border: s(2,16) solid $lightBlue
+
+.period
+  padding: 0
+  .voyage-post__timeline-title
+      font-size: s(40,16)
+      padding-top: s(30,40)
+      padding-bottom: s(10,40)
+  .voyage-post__timeline-marker
+    &:before
+      background: transparent
+      content: ""
+      width: s(15,16)
+      height: auto
+      border: none
+      border-radius: 0
+      top: 0
+      bottom: s(30,16)
+      position: absolute
+      border-top: s(2,16) solid $darkBlue
+      border-bottom: s(2,16) solid $darkBlue
+    &:after
+      content: ""
+      height: s(32,16)
+      top: auto
+
+@media screen and (max-width: 820px)
+  .voyage-post
+    &__figure
+      display: block
+      margin-right:0
+      margin-bottom: s(20,16)
+    &__timeline-text
+      width: 100%
+
+@media screen and (max-width: 430px)
+  .voyage-post
+    &__timeline-info
+      font-size: s(14,16)
+    &__timeline-title
+      font-size: s(25,16)
+    &__timeline-text
+      font-size: s(16,16)
+      line-height: 1.45em
+    &__timeline-marker
+      &:before
+        width: s(10,16)
+        height: s(10,16)
+      &:after
+        left: s(4,16)
+        width: s(1,16)
+  .period
+    .voyage-post__timeline-title
+      font-size: s(35,16)

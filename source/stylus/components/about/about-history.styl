@@ -1,0 +1,141 @@
+.about
+  max-width: 100%
+  &__history
+    max-width: s(1140,16)
+    margin: 0 auto
+    padding: s(100,16) s(20,16) 0
+    clearfix()
+  &__bloc-left
+    float: left
+    width: 47.5%
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0, 0.5)
+      z-index: 10
+  &__bloc-info
+    position: absolute
+    top: 35%
+    left: s(50,16)
+    color: $white
+    font-size: s(35,16)
+    font-weight: 600
+    text-align: center
+    line-height: 1.4em
+    border: s(1,35) solid $white
+    padding: s(30,35)
+    z-index: 50
+  &__association
+    text-transform: uppercase
+    font-weight: 300
+    display: block
+  &__opacity
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+    display: block
+  &__bloc-right
+    float: right
+    width: 47.5%
+  &__title
+    font-size: s(50,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,50)
+  &__text
+    font-size: s(18,16)
+    line-height: 1.6em
+    color: $darkBlue
+    font-weight: 300
+    &--columns
+      column-count: 2
+      column-gap: s(50,16)
+  &__img
+    display: block
+  &__relations
+    max-width: s(1140,16)
+    margin: 0 auto
+    padding: s(100,16) s(20,16)
+
+@media screen and (max-width: 1024px)
+  .about
+    &__bloc-right
+    &__bloc-left
+      text-align: center
+      float: none
+      width: 100%
+    &__bloc-img
+      text-align: center
+    &__bloc-info
+      font-size: s(50,16)
+      left: 27.5%
+    &__title
+      margin: s(50,50) 0
+      text-align: center
+    &__text
+      width: 80%
+      margin: 0 auto
+      text-align: left
+      &--columns
+        column-count: 1
+
+@media screen and (max-width: 760px)
+  .about
+    &__bloc-info
+      left: 20%
+    &__text
+      width: 100%
+      text-align: center
+
+@media screen and (max-width: 688px)
+  .about
+    &__bloc-info
+      left: 15%
+
+@media screen and (max-width: 600px)
+  .about
+    &__bloc-info
+      left: 22.5%
+      font-size: s(35,16)
+
+@media screen and (max-width: 530px)
+  .about
+    &__bloc-info
+      left: 17.5%
+
+@media screen and (max-width: 450px)
+  .about
+    &__bloc-info
+      left: 15%
+      font-size: s(30,16)
+    &__title
+      font-size: s(40,16)
+    &__text
+      font-size: s(16,16)
+
+@media screen and (max-width: 400px)
+  .about
+    &__bloc-info
+      left: 17.5%
+      font-size: s(25,16)
+      padding: s(20,25)
+
+@media screen and (max-width: 340px)
+  .about
+    &__bloc-info
+      left: 12.5%
+    &__title
+      font-size: s(30,16)
+    &__text
+      font-size: s(14,16)

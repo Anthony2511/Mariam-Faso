@@ -1,0 +1,91 @@
+.event
+  background: url(../images/backgroundEvent2.jpg)no-repeat top center/cover
+  padding: s(100,16) 0
+  background-position: 50% 50%
+  background-attachment: fixed
+  &__bloc
+    background-color: $darkBlue
+    opacity: 0.9
+    width: 60%
+    margin: 0 auto
+    text-align: center
+    padding: s(40,16) s(40,16) s(80,16)
+    position: relative
+    z-index: 1
+  &__title
+    font-size: s(50,16)
+    color: $darkYellow
+    font-family: 'crumble'
+    font-weight: bold
+    &:after
+      content: ""
+      display: block
+      width: s(150,50)
+      height: s(5,50)
+      background-color: $white
+      margin: s(20,50) auto
+  &__text
+    font-size: s(25,16)
+    color: $white
+    display: block
+    margin-bottom: s(40,22)
+  &__link
+    font-size: s(22,16)
+    font-weight: bold
+    padding: s(15,22) s(70,22)
+    color: $darkBlue
+    background-color: $white
+    border-radius: s(70,22)
+    position: relative
+    z-index: 50
+    transition: 0.3s ease-in-out
+    &:hover
+      background-color: $grey
+      transition: 0.3s ease-in-out
+
+@media screen and (max-width : 952px)
+  .event
+    &__title
+      font-size: s(40,16)
+    &__text
+      font-size: s(22,16)
+
+@media screen and (max-width : 765px)
+  .event
+    &__bloc
+      padding: s(20,16) s(20,16) s(40,16)
+      width: 70%
+    &__title
+      font-size: s(30,16)
+    &__text
+      font-size: s(20,16)
+    &__link
+      font-size: s(20,16)
+      padding: s(10,20) s(50,20)
+
+@media screen and (max-width : 468px)
+  .event
+    background-attachment: local
+    &__bloc
+      width: 80%
+    &__text
+      font-size: s(18,16)
+    &__title
+      font-size: s(25,16)
+    &__link
+      font-size: s(18,16)
+      padding: s(10,18) s(30,18)
+
+@media screen and (max-width : 331px)
+  .event
+    &__text
+      font-size: s(16,16)
+    &__link
+      padding: s(5,18) s(25,18)
+
+@media screen and (max-width : 298px)
+  .event
+    &__title
+      font-size: s(23,16)
+    &__text
+      font-size: s(14,16)

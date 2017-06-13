@@ -1,0 +1,74 @@
+.projet-type
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  &__history
+    display: flex
+    flex-direction: row
+    color: $darkBlue
+  &__figure
+    max-width: s(500,16)
+    height: auto
+    margin-right: s(50,16)
+  &__title
+    font-size: s(40,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,40)
+  &__infos
+    margin-bottom: s(30,16)
+    &:last-child
+      margin-bottom: 0
+  &__infos-title
+    font-size: s(22,16)
+    font-weight: bold
+    display: inline-block
+    &:before
+      icon('iconArrowFil')
+      font-size: s(12,16)
+      margin-right: s(20,12)
+  &__infos-text
+    font-size: s(18,16)
+    font-weight: 300
+    display inline-block
+
+@media screen and ( max-width : 1024px)
+  .projet-type
+    &__history
+      display: flex
+      flex-direction:column
+      justify-content: center
+      align-items: center
+    &__title
+      order: 1
+      text-align: center
+    &__figure
+      max-width: 100%
+      height: auto
+      margin: 0 auto
+      order: 2
+    &__infos
+      display: inline-block
+      margin-right: s(20,16)
+      text-align: center
+      &:last-child
+        margin-right: 0
+    &__infos-title
+      font-size: s(18,16)
+      display: block
+      margin-bottom: s(20,18)
+      &:before
+        display: none
+    &__infos-text
+      font-size: s(16,16)
+
+@media screen and ( max-width : 700px)
+  .projet-type
+    &__title
+      font-size: s(30,16)
+    &__infos
+      display: block
+      margin-right: 0
+    &__figure
+      margin-top: s(50,16)

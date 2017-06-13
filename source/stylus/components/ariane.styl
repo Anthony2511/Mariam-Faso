@@ -1,0 +1,36 @@
+.fil-ariane
+  max-width: s(1140,16)
+  margin: 0 auto
+  color: $white
+  padding: s(50,16) s(20,16) 0
+  position: relative
+  z-index: 60
+  &__navigation
+    font-size: s(20,16)
+    font-weight: 300
+  &__ariane-item
+    display: inline-block
+    margin-right: s(20,20)
+    &:first-child
+      margin-right: 0
+  &__ariane-home
+    &:before
+      icon('iconHome')
+      font-size: s(16,20)
+      margin-right: s(20,16)
+  &__ariane-link
+    &:before
+      icon('iconArrowTwo')
+      font-size: s(12,20)
+      margin-right: s(20,12)
+
+@media screen and (max-width: 424px)
+  .fil-ariane
+    &__navigation
+      font-size: s(16,16)
+    &__ariane-home
+      &:before
+        margin-right: s(30,16)
+    &__ariane-link
+      &:before
+        margin-right: s(30,16)

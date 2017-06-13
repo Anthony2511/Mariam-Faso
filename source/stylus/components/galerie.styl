@@ -1,0 +1,21 @@
+.galerie
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  column-count: 3
+  &__bloc-figure
+    width: 100%
+    height: auto
+    margin-bottom: s(15,16)
+
+@media screen and (max-width:1024px)
+  .galerie
+    column-count: 2
+
+@media screen and (max-width:600px)
+  .galerie
+    column-count: 1
+    &__bloc-figure
+      width: 100%
+      margin: 0 auto s(15,16)
+      text-align: center

@@ -1,0 +1,132 @@
+.page-event
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  color: $darkBlue
+  background-color: $lightGrey
+  &__bloc
+    clearfix()
+    margin-bottom: s(100,16)
+  &__date
+    text-transform: uppercase
+    font-size: s(22,16)
+    font-weight: bold
+    max-width: s(60,22)
+    float: left
+    text-align: center
+    margin-right: s(50,22)
+    &:before
+      display: block
+      icon('iconCalendar')
+      font-size: s(30,22)
+      margin-bottom: s(10,30)
+  &__bloc-img
+    width: 40%
+    float: left
+  &__title
+    font-size: s(40,16)
+    font-family: 'crumble'
+    font-weight: bold
+    margin-bottom: s(25,40)
+    color: $lightBlue
+  &__text
+    font-size: s(18,16)
+    line-height: 1.6em
+    font-weight: 300
+    margin-bottom: s(50,18)
+  &__infos
+    width: 40%
+    float: right
+  &__button
+    color: $white
+    background-color: $darkBlue
+    font-weight: 300
+    padding: s(15,22) s(40,22)
+    border-radius: s(4,22)
+    display: inline-block
+    text-align: center
+    line-height: 1.5em
+    &--margin
+      margin-right: s(20,16)
+  &__button-hover
+    font-weight: 500
+    display: block
+  &__number-page
+    text-align: center
+    font-size: s(22,16)
+  &__page
+    border: s(2,22) solid $darkBlue
+    padding:  s(2,22) s(10,22)
+    border-radius: s(6,22)
+    margin: 0 s(5,22)
+    &:hover
+      background-color: $darkBlue
+      color: $darkYellow
+    &--active
+      background-color: $darkBlue
+      color: $darkYellow
+    &--hellip
+      border: none
+      &:hover
+        background: none
+        color: $darkBlue
+  &__arrowL
+    &:before
+      icon('iconArrowPage')
+  &__arrowR
+    &:after
+      icon('iconArrowTwo')
+
+.page-event__button:hover .page-event__button-hover
+  color: $darkYellow
+
+@media screen and (max-width:1024px)
+  .page-event
+    &__date
+      float: none
+      &:before
+        display: inline-block
+        margin-right: s(20,30)
+    &__infos
+      float: none
+      width: 100%
+    &__bloc-img
+      float: none
+      width: 100%
+      margin: s(30,22) 0
+    &__infos
+      text-align: center
+
+@media screen and (max-width:441px)
+  .page-event
+    &__title
+      font-size: s(30,16)
+    &__text
+      font-size: s(16,16)
+    &__button
+      font-size: s(14,16)
+      padding: s(10,14) s(30,14)
+    &__date
+      font-size: s(20,16)
+      &:before
+        font-size: s(25,20)
+
+@media screen and (max-width:410px)
+  .page-event
+    &__button
+      display: block
+      &--margin
+        margin-right: 0
+        margin-bottom: s(30,14)
+
+@media screen and (max-width:356px)
+  .page-event
+    &__title
+      font-size: s(25,16)
+
+@media screen and (max-width:347px)
+  .page-event
+    &__number-page
+      font-size: s(20,16)
+    &__page
+      padding: 0 s(5,20)

@@ -1,0 +1,54 @@
+.dons
+  max-width: s(1140,16)
+  padding: s(100,16) s(20,16)
+  margin: 0 auto
+  &__intro
+    margin-bottom: s(50,16)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__list
+    display: inline-block
+    text-align: center
+    margin: 0 auto
+    vertical-align: text-top
+    width: 30%
+    color: $lightBlue
+  &__terms
+    font-family: 'crumble'
+    font-size: s(25,16)
+    text-transform: uppercase
+    font-weight: bold
+    margin: s(50,25) auto
+    text-align: center
+    &--partage
+      &:before
+        display: block
+        icon('iconDonPartage')
+        font-size: s(50,25)
+        margin-bottom: s(50,50)
+    &--solidarite
+      &:before
+        display: block
+        icon('iconDonSolidarité')
+        font-size: s(50,25)
+        margin-bottom: s(50,50)
+    &--avenir
+      &:before
+        display: block
+        icon('iconDonAvenir')
+        font-size: s(50,25)
+        margin-bottom: s(50,50)
+  &__text
+    font-size: s(18,16)
+    font-weight: 300
+    line-height: 1.6em
+    text-align: center
+
+@media screen and (max-width:806px)
+  .dons
+    &__intro
+      display: flex
+      flex-direction: column
+    &__list
+      width: 100%

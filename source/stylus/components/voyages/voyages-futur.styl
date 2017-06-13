@@ -1,0 +1,163 @@
+.voyages
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  &__title
+    font-size: s(40,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,40)
+    &:after
+      content: ""
+      max-width: s(150,40)
+      height: s(4,40)
+      background-color: $lightBlue
+      display: block
+      margin-top: s(20,40)
+    &--center
+      text-align: center
+      &:after
+        margin: s(20,40) auto
+  &__futur
+    clearfix()
+    margin-bottom: s(100,16)
+    color: $darkBlue
+  &__futur-figure
+    float: left
+    width: 40%
+  &__futur-infos
+    float: right
+    width: 55%
+  &__futur-title
+    font-size: s(35,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(20,35)
+  &__futur-date
+    font-size: s(16,16)
+    display: block
+    font-weight: 500
+    margin-bottom: s(20,16)
+  &__futur-text
+    line-height: 1.6em
+    font-size: s(18,16)
+    margin-bottom: s(40,18)
+    font-weight: 300
+  &__futur-span
+    display:inline-block
+    opacity: 1
+    text-align: center
+    position: relative
+    left: -15px
+    top: -5px
+  &__futur-link
+    color: $white
+    background-color: $darkBlue
+    font-size: s(20,16)
+    padding: s(10,20) s(60,20)
+    display: inline-block
+    overflow: hidden
+    position: absolute
+    &:before
+      icon('iconFly')
+      font-size: s(25,16)
+      text-align: center
+      display: inline-block
+      transform: translateX(-150px)
+  &__bloc-link
+    width: 100%
+    height: 100%
+    display: block
+
+@keyframes link
+  0%
+    transform: translateX(-150px)
+    animation: link 0.6s ease-in-out
+  100%
+    transform: translateX(200px)
+    animation: link 0.6s ease-in-out
+
+@keyframes span
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  75%
+    opacity: 0
+  100%
+    opacity: 1
+
+.voyages__futur:hover .voyages__futur-span
+  animation: span 0.6s ease-in-out
+
+.voyages__futur:hover .voyages__futur-link:before
+  animation: link 0.6s ease-in-out forwards
+
+@media screen and ( max-width:1024px)
+  .voyages__futur:hover .voyages__futur-link:before
+    animation: link 0s ease-in-out forwards
+  .voyages__futur:hover .voyages__futur-span
+    animation: span 0s ease-in-out
+  .voyages__futur:hover .voyages__futur-span
+    opacity: 1
+  .voyages
+    &__futur
+      text-align: center
+    &__title
+      &:after
+        margin: s(20,40) auto
+    &__futur-figure
+      float: none
+      width: 100%
+      margin-bottom: s(30,16)
+    &__futur-infos
+      float: none
+      width: 100%
+    &__futur-text
+      width: 55%
+      margin: 0 auto s(40,16)
+    &__futur-link
+      position: static
+      &:before
+        opacity: 0
+
+
+@media screen and ( max-width: 760px )
+  .voyages
+    &__futur-text
+      width: 80%
+
+@media screen and ( max-width: 614px )
+  .voyages
+    &__title
+      font-size: s(35,16)
+    &__futur-title
+      font-size: s(30,16)
+      margin-bottom: s(30,30)
+    &__futur-text
+      width: 100%
+      font-size: s(16,16)
+      line-height: 1.45em
+    &__futur-date
+      font-size: s(14,16)
+      margin-bottom: s(30,14)
+    &__futur-link
+      font-size: s(18,16)
+      width: s(300,18)
+      margin-bottom: s(10,18) s(50,18)
+
+@media screen and ( max-width: 400px )
+  .voyages
+    &__title
+      font-size: s(30,16)
+    &__futur-title
+      font-size: s(25,16)
+
+@media screen and ( max-width: 325px )
+  .voyages
+    &__title
+      font-size: s(25,16)
+      &__futur-title
+        font-size: s(20,16)

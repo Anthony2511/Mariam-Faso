@@ -1,0 +1,46 @@
+.projets
+  &__bloc
+    max-width: s(1140,16)
+    margin: 0 auto
+    padding: s(100,16) s(20,16)
+  &__do
+    margin-bottom: s(100,16)
+  &__do-title
+    font-size: s(40,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,40)
+    &:after
+      content: ""
+      display: block
+      width: s(120,40)
+      height: s(4,40)
+      background-color: $lightBlue
+      margin-top: s(20,40)
+  &__do-text
+    font-size: s(18,16)
+    line-height: 1.6em
+    color: $darkBlue
+    font-weight: 300
+    column-count: 2
+    column-gap: s(50,18)
+
+@media screen and (max-width:900px)
+  .projets
+    &__do-text
+      column-count: 1
+
+@media screen and (max-width:595px)
+  .projets
+    &__do-text
+      font-size: s(16,16)
+    &__do-title
+      font-size: s(30,16)
+
+@media screen and (max-width:400px)
+  .projets
+    &__do-text
+      font-size: s(14,16)
+    &__do-title
+      font-size: s(25,16)

@@ -1,0 +1,107 @@
+.news
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  color: $darkBlue
+  &__bloc
+    clearfix()
+    margin-bottom: s(100,16)
+    &:before
+      content: ""
+      max-width: s(200,16)
+      height: s(4,16)
+      margin: 0 auto
+      background-color: $darkBlue
+      display: block
+      margin-bottom: s(100,16)
+    &:first-child
+      &:before
+        display: none
+  &__date
+    font-size: s(18,16)
+    display: block
+    margin-bottom: s(20,16)
+    &:before
+      icon('iconDateTime')
+      margin-right: s(20,16)
+  &__title
+    font-size: s(40,16)
+    font-family: 'crumble'
+    font-weight: bold
+    margin-bottom: s(25,40)
+    color: $lightBlue
+  &__text
+    font-size: s(18,16)
+    font-weight: 300
+    line-height: 1.6em
+    margin-bottom: s(70,18)
+  &__link
+    font-size: s(22,16)
+    background-color: $darkBlue
+    font-weight: bold
+    color: $white
+    padding: s(15,22) s(70,22)
+    transition: 0.3s ease-in-out
+    &:hover
+      background-color: $lightBlue
+      transition: 0.3s ease-in-out
+  &__bloc-link
+    width: 100%
+    height: 100%
+    display: block
+
+//Actu float right & left
+.news__bloc:nth-child(odd) .news__bloc-img
+  width: 45%
+  float: left
+.news__bloc:nth-child(odd) .news__infos
+  width: 45%
+  float: right
+.news__bloc:nth-child(even) .news__bloc-img
+  width: 45%
+  float: right
+.news__bloc:nth-child(even) .news__infos
+  width: 45%
+  float: left
+.news__bloc:nth-child(even) .news__date
+  text-align: right
+
+@media screen and (max-width:900px)
+  .news__bloc:nth-child(odd) .news__bloc-img
+    width: 100%
+    float: none
+  .news__bloc:nth-child(odd) .news__infos
+    width: 100%
+    float: none
+    text-align: center
+  .news__bloc:nth-child(even) .news__bloc-img
+    width: 100%
+    float: none
+  .news__bloc:nth-child(even) .news__infos
+    width: 100%
+    float: none
+    text-align: center
+  .news__bloc:nth-child(even) .news__date
+    text-align: left
+  .news
+    &__bloc-img
+      margin-bottom: s(50,16)
+
+@media screen and (max-width:588px)
+  .news
+    &__title
+      font-size: s(30,16)
+    &__text
+      font-size: s(16,16)
+    &__link
+      font-size: s(20,16)
+      padding: s(10,20) s(50,20)
+    &__date
+      font-size: s(16,16)
+
+@media screen and (max-width:455px)
+  .news
+    &__title
+      font-size: s(25,16)
+    &__text
+      font-size: s(14,16)

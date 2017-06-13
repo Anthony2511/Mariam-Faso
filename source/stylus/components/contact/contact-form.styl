@@ -1,0 +1,126 @@
+.contact
+  &__bloc
+    background-color: $white
+    color: $darkBlue
+    position: relative
+  &__bloc-title
+    font-size: s(35,16)
+    font-weight: bold
+    margin-bottom: s(10,35)
+  &__bloc-text
+    display: block
+    margin-bottom: s(50,16)
+  &__infos
+    background-color: $darkBlue
+  &__form
+    font-size: s(20,16)
+    padding: s(50,20)
+    position: relative
+  &__form-label
+    display: block
+    font-weight: 300
+  &__form-infos
+    margin-bottom: s(50,16)
+  &__form-bloc
+    column-count: 2
+    column-gap: s(50,16)
+    width: 60%
+  &__form-input
+    border-bottom: s(2,16) solid $darkBlue
+    padding: s(10,16) 0
+    width: 100%
+  &__form-textarea
+    border: none
+    border-bottom: s(2,16) solid $darkBlue
+    padding: s(10,16) 0
+    margin-bottom: s(50,16)
+    width: 60%
+  &__infos
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    color: $white
+    width: 35%
+    padding: s(50,16)
+  &__infos-title
+    font-size: s(35,16)
+    font-weight: bold
+    margin-bottom: s(50,35)
+  &__form-button
+    border: none
+    color: $white
+    background-color: $darkBlue
+    font-size: s(22,20)
+    padding: s(15,22) s(70,22)
+  &__infos-text
+    font-size: s(20,16)
+    font-weight: 400
+    margin-bottom: s(50,20)
+    line-height: 1.5em
+    &--lieu
+      &:before
+        icon('iconLieuContact')
+        margin-right: s(20,20)
+    &--phone
+      &:before
+        icon('iconTelContact')
+        margin-right: s(20,20)
+    &--mail
+      &:before
+        icon('iconMailContact')
+        margin-right: s(20,20)
+
+@media screen and (max-width:1024px)
+  .contact
+    &__infos
+      position: static
+      width: 100%
+    &__form
+      clearfix()
+    &__form-bloc
+      width: 100%
+    &__form-textarea
+      width: 100%
+    &__form-button
+      float: right
+
+@media screen and (max-width:666px)
+  .contact
+    &__bloc-title
+    &__infos-title
+      font-size: s(30,16)
+    &__bloc-text
+    &__infos-labels
+      font-size: s(16,20)
+
+@media screen and (max-width:593px)
+  .contact
+    &__bloc-title
+    &__infos-title
+      font-size: s(25,16)
+    &__infos
+      width: 100%
+    &__form-bloc
+      column-count: 1
+    &__form
+      padding: s(30,20)
+
+@media screen and (max-width:480px)
+  .contact
+    &__bloc-title
+    &__infos-title
+      font-size: s(20,16)
+    &__bloc-text
+    &__infos-labels
+      font-size: s(14,20)
+    &__form-label
+      font-size: s(16,20)
+    &__form-input
+      font-size: s(12,20)
+    &__form-button
+      font-size: s(20,20)
+      padding: s(10,20) s(50,20)
+      float: none
+      width: 100%
+      margin: 0 auto

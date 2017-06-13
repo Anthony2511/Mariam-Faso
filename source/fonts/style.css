@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9i5ks1');
+  src:  url('fonts/icomoon.eot?9i5ks1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9i5ks1') format('truetype'),
+    url('fonts/icomoon.woff?9i5ks1') format('woff'),
+    url('fonts/icomoon.svg?9i5ks1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconFly:before {
+  content: "\e900";
+}
+.icon-iconQuotation:before {
+  content: "\e901";
+}
+.icon-iconParticipate:before {
+  content: "\e902";
+}
+.icon-iconMore:before {
+  content: "\e903";
+}
+.icon-iconMail:before {
+  content: "\e904";
+}
+.icon-iconHome:before {
+  content: "\e905";
+}
+.icon-iconDons:before {
+  content: "\e906";
+}
+.icon-iconDonner:before {
+  content: "\e907";
+}
+.icon-iconTelContact:before {
+  content: "\e908";
+}
+.icon-iconMailContact:before {
+  content: "\e909";
+}
+.icon-iconLieuContact:before {
+  content: "\e90a";
+}
+.icon-iconArrowTwo:before {
+  content: "\e90b";
+}
+.icon-iconDonSolidarit:before {
+  content: "\e90c";
+}
+.icon-iconDateTime:before {
+  content: "\e90d";
+}
+.icon-iconConstruire:before {
+  content: "\e90e";
+}
+.icon-iconCalendar:before {
+  content: "\e90f";
+}
+.icon-iconArrowPage:before {
+  content: "\e910";
+}
+.icon-iconArrowFil:before {
+  content: "\e911";
+}
+.icon-iconApprendre:before {
+  content: "\e912";
+}
+.icon-iconDonPartage:before {
+  content: "\e913";
+}
+.icon-iconDonAvenir:before {
+  content: "\e914";
+}

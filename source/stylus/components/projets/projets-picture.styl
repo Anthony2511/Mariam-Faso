@@ -1,0 +1,72 @@
+.projets
+  &__picture
+    margin-bottom: s(100,16)
+    clearfix()
+  &__title
+    font-size: s(30,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,30)
+  &__bloc-img
+    width: s(350,16)
+    height: auto
+    overflow: hidden
+    display: inline-block
+    margin-right: s(20,16)
+    &:last-child
+      margin-right: 0
+  &__picture-img
+    transition: 0.3s ease-in-out
+  &__galerie-link
+    float: right
+    display: inline-block
+    color: $darkBlue
+    font-size: s(25,16)
+    font-weight: bold
+    &:hover
+      &:after
+        transform: translateX(15px)
+        transition: all 0.5s $ease-personalize
+    &:after
+      display: inline-block
+      margin-left: s(20,25)
+      font-size: s(19,25)
+      icon('iconArrowFil')
+      transition: all 0.5s $ease-personalize
+  &__figure-bloc
+    margin-bottom: s(50,22)
+
+.projets__bloc-img:hover .projets__picture-img
+  transform: scale(1.2)
+  transition: 0.3s ease-in-out
+
+@media screen and (max-width:1155px)
+  .projets__bloc-img:hover .projets__picture-img
+    transform: none
+  .projets
+    &__picture
+      text-align: center
+    &__bloc-img
+      display: block
+      width: 100%
+      height: auto
+      margin-right: 0
+      margin-bottom: s(20,16)
+    &__galerie-link
+      float: none
+
+@media screen and (max-width:550px)
+  .projets
+    &__galerie-link
+      font-size: s(20,16)
+      &:after
+        font-size: s(14,20)
+      &:hover
+        &:after
+          transform: none
+
+@media screen and (max-width:400px)
+  .projets
+    &__title
+      font-size: s(25,16)

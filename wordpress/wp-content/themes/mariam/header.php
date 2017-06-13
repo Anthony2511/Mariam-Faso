@@ -12,6 +12,9 @@
           <?php if(is_singular('voyages')): ?>
           <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(35); ?>" title="Vers la page Voyages"><?= __('Voyages','ma'); ?></a></li>
           <?php endif; ?>
+          <?php if(is_singular('projets')): ?>
+          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(111); ?>" title="Vers la page Voyages"><?= __('Projets','ma'); ?></a></li>
+          <?php endif; ?>
           <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(); ?>" title="Vers le voyage : <?php the_title(); ?>"><?php the_title(); ?></a></li>
         </ul>
       </section>

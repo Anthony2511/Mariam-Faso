@@ -1,0 +1,89 @@
+.footer
+  background-color: $lightBlue
+  text-align: center
+  color: $white
+  padding: s(100,16) s(40,16)
+  &__container
+    max-width: s(1140,16)
+    margin: 0 auto
+  &__title
+    font-family: 'crumble'
+    font-size: s(40,16)
+    font-weight: bold
+    color: $darkYellow
+    margin-bottom: s(50,40)
+    text-align: center
+  &__bloc
+    display: inline-block
+    vertical-align: text-top
+    margin: 0 s(50,16)
+    text-align: left
+  &__link
+    font-size: s(20,16)
+    font-weight: 500
+    display: block
+    margin-bottom: s(20,20)
+    &:hover
+      &:before
+        color: $darkYellow
+    &--email
+      &:before
+        margin-right: s(20,20)
+        icon('iconMail')
+  &__link-button
+    background-color: $darkBlue
+    font-weight: bold
+    display: inline-block
+    width: s(150,16)
+    padding: s(10,16)
+    overflow: hidden
+    text-align: center
+    &:after
+      icon('iconDons')
+      font-size: s(20,16)
+      text-align: center
+      display: block
+      transform: translateY(40px);
+      transition: 0.3s ease-in-out
+    &:hover
+      &:after
+        transform: translateY(-8px);
+        transition: 0.3s ease-in-out
+  &__link-span
+    display: block
+    transform: translateY(8px)
+    transition: 0.3s ease-in-out
+  &__copyright-bloc
+    background-color: $darkBlue
+    text-align: center
+    padding: s(20,16) s(40,16)
+  &__copyright
+    color: $white
+  &__portfolio
+    display: inline-bloc
+    color: $darkYellow
+
+.footer__link-button:hover .footer__link-span
+  transform: translateY(-30px)
+  transition: 0.3s ease-in-out
+
+@media screen and (max-width: 965px)
+  .footer
+    &__title
+      margin-bottom: s(20,40)
+    &__bloc
+      display: block
+      text-align: center
+      margin : 0 0 s(50,16)
+
+@media screen and (max-width: 525px)
+  .footer
+    &__copyright-bloc
+      font-size: s(14,16)
+
+@media screen and (max-width: 437px)
+  .footer
+    &__title
+      font-size: s(25,16)
+    &__link
+      font-size: s(16,16)

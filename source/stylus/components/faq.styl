@@ -1,0 +1,59 @@
+.faq
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  &__bloc
+    font-size: s(20,16)
+    color: $darkBlue
+    font-weight: 300
+    margin-bottom: s(50,20)
+    line-height: 1.6em
+  &__list
+    margin-bottom: s(50,20)
+    &:before
+      content: ""
+      max-width: s(500,20)
+      height: s(2,20)
+      background-color: $darkBlue
+      margin: s(50,20) auto
+      display: block
+    &:first-child
+      &:before
+        display: none
+  &__term
+    font-size: s(22,20)
+    margin-right: s(30,22)
+    &--question
+      font-weight: 900
+      margin-bottom: s(20,22)
+  &__contact
+    text-align: center
+    font-size: s(22,16)
+  &__contact-line
+    margin-bottom: s(50,22)
+    color: $lightBlue
+    font-weight: 900
+  &__link
+    color: $white
+    background-color: $darkBlue
+    padding: s(15,22) s(70,22)
+    transition: 0.3s ease-in-out
+    &:hover
+      background-color: $lightBlue
+      transition: 0.3s ease-in-out
+
+@media screen and ( max-width: 530px )
+  .faq
+    &__bloc
+      line-height: 1.4em
+    &__term
+      font-size: s(20,20)
+    &__contact
+      font-size: s(20,16)
+    &__link
+      padding: s(10,20) s(50,20)
+
+@media screen and ( max-width: 400px )
+  .faq
+    &__term
+      font-size: s(18,20)

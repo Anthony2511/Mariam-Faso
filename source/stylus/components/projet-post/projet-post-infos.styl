@@ -1,0 +1,38 @@
+.projet-type
+  &__flow
+    display: flex
+    flex-direction: column
+    margin: s(100,16) auto
+  &__flow-title
+    text-align: center
+    font-family: 'crumble'
+    font-size: s(40,16)
+    color: $lightBlue
+    font-weight: bold
+    border: s(1,16) solid $lightBlue
+    padding: s(20,40) 0
+    width: 50%
+    margin: 0 auto s(50,40)
+  &__flow-text
+    font-size: s(18,16)
+    color: $darkBlue
+    font-weight: 300
+    line-height: 1.6em
+    column-count: 2
+    column-gap: s(50,18)
+
+@media screen and ( max-width : 700px)
+  .projet-type
+    &__flow-title
+      width: 100%
+      font-size: s(30,16)
+    &__flow-text
+      column-count: 1
+      text-align: center
+      font-size: s(16,16)
+      line-height: 1.45em
+
+@media screen and ( max-width : 400px)
+  .projet-type
+    &__flow-title
+      font-size: s(25,16)

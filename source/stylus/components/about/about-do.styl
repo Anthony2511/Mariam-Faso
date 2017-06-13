@@ -1,0 +1,98 @@
+.about
+  &__do
+    max-width: s(1140,16)
+    margin: 0 auto
+    text-align: center
+    padding: 0 s(20,16) s(120,16)
+  &__do-title
+    font-size: s(50,16)
+    font-family: 'crumble'
+    font-weight: bold
+    color: $lightBlue
+    margin-bottom: s(50,50)
+    &:after
+      content: ""
+      display: block
+      width: s(150,50)
+      height: s(5,50)
+      background-color: $lightBlue
+      margin: s(20,50) auto
+  &__do-action
+    text-transform: uppercase
+    font-size: s(20,16)
+    color: $lightBlue
+    font-weight: bold
+    margin-bottom: s(50,20)
+  &__do-logo
+    display: inline-block
+    &:first-child
+      margin-right: s(50,20)
+    &:last-child
+      margin-left: s(50,20)
+    &--learn
+      &:before
+        icon('iconApprendre')
+        display: block
+        font-size: s(50,20)
+        margin-bottom: s(20,50)
+    &--build
+      &:before
+        display: block
+        icon('iconConstruire')
+        font-size: s(50,20)
+        margin-bottom: s(20,50)
+    &--given
+      &:before
+        display: block
+        icon('iconDonner')
+        font-size: s(50,20)
+        margin-bottom: s(20,50)
+  &__do-text
+    font-size: s(18,16)
+    max-width: s(960,18)
+    margin: 0 auto s(70,18)
+    font-weight: 300
+    line-height: 1.6em
+    color: $darkBlue
+  &__do-link
+    font-size: s(22,16)
+    background-color: $darkBlue
+    padding: s(15,22) s(70,22)
+    color: $white
+    font-weight: bold
+    transition: 0.3s ease-in-out
+    &:hover
+      background-color: $lightBlue
+      transition: 0.3s ease-in-out
+
+@media screen and (max-width: 497px)
+  .about
+    &__do-logo
+      display: block
+      margin-bottom: s(50,20)
+      &:first-child
+        margin-right: 0
+      &:last-child
+        margin-left: 0
+    &__do-text
+      font-size: s(16,16)
+
+@media screen and (max-width: 416px)
+  .about
+    &__do-title
+      font-size: s(40,16)
+    &__do-action
+      font-size: s(18,16)
+    &__do-text
+      font-size: s(14,16)
+
+@media screen and (max-width: 346px)
+  .about
+    &__do-title
+      font-size: s(35,16)
+
+@media screen and (max-width: 331px)
+  .about
+    &__do-link
+      font-size: s(20,16)
+      padding: s(10,20) s(50,20)
