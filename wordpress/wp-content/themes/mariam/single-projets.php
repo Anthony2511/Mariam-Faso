@@ -44,10 +44,13 @@ Template Name: Single Projets
           </div>
         </section>
       </div>
+      <?php if( have_rows('section') ): ?>
+      <?php while( have_rows('section') ): the_row(); ?>
       <section class="projet-type__flow">
-        <h3 class="projet-type__flow-title" aria-level="3" role="heading"><?= __('Déroulement du projet', 'ma'); ?></h3>
-        <p class="projet-type__flow-text"><?= get_field('single__text-deroulement'); ?></p>
+        <h3 class="projet-type__flow-title" aria-level="3" role="heading"><?= the_sub_field('single__title-section'); ?></h3>
+        <p class="projet-type__flow-text"><?= the_sub_field('single__text-deroulement'); ?></p>
       </section>
+      <?php endwhile; endif; ?>
       <?php endwhile; endif; ?>
     </div>
     <?php include('footer.php'); ?>
