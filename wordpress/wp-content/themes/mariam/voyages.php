@@ -61,7 +61,7 @@ Template Name: Page Voyages
               <h4 class="voyages__finish-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
               <span class="voyages__finish-date">27 Mars 2017 - 14 Avril 2017</span>
               <p class="voyages__finish-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet
+                <?= get_field('single__description'); ?>
               </p>
               <a class="voyages__finish-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage"><?= __('En savoir plus','ma'); ?></a>
             </section>
