@@ -1,10 +1,12 @@
 Définitions-Stratégies/Stratégie.ai
 Définitions-Stratégies/Wireframes/mariam-faso.bmpr
 node_modules
-/build
 wordpress/*
 !wordpress/wp-content/
 wordpress/wp-content/*
 !wordpress/wp-content/themes/
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/mariam/
+.idea
+.DS_Store
+build
