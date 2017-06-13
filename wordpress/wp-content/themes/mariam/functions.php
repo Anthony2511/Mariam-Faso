@@ -4,6 +4,7 @@
 add_theme_support('post-thumbnails');
 add_image_size( 'thumb-about', 523, 523, true );
 add_image_size( 'thumb-voyage', 500, 331, true );
+add_image_size( 'thumb-home-project', 756, 501, true );
 
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';

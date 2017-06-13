@@ -20,10 +20,15 @@ Template Name: Page d’accueil
 		<section class="projet__left">
 			<h3 class="projet__title" aria-level="3" role="heading"><?= __('Participer à notre projet','ma'); ?></h3>
 			<p class="projet__text"><?= get_field('home__text-projet'); ?></p>
-			<a class="projet__link" href="projets.html" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
+			<a class="projet__link" href="<?php the_permalink(); ?>" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
 		</section>
+    <?php $homeProject = get_field('home__project'); ?>
 		<figure class="projet__bloc-img">
-			<img class="projet__img" src="./images/participate-projet.jpg" width="756" height="501" alt="Sixième classe de Burkina Faso">
+      <?php if( !empty($homeProject) ): ?>
+        <?php $size = 'thumb-home-project';
+              $thumb = $homeProject['sizes'][ $size ]; ?>
+        <img class="projet__img" src="<?= $thumb; ?>" width="756" height="501" alt="<?= $homeProject['alt']; ?>" />
+      <?php endif; ?>
 		</figure>
 	</div>
 	<div class="event">

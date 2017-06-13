@@ -25,8 +25,13 @@ Template Name: Page Voyages
     <div class="voyages__futur">
       <a class="voyages__futur__bloc-link" href="participer.html">
         <h3 class="voyages__title" aria-level="3" role="heading"><?= __('Notre prochain voyage','ma'); ?></h3>
+        <?php $voyagesImage = get_field('voyages__image'); ?>
         <figure class="voyages__futur-figure">
-          <img class="voyages__futur-img" src="./images/voyage-one.jpg" width="500" height="331" alt="Futur voyage au Maroc">
+          <?php if( !empty($voyagesImage) ): ?>
+            <?php $size = 'thumb-voyage';
+                  $thumb = $voyagesImage['sizes'][ $size ]; ?>
+            <img class="voyages__futur-img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $voyagesImage['alt']; ?>" />
+          <?php endif; ?>
         </figure>
         <section class="voyages__futur-infos">
           <h4 class="voyages__futur-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
@@ -44,8 +49,13 @@ Template Name: Page Voyages
         <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="voyages__finish-list">
           <a class="voyages__finish__bloc-link" href="<?php the_permalink(); ?>">
+            <?php $voyageFinish = get_field('voyages__image'); ?>
             <figure class="voyages__finish-figure">
-              <img class="voyages__finish-img" src="./images/voyage-two.jpg" width="500" height="500" alt="Voyage au Maroc">
+              <?php if( !empty($voyageFinish) ): ?>
+                <?php $size = 'thumb-voyage';
+                      $thumb = $voyageFinish['sizes'][ $size ]; ?>
+                <img class="voyages__finish-img" src="<?= $thumb; ?>" width="500" height="500" alt="<?= $voyageFinish['alt']; ?>" />
+              <?php endif; ?>
             </figure>
             <section class="voyages__finish-infos">
               <h4 class="voyages__finish-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
