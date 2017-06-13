@@ -6,40 +6,23 @@ Template Name: Page Galerie
 
 <?php include('head.php'); ?>
 
-<body>
+<body class="galerie-page">
   <h1 class="hidden" aria-level="1" role="heading">Page Photos</h1>
   <?php include('navigation.php'); ?>
   <?php include('header.php'); ?>
     <div class="galerie">
+      <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+      <?php if( have_rows('image-galerie') ): ?>
+      <?php while( have_rows('image-galerie') ): the_row(); ?>
+      <?php $galerieImage = get_sub_field('galerie__image'); ?>
       <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-one.jpg" width="500" height="331" alt="Photos de nos projets">
+        <?php if( !empty($galerieImage) ): ?>
+          <?php $size = 'thumb-galerie';
+                $thumb = $galerieImage['sizes'][ $size ]; ?>
+          <img class="galerie__bloc-img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $galerieImage['alt']; ?>" />
+        <?php endif; ?>
       </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-two.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-three.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-four.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-five.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-six.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-seven.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-eight.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-nine.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
-      <figure class="galerie__bloc-figure">
-        <img class="galerie__bloc-img" src="./images/voyage-ten.jpg" width="500" height="331" alt="Photos de nos projets">
-      </figure>
+    <?php endwhile; endif; ?>
+    <?php endwhile; endif; ?>
     </div>
     <?php include('footer.php'); ?>
