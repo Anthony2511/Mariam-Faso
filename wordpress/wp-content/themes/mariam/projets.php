@@ -39,7 +39,7 @@ Template Name: Page Projets
               <img class="projets__picture-img" src="./images/voyage-three.jpg" width="500" height="331" alt="Photo réalisé pendant le voyage au Burkina Faso">
             </figure>
           </div>
-          <a class="projets__galerie-link" href="<?php the_permalink(); ?>"><?= __('Voir notre galerie','ma'); ?></a>
+          <a class="projets__galerie-link" href="<?php the_permalink(145); ?>"><?= __('Voir notre galerie','ma'); ?></a>
         </section>
         <section class="projets__video">
           <h3 class="projets__title" aria-level="3" role="heading"><?= __('Notre dernier voyage en vidéo','ma'); ?></h3>

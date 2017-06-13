@@ -8,7 +8,7 @@
       <section class="fil-ariane">
         <h2 class="hidden" aria-level="2" role="heading"><?= __('Fil d\'ariane','ma'); ?></h2>
         <ul class="fil-ariane__navigation">
-          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?php get_home_url(); ?>" title="Vers la page d'accueil"></a></li>
+          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?= get_home_url(); ?>" title="Vers la page d'accueil"></a></li>
           <?php if(is_singular('voyages')): ?>
           <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(35); ?>" title="Vers la page Voyages"><?= __('Voyages','ma'); ?></a></li>
           <?php endif; ?>

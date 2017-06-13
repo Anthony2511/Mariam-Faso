@@ -7,7 +7,7 @@ Template Name: Single Projets
 <?php include('head.php'); ?>
 
 <body class="projets-page">
-  <h1 class="hidden" aria-level="1" role="heading">grere</h1>
+  <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
   <?php include('header.php'); ?>
 
