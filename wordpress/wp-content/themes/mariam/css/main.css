@@ -4675,10 +4675,6 @@ img
 {
     position: relative;
 }
-.header-page--events
-{
-    background: url('../images/header-event.jpg') no-repeat top center/cover;
-}
 .header-page--about
 {
     background: url('../images/header-about.jpg') no-repeat top center/cover;
@@ -4780,6 +4776,10 @@ img
 {
     background: url('../images/backgroundGalerie.jpg') no-repeat top center/cover;
     background-position: 50% 40%;
+}
+.events-page .header-page
+{
+    background: url('../images/header-event.jpg') no-repeat top center/cover;
 }
 @media screen and (max-width: 504px)
 {
