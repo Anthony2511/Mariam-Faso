@@ -48,6 +48,19 @@ function ma_register_types() {
               'supports' => ['title','thumbnail']
         ] );
 
+  register_post_type( 'evenements', [
+              'label' => 'Évènements',
+              'labels' => [
+                          'singular_name' => 'evenement',
+                          'add_new' =>'Ajouter un nouveau évènement'
+                    ],
+              'description' => 'Permet d\'administrer les évènements affichés sur le site.',
+              'public' => true,
+              'menu_position' => 22,
+              'menu_icon' => 'dashicons-calendar-alt',
+              'supports' => ['title','thumbnail']
+        ] );
+
 }
 
 
