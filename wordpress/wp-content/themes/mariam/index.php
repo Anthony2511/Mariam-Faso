@@ -79,24 +79,21 @@ Template Name: Page d’accueil
 	</section>
 	<section class="partenaires">
 		<h3 class="partenaires__title" aria-level="3" role="heading"><?= __('Nos partenaires','ma'); ?></h3>
-		<div class="partenaires__bloc">
+    <?php if( have_rows('partenaires') ): ?>
+    <?php while( have_rows('partenaires') ): the_row(); ?>
+    <div class="partenaires__bloc">
+      <?php $logoPartenaires = get_sub_field('logo__partenaire'); ?>
+      <a class="partenaires__link" href="<?= get_sub_field('logo__url'); ?>" title="Vers le site Partenaires">
 			<figure class="partenaires__bloc-img">
-				<img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
+        <?php if( !empty($logoPartenaires) ): ?>
+          <?php $size = 'thumb-partenaires';
+                $thumb = $logoPartenaires['sizes'][ $size ]; ?>
+          <img class="partenaires__img" src="<?= $thumb; ?>" width="260" height="153" alt="<?= $logoPartenaires['alt']; ?>" />
+        <?php endif; ?>
 			</figure>
-			<a class="partenaires__link" href="#" title="Vers le site Partenaires"></a>
+      </a>
 		</div>
-		<div class="partenaires__bloc partenaires__bloc--margin">
-			<figure class="partenaires__bloc-img">
-				<img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
-			</figure>
-			<a class="partenaires__link" href="#" title="Vers le site Partenaires"></a>
-		</div>
-		<div class="partenaires__bloc">
-			<figure class="partenaires__bloc-img">
-				<img class="partenaires__img" src="./images/baudouin.png" width="1420" height="834" alt="Logo du partenaire">
-			</figure>
-			<a class="partenaires__link" href="#" title="Vers le site Partenaires"></a>
-		</div>
+    <?php endwhile; endif; ?>
 	</section>
 
 	<?php include('footer.php'); ?>
