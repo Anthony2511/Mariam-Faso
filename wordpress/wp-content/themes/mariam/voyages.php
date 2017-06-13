@@ -25,21 +25,21 @@ Template Name: Page Voyages
     <div class="voyages__futur">
       <a class="voyages__futur__bloc-link" href="participer.html">
         <h3 class="voyages__title" aria-level="3" role="heading"><?= __('Notre prochain voyage','ma'); ?></h3>
-        <?php $voyagesImage = get_field('voyages__image'); ?>
+        <?php $voyagesImage = get_field('voyages__futur-image'); ?>
         <figure class="voyages__futur-figure">
           <?php if( !empty($voyagesImage) ): ?>
-            <?php $size = 'thumb-voyage';
+            <?php $size = 'thumb-voyages';
                   $thumb = $voyagesImage['sizes'][ $size ]; ?>
             <img class="voyages__futur-img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $voyagesImage['alt']; ?>" />
           <?php endif; ?>
         </figure>
         <section class="voyages__futur-infos">
-          <h4 class="voyages__futur-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
-          <span class="voyages__futur-date">17 Juin 2017 - 10 Juillet 2017</span>
+          <h4 class="voyages__futur-title" aria-level="4" role="heading"><?= get_field('voyages__futur-title'); ?></h4>
+          <span class="voyages__futur-date"><?= get_field('voyages__futur-date'); ?></span>
           <p class="voyages__futur-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo.
+            <?= get_field('voyages__futur-text'); ?>
           </p>
-          <a class="voyages__futur-link" href="participer.html" title="Vers la page du voyage"><span class="voyages__futur-span">Participer</span></a>
+          <a class="voyages__futur-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage"><span class="voyages__futur-span"><?= __('Participer','ma'); ?></span></a>
         </section>
       </a>
     </div>

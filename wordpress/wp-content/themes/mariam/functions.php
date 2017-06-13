@@ -7,6 +7,7 @@ add_image_size( 'thumb-voyage', 330, 218, true );
 add_image_size( 'thumb-home-project', 542, 359, true );
 add_image_size( 'thumb-single-project', 500, 375, true );
 add_image_size( 'thumb-project', 350, 232, true );
+add_image_size( 'thumb-voyages', 440, 291, true );
 
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';
