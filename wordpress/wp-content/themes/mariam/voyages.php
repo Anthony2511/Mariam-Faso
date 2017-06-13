@@ -49,7 +49,7 @@ Template Name: Page Voyages
         <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="voyages__finish-list">
           <a class="voyages__finish__bloc-link" href="<?php the_permalink(); ?>">
-            <?php $voyageFinish = get_field('voyages__image'); ?>
+            <?php $voyageFinish = get_field('single__voyage-image'); ?>
             <figure class="voyages__finish-figure">
               <?php if( !empty($voyageFinish) ): ?>
                 <?php $size = 'thumb-voyage';
@@ -59,7 +59,7 @@ Template Name: Page Voyages
             </figure>
             <section class="voyages__finish-infos">
               <h4 class="voyages__finish-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
-              <span class="voyages__finish-date">27 Mars 2017 - 14 Avril 2017</span>
+              <span class="voyages__finish-date"><?= get_field('single__date'); ?></span>
               <p class="voyages__finish-text">
                 <?= get_field('single__description'); ?>
               </p>

@@ -8,6 +8,17 @@
     font-weight: bold
     color: $lightBlue
     margin-bottom: s(20,30)
+    &--size
+      font-size: s(40,16)
+      padding-top: s(30,40)
+      padding-bottom: s(10,40)
+      &:after
+        content: ""
+        width: s(50,40)
+        height: s(2,40)
+        background-color: $lightBlue
+        display: block
+        margin-top: s(10,40)
   &__timeline-text
     font-size: s(18,16)
     color: $darkBlue
@@ -76,27 +87,7 @@
 
 .period
   padding: 0
-  .voyage-post__timeline-title
-      font-size: s(40,16)
-      padding-top: s(30,40)
-      padding-bottom: s(10,40)
-  .voyage-post__timeline-marker
-    &:before
-      background: transparent
-      content: ""
-      width: s(15,16)
-      height: auto
-      border: none
-      border-radius: 0
-      top: 0
-      bottom: s(30,16)
-      position: absolute
-      border-top: s(2,16) solid $darkBlue
-      border-bottom: s(2,16) solid $darkBlue
-    &:after
-      content: ""
-      height: s(32,16)
-      top: auto
+
 
 @media screen and (max-width: 820px)
   .voyage-post

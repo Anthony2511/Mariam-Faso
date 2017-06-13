@@ -6,7 +6,6 @@ Template Name: Single Voyages
 
 <?php include('head.php'); ?>
 
-
 <body class="voyages-page">
   <h1 class="hidden" aria-level="1" role="heading">fff</h1>
   <?php include('navigation.php'); ?>
@@ -21,9 +20,9 @@ Template Name: Single Voyages
 
       <ul class="voyage-post__list">
 
-        <li class="voyage-post__item period">
+        <li class="voyage-post__item">
           <section class="voyage-post__content">
-            <h3 class="voyage-post__timeline-title" aria-level="3" role="heading"><?= the_sub_field('voyage__titre-principal'); ?></h3>
+            <h3 class="voyage-post__timeline-title voyage-post__timeline-title--size" aria-level="3" role="heading"><?= the_sub_field('voyage__titre-principal'); ?></h3>
           </section>
         </li>
         <?php if( have_rows('infos') ): ?>
