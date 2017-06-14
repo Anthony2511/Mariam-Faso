@@ -1,5 +1,5 @@
 <nav class="nav">
-  <h2 aria-level="2" role="heading" class="hidden">Navigation principale</h2>
+  <h2 aria-level="2" role="heading" class="hidden"><?= __('Navigation principale','ma'); ?></h2>
   <div class="nav__button">
     <div class="nav__button-wrap">
       <div class="nav__icon">
@@ -16,7 +16,7 @@
         <defs>
           <style>.cls-1{fill:#fff;}.cls-2{fill:#f0c419;}</style>
         </defs>
-        <title>Logo Mariam Faso</title>
+        <title><?= __('Logo de Mariam Faso','ma'); ?></title>
         <g id="Calque_2" data-name="Calque 2">
         <g id="Calque_1-2" data-name="Calque 1">
           <path class="cls-1" d="M66.68,21.86l-.22.07-1.2.1-.34.54-.25-.08-1-.86-.14-.45-.18-.48-.6-.54L62.1,20l0,.32.69.67.34.4-.38.2-.31-.09L62,21.36,62,21l-.61-.25-.2.88-.61.14.06.49.8.15.14-.78.66.1.31.18H63l.34.67.89.91-.07.35-.72-.09-1.25.63-.9,1.07-.12.48h-.32l-.6-.28-.58.28.14.61.25-.29h.45l0,.55.37.11.37.41.6-.17.69.11.8.21.4,0,.67.77,1.3.77-.84,1.61L64,31l-.34.92-1.29.86-.14.5a7.49,7.49,0,0,0,4.47-11.46Zm0,0"/>

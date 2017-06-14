@@ -19,7 +19,8 @@ Template Name: Page Projets
 <body class="projets-page">
   <h1 class="hidden" aria-level="1" role="heading"></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
+
     <div class="projets">
       <div class="projets__bloc">
         <section class="projets__do">
@@ -31,12 +32,6 @@ Template Name: Page Projets
           <div class="projets__figure-bloc">
             <figure class="projets__bloc-img">
               <img class="projets__picture-img" src="./images/voyage-one.jpg" width="500" height="331" alt="Photo réalisé pendant le voyage au Burkina Faso">
-            </figure>
-            <figure class="projets__bloc-img">
-              <img class="projets__picture-img" src="./images/voyage-two.jpg" width="500" height="331" alt="Photo réalisé pendant le voyage au Burkina Faso">
-            </figure>
-            <figure class="projets__bloc-img">
-              <img class="projets__picture-img" src="./images/voyage-three.jpg" width="500" height="331" alt="Photo réalisé pendant le voyage au Burkina Faso">
             </figure>
           </div>
           <a class="projets__galerie-link" href="<?php the_permalink(145); ?>"><?= __('Voir notre galerie','ma'); ?></a>
@@ -51,7 +46,7 @@ Template Name: Page Projets
       </div>
       <div class="projets__participate">
         <div class="projets__participate-bloc">
-          <span class="projets__citation">Si tu es intéressé et que tu souhaites nous rejoindre , nous t’invitons à participer à notre cause</span>
+          <span class="projets__citation"><?= get_field('projets__text-citation'); ?></span>
           <a class="projets__link" href="<?php the_permalink(35); ?>" title="Vers la page Voyages"><?= __('Voyage avec nous','ma'); ?></a>
         </div>
       </div>
@@ -64,6 +59,7 @@ Template Name: Page Projets
         <section class="projets__realize">
           <h3 class="projets__title" aria-level="4" role="heading"><?= __('Nos projets réalisés', 'ma'); ?></h3>
           <div class="projets__figure-realize">
+
             <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="projets__type">
               <?php $singleProjet = get_field('single__image-projet'); ?>
@@ -73,6 +69,7 @@ Template Name: Page Projets
                         $thumb = $singleProjet['sizes'][ $size ]; ?>
                   <img class="projets__realize-img" src="<?= $thumb; ?>" width="500" height="331" alt="<?= $singleProjet['alt']; ?>" />
                 <?php endif; ?>
+
               </figure>
               <div class="projets__realize-opacity">
                 <h4 class="projets__realize-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
@@ -81,8 +78,10 @@ Template Name: Page Projets
               <a class="projets__realize-link" href="<?php the_permalink(); ?>" title="Vers la page du projet"></a>
             </div>
             <?php endwhile; endif; ?>
+
           </div>
         </section>
       </div>
     </div>
-    <?php include('footer.php'); ?>
+
+    <?php get_footer(); ?>

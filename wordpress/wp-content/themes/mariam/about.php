@@ -14,6 +14,7 @@ Template Name: Page A Propos
   <div class="about">
     <div class="about__history">
       <div class="about__bloc-left">
+
         <?php $aboutImage = get_field('about__image'); ?>
         <figure class="about__bloc-img">
           <?php if( !empty($aboutImage) ): ?>
@@ -21,6 +22,7 @@ Template Name: Page A Propos
                   $thumb = $aboutImage['sizes'][ $size ]; ?>
             <img class="about__img" src="<?= $thumb; ?>" width="523" height="523" alt="<?= $aboutImage['alt']; ?>" />
           <?php endif; ?>
+
         </figure>
         <div class="about__bloc-info">
           <span class="about__title-info"><?= __('Mariam Faso','ma'); ?></span>
@@ -29,16 +31,12 @@ Template Name: Page A Propos
       </div>
       <section class="about__bloc-right">
         <h3 class="about__title" aria-level="3" role="heading"><?= get_field('about__title-intro'); ?></h3>
-        <p class="about__text">
-          <?= get_field('about__text-intro'); ?>
-        </p>
+        <p class="about__text"><?= get_field('about__text-intro'); ?></p>
       </section>
     </div>
     <section class="about__relations">
       <h3 class="about__title" aria-level="3" role="heading"><?= get_field('about__title-content'); ?></h3>
-      <p class="about__text about__text--columns">
-        <?= get_field('about__text-content'); ?>
-      </p>
+      <p class="about__text about__text--columns"><?= get_field('about__text-content'); ?></p>
     </section>
     <div class="about__quotation">
       <section class="about__quotation-bloc">
@@ -54,11 +52,9 @@ Template Name: Page A Propos
         <span class="about__do-logo about__do-logo--build"><?= __('construire','ma'); ?></span>
         <span class="about__do-logo about__do-logo--given"><?= __('donner','ma'); ?></span>
       </div>
-      <p class="about__do-text">
-        <?= get_field('about__text-do'); ?>
-      </p>
-      <a class="about__do-link" href="projets.html" title="Vers la page Projets"><?= __('En savoir plus','ma'); ?></a>
+      <p class="about__do-text"><?= get_field('about__text-do'); ?></p>
+      <a class="about__do-link" href="<?php the_permalink(111); ?>" title="Vers la page Projets"><?= __('En savoir plus','ma'); ?></a>
     </section>
   </div>
 
-	<?php include('footer.php'); ?>
+	<?php get_footer(); ?>

@@ -9,7 +9,8 @@ Template Name: Page Dons
 <body class="dons-page">
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
+
     <div class="dons">
       <div class="dons__intro">
         <dl class="dons__list">
@@ -27,9 +28,7 @@ Template Name: Page Dons
       </div>
       <section class="dons__donate">
         <h3 class="dons__donate-title" aria-level="3" role="heading"><?= __('Soutenez nous','ma'); ?></h3>
-        <p class="dons__donate-text">
-          <?= get_field('dons__text'); ?>
-        </p>
+        <p class="dons__donate-text"><?= get_field('dons__text'); ?></p>
         <div class="dons__buttons">
           <a class="dons__single-button" href="<?= get_field('dons__link'); ?>" title="Vers le site Paypal"><?= __('Faire un don financier','ma'); ?></a>
           <a class="dons__single-button" href="<?= get_field('dons__link'); ?>" title="Vers le site"><?= __('Faire un don matériel','ma'); ?></a>
@@ -37,4 +36,5 @@ Template Name: Page Dons
         </div>
       </section>
     </div>
-    <?php include('footer.php'); ?>
+
+    <?php get_footer(); ?>

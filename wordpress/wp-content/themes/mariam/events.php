@@ -19,11 +19,13 @@ Template Name: Page Evenements
 <body class="events-page">
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
+
     <div class="page-event">
+
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="page-event__bloc">
-        <time class="page-event__date" datetime="2017-06-23"><?= get_field('single__event-date'); ?></time>
+        <time class="page-event__date" datetime="<?php the_time(); ?>"><?= get_field('single__event-date'); ?></time>
         <?php $eventImage = get_field('single__image-event'); ?>
         <figure class="page-event__bloc-img">
           <?php if( !empty($eventImage) ): ?>
@@ -35,7 +37,7 @@ Template Name: Page Evenements
         <section class="page-event__infos">
           <h3 class="page-event__title" aria-level="3" role="heading"><?php the_title(); ?></h3>
           <p class="page-event__text">
-            <?= the_content(); ?>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula laoreet, efficitur nisi ut, rutrum lectus. Sed sed rhoncus ante. Nulla dictum, lacus sit amet suscipit congue, mauris arcu porta magna, et dapibus urna arcu ut libero. Proin hendrerit, dolor et
           </p>
           <div class="page-event__inscriptions">
             <a class="page-event__button page-event__button--margin" href="<?php the_permalink(); ?>" title="Vers la page Inscriptions"><?= __('Inscription sur ', 'ma'); ?><span class="page-event__button-hover"><?= __('Mariam Faso', 'ma'); ?></span></a>
@@ -44,6 +46,7 @@ Template Name: Page Evenements
         </section>
       </div>
       <?php endwhile; endif; ?>
+
       <div class="page-event__number-page">
         <a class="page-event__arrowL" href="#" title="Vers la page précédente"></a>
         <a class="page-event__page page-event__page--active" href="#" title="Vers la page 1"><span>1</span></a>
@@ -53,4 +56,5 @@ Template Name: Page Evenements
         <a class="page-event__arrowR" href="#" title="Vers la page suivante"></a>
       </div>
     </div>
-    <?php include('footer.php'); ?>
+
+    <?php get_footer(); ?>

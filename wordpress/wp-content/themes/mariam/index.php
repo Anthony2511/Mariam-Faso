@@ -97,4 +97,4 @@ Template Name: Page d’accueil
     <?php endwhile; endif; ?>
 	</section>
 
-	<?php include('footer.php'); ?>
+	<?php get_footer(); ?>

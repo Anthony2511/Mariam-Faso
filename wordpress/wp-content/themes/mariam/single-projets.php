@@ -9,18 +9,21 @@ Template Name: Single Projets
 <body class="projets-page">
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
 
     <div class="projet-type">
+
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="projet-type__history">
         <?php $singleProjet = get_field('single__image-projet'); ?>
         <figure class="projet-type__figure">
+
           <?php if( !empty($singleProjet) ): ?>
             <?php $size = 'thumb-voyage';
                   $thumb = $singleProjet['sizes'][ $size ]; ?>
-            <img class="projet-type__img" src="<?= $thumb; ?>" width="960" height="720" alt="<?= $singleProjet['alt']; ?>" />
+            <img class="projet-type__img" src="<?= $thumb; ?>" width="960" height="720" alt="<?= $singleProjet['alt']; ?>"/>
           <?php endif; ?>
+
         </figure>
         <section class="projet-type__details">
           <h3 class="projet-type__title" aria-level="3" role="heading"><?= __('Détails du projets', 'ma'); ?></h3>
@@ -44,6 +47,7 @@ Template Name: Single Projets
           </div>
         </section>
       </div>
+
       <?php if( have_rows('section') ): ?>
       <?php while( have_rows('section') ): the_row(); ?>
       <section class="projet-type__flow">
@@ -52,5 +56,7 @@ Template Name: Single Projets
       </section>
       <?php endwhile; endif; ?>
       <?php endwhile; endif; ?>
+
     </div>
-    <?php include('footer.php'); ?>
+
+    <?php get_footer(); ?>

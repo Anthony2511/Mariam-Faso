@@ -9,18 +9,21 @@ Template Name: Single Evenements
 <body class="voyages-page">
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
 
   <div class="single-event">
+
     <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="single-event__bloc">
       <?php $eventImage = get_field('single__image-event'); ?>
+
       <figure class="single-event__figure">
         <?php if( !empty($eventImage) ): ?>
           <?php $size = 'thumb-home-project';
                 $thumb = $eventImage['sizes'][ $size ]; ?>
           <img class="single-event__img" src="<?= $thumb; ?>" width="542" height="359" alt="<?= $eventImage['alt']; ?>" />
         <?php endif; ?>
+
       </figure>
       <p class="single-event__intro"><?= get_field('single__event-text'); ?></p>
     </div>
@@ -55,4 +58,5 @@ Template Name: Single Evenements
     </section>
     <?php endwhile; endif; ?>
   </div>
-  <?php include('footer.php'); ?>
+
+  <?php get_footer(); ?>

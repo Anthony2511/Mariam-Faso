@@ -9,15 +9,12 @@ Template Name: Page Contact
 <body class="contact-page">
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
   <?php include('navigation.php'); ?>
-  <?php include('header.php'); ?>
+  <?php get_header(); ?>
 
     <div class="contact">
       <section class="contact__intro">
         <h3 class="contact__title" aria-level="3" role="heading"><?= __('Besoin de réponse ?','ma'); ?></h3>
-        <p class="contact__text">
-          <?= get_field('contact__text-intro'); ?>
-
-        </p>
+        <p class="contact__text"><?= get_field('contact__text-intro'); ?></p>
       </section>
       <section class="contact__bloc">
         <div class="contact__form">
@@ -35,4 +32,5 @@ Template Name: Page Contact
         </section>
       </section>
     </div>
-    <?php include('footer.php'); ?>
+
+    <?php get_footer(); ?>
