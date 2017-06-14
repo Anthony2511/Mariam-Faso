@@ -152,8 +152,6 @@ html *
 
     box-sizing: border-box;
 
-    color: $cText-greyblue;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3661,6 +3659,129 @@ img
     {
         margin-top: 3.125em;
     }
+}
+.single-event
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 6.25em 1.25em;
+}
+.single-event__bloc
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    margin-bottom: 6.25em;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+}
+.single-event__container
+{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.single-event__intro
+{
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6em;
+
+    width: 50%;
+    margin-left: 2.777777777777778em;
+
+    color: #34495e;
+}
+.single-event__type
+{
+    padding: 1.875em 0;
+
+    text-align: center;
+
+    background-color: #3e586d;
+}
+.single-event__title
+{
+    font-family: 'crumble';
+    font-size: 2.1875em;
+    font-weight: bold;
+
+    margin-bottom: .571428571428571em;
+
+    color: #fff;
+}
+.single-event__item
+{
+    font-size: 1.25em;
+    font-weight: 300;
+
+    display: inline-block;
+
+    margin-right: 2.5em;
+
+    color: #fff;
+}
+.single-event__item:last-child
+{
+    margin-right: 0;
+}
+.single-event__form
+{
+    padding: 1.875em 0;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.single-event__champ
+{
+    display: inline-block;
+
+    margin-right: 1.25em;
+}
+.single-event__champ:last-child
+{
+    margin-right: 0;
+}
+.single-event__label
+{
+    font-size: 1.125em;
+    font-weight: bold;
+
+    color: #34495e;
+}
+.single-event__input
+{
+    padding: .625em;
+
+    border-bottom: .0625em solid #34495e;
+}
+.single-event__button
+{
+    font-size: 1.5625em;
+
+    margin-top: 1.2em;
+    padding: .4em 2em;
+
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    background-color: #34495e;
+}
+.single-event__button:hover
+{
+    -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+
+    background-color: #3e586d;
 }
 .about
 {

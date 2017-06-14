@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page Events
+Template Name: Page Evenements
 */
 ; ?>
 
@@ -24,8 +24,13 @@ Template Name: Page Events
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="page-event__bloc">
         <time class="page-event__date" datetime="2017-06-23">23 juin</time>
+        <?php $eventImage = get_field('single__image-event'); ?>
         <figure class="page-event__bloc-img">
-          <img  class="page-event__img" src="./images/imgEvent.jpg" width="960" height="720" alt="Souper spaghetti annuel">
+          <?php if( !empty($eventImage) ): ?>
+          <?php $size = 'thumb-events';
+                $thumb = $eventImage['sizes'][ $size ]; ?>
+          <img class="page-event__img" src="<?= $thumb; ?>" width="542" height="359" alt="<?= $eventImage['alt']; ?>" />
+          <?php endif; ?>
         </figure>
         <section class="page-event__infos">
           <h3 class="page-event__title" aria-level="3" role="heading"><?php the_title(); ?></h3>

@@ -1,0 +1,64 @@
+.single-event
+  max-width: s(1140,16)
+  margin: 0 auto
+  padding: s(100,16) s(20,16)
+  &__bloc
+    display: flex
+    flex-direction: row
+    margin-bottom: s(100,16)
+  &__container
+    max-width: 70%
+    margin: 0 auto
+  &__intro
+    width: 50%
+    font-size: s(18,16)
+    margin-left: s(50,18)
+    color: $darkBlue
+    line-height: 1.6em
+    font-weight: 300
+  &__type
+    background-color: $lightBlue
+    text-align: center
+    padding: s(30,16) 0
+  &__title
+    font-size: s(35,16)
+    font-family: 'crumble'
+    color: $white
+    font-weight: bold
+    margin-bottom: s(20,35)
+  &__item
+    display: inline-block
+    color: $white
+    font-size: s(20,16)
+    font-weight: 300
+    margin-right: s(50,20)
+    &:last-child
+      margin-right: 0
+  &__form
+    background-color: $white
+    padding: s(30,16) 0
+    text-align: center
+  &__champ
+    display: inline-block
+    margin-right: s(20,16)
+    &:last-child
+      margin-right: 0
+  &__label
+    color: $darkBlue
+    font-size: s(18,16)
+    font-weight: bold
+  &__input
+    border-bottom: s(1,16) solid $darkBlue
+    padding: s(10,16)
+  &__button
+    border: none
+    background-color: $darkBlue
+    color: $white
+    font-size: s(25,16)
+    padding: s(10,25) s(50,25)
+    margin-top: s(30,25)
+    border-radius: s(50,25)
+    transition: all 0.3s ease-in-out
+    &:hover
+      background-color: $lightBlue
+      transition: all 0.3s ease-in-out
