@@ -27,33 +27,32 @@ Template Name: Single Evenements
     <section class="single-event__container">
       <div class="single-event__infos">
         <div class="single-event__type">
-          <h3 class="single-event__title">Informations</h3>
+          <h3 class="single-event__title"><?= __('Informations','ma'); ?></h3>
           <ul class="single-event__list">
-            <li class="single-event__item single-event__item--lieu">Houmont</li>
-            <li class="single-event__item single-event__item--date">23 Juin 2017</li>
-            <li class="single-event__item single-event__item--time">17h - 22h</li>
+            <li class="single-event__item single-event__item--lieu"><?= get_field('single__event-lieu'); ?></li>
+            <li class="single-event__item single-event__item--date"><?= get_field('single__event-date'); ?></li>
+            <li class="single-event__item single-event__item--time"><?= get_field('single__event-heure'); ?></li>
           </ul>
         </div>
         <div class="single-event__form">
           <form class="single-event__inscription" action="index.html" method="post">
             <div class="single-event__champ">
-              <label class="single-event__label" for="name">Nom pour la réservation :</label>
+              <label class="single-event__label" for="name"><?= __('Nom pour la réservation :','ma'); ?></label>
               <input class="single-event__input" type="text" name="name" id="name" placeholder="Dupont Jean">
             </div>
             <div class="single-event__champ">
-              <label class="single-event__label" for="adult">Adulte(s) :</label>
+              <label class="single-event__label" for="adult"><?= __('Adulte(s) :','ma'); ?></label>
               <input class="single-event__input" type="number" min="1" max="10" step="1" name="adult" id="adult" placeholder="1">
             </div>
             <div class="single-event__champ">
-              <label class="single-event__label" for="children">Enfant(s) :</label>
+              <label class="single-event__label" for="children"><?= __('Enfant(s) :','ma'); ?></label>
               <input class="single-event__input" type="number" min="1" max="10" step="1" name="children" id="children" placeholder="1">
             </div>
-            <button class="single-event__button" type="button" name="button">Inscription</button>
+            <button class="single-event__button" type="button" name="button"><?= __('Inscription','ma'); ?></button>
           </form>
         </div>
       </div>
     </section>
-
     <?php endwhile; endif; ?>
   </div>
   <?php include('footer.php'); ?>

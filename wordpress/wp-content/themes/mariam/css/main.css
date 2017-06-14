@@ -1360,7 +1360,8 @@ img
 
         width: 100%;
     }
-    .page-event__bloc-img
+    .page-event__bloc-img,
+    .page-event__img
     {
         float: none;
 

@@ -23,7 +23,7 @@ Template Name: Page Evenements
     <div class="page-event">
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="page-event__bloc">
-        <time class="page-event__date" datetime="2017-06-23">23 juin</time>
+        <time class="page-event__date" datetime="2017-06-23"><?= get_field('single__event-date'); ?></time>
         <?php $eventImage = get_field('single__image-event'); ?>
         <figure class="page-event__bloc-img">
           <?php if( !empty($eventImage) ): ?>
@@ -35,7 +35,7 @@ Template Name: Page Evenements
         <section class="page-event__infos">
           <h3 class="page-event__title" aria-level="3" role="heading"><?php the_title(); ?></h3>
           <p class="page-event__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet, felis eget pretium condimentum, nisl turpis porta risus, sed iaculis lacus ligula eu augue. Suspendisse id interdum dolor. Integer fermentum a justo a commodo. (&hellip;)
+            <?= the_content(); ?>
           </p>
           <div class="page-event__inscriptions">
             <a class="page-event__button page-event__button--margin" href="<?php the_permalink(); ?>" title="Vers la page Inscriptions"><?= __('Inscription sur ', 'ma'); ?><span class="page-event__button-hover"><?= __('Mariam Faso', 'ma'); ?></span></a>

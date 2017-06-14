@@ -31,15 +31,16 @@ Template Name: Page d’accueil
       <?php endif; ?>
 		</figure>
 	</div>
+  <?php $posts = new WP_Query(['showpost' => 1, 'post_type' => 'evenements']); ?>
+  <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
 	<div class="event">
-    <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
 		<section class="event__bloc">
-			<h3 class="event__title" aria-level="3" role="heading">Dinner annuel Mariam Faso 24 Mars 2017</h3>
+			<h3 class="event__title" aria-level="3" role="heading"><?php the_title(); ?></h3>
 			<span class="event__text"><?= __('Notre prochain évènement','ma'); ?></span>
 			<a class="event__link" href="<?php the_permalink(); ?>" title="Vers la page évènements"><?= __('En savoir plus','ma'); ?></a>
 		</section>
-    <?php endwhile; endif; ?>
 	</div>
+  <?php endwhile; endif; ?>
 	<section class="actu">
 		<h3 class="actu__title" aria-level="3" role="heading"><?= __('Toute l\'actulité','ma'); ?></h3>
 		<div class="actu__bloc-gen">
