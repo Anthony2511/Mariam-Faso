@@ -1275,69 +1275,6 @@ img
 
     display: block;
 }
-.page-event__number-page
-{
-    font-size: 1.375em;
-
-    text-align: center;
-}
-.page-event__page
-{
-    margin: 0 .227272727272727em;
-    padding: .090909090909091em .454545454545455em;
-
-    border: .090909090909091em solid #34495e;
-    border-radius: .272727272727273em;
-}
-.page-event__page:hover
-{
-    color: #f1c40f;
-    background-color: #34495e;
-}
-.page-event__page--active
-{
-    color: #f1c40f;
-    background-color: #34495e;
-}
-.page-event__page--hellip
-{
-    border: none;
-}
-.page-event__page--hellip:hover
-{
-    color: #34495e;
-    background: none;
-}
-.page-event__arrowL:before
-{
-    font-family: 'icomoon';
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-
-    content: '\e913';
-    text-transform: none;
-
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.page-event__arrowR:after
-{
-    font-family: 'icomoon';
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-
-    content: '\e90e';
-    text-transform: none;
-
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 .page-event__button:hover .page-event__button-hover
 {
     color: #f1c40f;
@@ -6510,6 +6447,74 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object
     {
         left: 0;
     }
+}
+.wp-pagenavi
+{
+    font-size: 1.375em;
+
+    text-align: center;
+}
+.wp-pagenavi .pages
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+.wp-pagenavi .current
+{
+    margin-right: .909090909090909em;
+    padding: .090909090909091em .454545454545455em;
+
+    color: #f1c40f;
+    border: .090909090909091em solid #34495e;
+    border-radius: .272727272727273em;
+    background-color: #34495e;
+}
+.wp-pagenavi .page
+{
+    margin-right: .909090909090909em;
+    padding: .090909090909091em .454545454545455em;
+
+    color: #34495e;
+    border: .090909090909091em solid #34495e;
+    border-radius: .272727272727273em;
+}
+.wp-pagenavi .page:hover
+{
+    color: #f1c40f;
+    background-color: #34495e;
+}
+.wp-pagenavi .nextpostslink:after
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\e90e';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wp-pagenavi .previouspostslink:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .909090909090909em;
+
+    content: '\e913';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 body
 {

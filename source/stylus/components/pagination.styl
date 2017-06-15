@@ -1,0 +1,32 @@
+.wp-pagenavi
+  font-size: s(22,16)
+  text-align: center
+  .pages
+    hidden()
+
+  .current
+    background-color: $darkBlue
+    color: $darkYellow
+    border: s(2,22) solid $darkBlue
+    padding:  s(2,22) s(10,22)
+    border-radius: s(6,22)
+    margin-right: s(20,22)
+  .page
+    color: $darkBlue
+    border: s(2,22) solid $darkBlue
+    padding:  s(2,22) s(10,22)
+    border-radius: s(6,22)
+    margin-right: s(20,22)
+    &:hover
+      background-color: $darkBlue
+      color: $darkYellow
+
+
+
+  .nextpostslink
+    &:after
+      icon('iconArrowTwo')
+  .previouspostslink
+    &:before
+      icon('iconArrowPage')
+      margin-right: s(20,22)
