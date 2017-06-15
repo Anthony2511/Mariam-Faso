@@ -31,7 +31,7 @@ Template Name: Page d’accueil
       <?php endif; ?>
 		</figure>
 	</div>
-  <?php $posts = new WP_Query(['showpost' => 1, 'post_type' => 'evenements']); ?>
+  <?php $posts = new WP_Query( ['posts_per_page' => 1, 'post_type' => 'evenements'] ); ?>
   <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
 	<div class="event">
 		<section class="event__bloc">
@@ -40,6 +40,7 @@ Template Name: Page d’accueil
 			<a class="event__link" href="<?php the_permalink(); ?>" title="Vers la page évènements"><?= __('En savoir plus','ma'); ?></a>
 		</section>
 	</div>
+  <?php wp_reset_postdata(); ?>
   <?php endwhile; endif; ?>
 	<section class="actu">
 		<h3 class="actu__title" aria-level="3" role="heading"><?= __('Toute l\'actulité','ma'); ?></h3>
