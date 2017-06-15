@@ -38,21 +38,7 @@ Template Name: Single Evenements
           </ul>
         </div>
         <div class="single-event__form">
-          <form class="single-event__inscription" action="index.html" method="post">
-            <div class="single-event__champ">
-              <label class="single-event__label" for="name"><?= __('Nom pour la réservation :','ma'); ?></label>
-              <input class="single-event__input" type="text" name="name" id="name" placeholder="Dupont Jean">
-            </div>
-            <div class="single-event__champ">
-              <label class="single-event__label" for="adult"><?= __('Adulte(s) :','ma'); ?></label>
-              <input class="single-event__input" type="number" min="1" max="10" step="1" name="adult" id="adult" placeholder="1">
-            </div>
-            <div class="single-event__champ">
-              <label class="single-event__label" for="children"><?= __('Enfant(s) :','ma'); ?></label>
-              <input class="single-event__input" type="number" min="1" max="10" step="1" name="children" id="children" placeholder="1">
-            </div>
-            <button class="single-event__button" type="button" name="button"><?= __('Inscription','ma'); ?></button>
-          </form>
+          <?= do_shortcode('[contact-form-7 id="246" title="Inscription events"]'); ?>
         </div>
       </div>
     </section>

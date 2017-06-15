@@ -4,7 +4,7 @@
   margin: 0 auto
   text-align: center
   &__bloc-gen
-    clearfix()
+    display: flex
   &__title
     font-size: s(50,16)
     font-family: 'crumble'
@@ -18,19 +18,12 @@
       height: s(5,50)
       background-color: $darkBlue
       margin: s(20,50) auto
-  &__bloc-left
-    float: left
-    width: 47.5%
-  &__bloc-right
-    float: right
-    width: 47.5%
   &__img-title
     color: $white
-    font-size: s(22,16)
+    font-size: s(18,16)
     font-weight: bold
-    position: absolute
+    position: relative
     top: 40%
-    left: 20%
     z-index: 50
     opacity: 0
     transition: 0.3s ease-in-out
@@ -62,14 +55,14 @@
     left: 0
     bottom: 0
     top: 0
-  &__img-right
-    height: s(621,16)
-    display: block
-  &__img
-    display: block
+
   &__bloc
     position: relative
     cursor: pointer
+    display: inline-block
+    margin-right: s(20,16)
+    &:last-child
+      margin-right: 0
 
 .actu__bloc-left .actu__bloc:first-child
   margin-bottom: s(40,16)

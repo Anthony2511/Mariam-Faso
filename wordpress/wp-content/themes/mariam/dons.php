@@ -37,4 +37,4 @@ Template Name: Page Dons
       </section>
     </div>
 
-    <?php get_footer(); ?>
+    <?php include('footer.php');  ?>

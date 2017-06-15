@@ -6,7 +6,7 @@ Template Name: Page Evenements
 
 <?php if(is_page()){
     query_posts([
-        'posts_per_page' => 3,
+        'posts_per_page' => 2,
         'orderby' => 'date',
         'order' => 'DESC',
         'post_type' => 'evenements',
@@ -47,14 +47,7 @@ Template Name: Page Evenements
       </div>
       <?php endwhile; endif; ?>
 
-      <div class="page-event__number-page">
-        <a class="page-event__arrowL" href="#" title="Vers la page précédente"></a>
-        <a class="page-event__page page-event__page--active" href="#" title="Vers la page 1"><span>1</span></a>
-        <a class="page-event__page" href="#" title="Vers la page 2"><span>2</span></a>
-        <a class="page-event__page page-event__page--hellip" href="#" title="Vers la page..."><span>&hellip;</span></a>
-        <a class="page-event__page" href="#" title="Vers la page 5"><span>5</span></a>
-        <a class="page-event__arrowR" href="#" title="Vers la page suivante"></a>
-      </div>
+      <?php wp_pagenavi(); ?>
     </div>
 
-    <?php get_footer(); ?>
+    <?php include('footer.php');  ?>

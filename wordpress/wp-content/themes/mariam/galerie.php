@@ -32,4 +32,4 @@ Template Name: Page Galerie
 
     </div>
 
-    <?php get_footer(); ?>
+    <?php include('footer.php');  ?>

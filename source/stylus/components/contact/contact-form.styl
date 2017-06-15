@@ -17,10 +17,10 @@
     padding: s(50,20)
     position: relative
   &__form-label
-    display: block
     font-weight: 300
   &__form-infos
     margin-bottom: s(50,16)
+    position: relative
   &__form-bloc
     column-count: 2
     column-gap: s(50,16)
@@ -33,8 +33,8 @@
     border: none
     border-bottom: s(2,16) solid $darkBlue
     padding: s(10,16) 0
-    margin-bottom: s(50,16)
     width: 60%
+    display: block
   &__infos
     position: absolute
     top: 0
@@ -53,6 +53,7 @@
     background-color: $darkBlue
     font-size: s(22,20)
     padding: s(15,22) s(70,22)
+    margin-top: s(50,22)
   &__infos-text
     font-size: s(20,16)
     font-weight: 400
@@ -70,6 +71,27 @@
       &:before
         icon('iconMailContact')
         margin-right: s(20,20)
+
+.screen-reader-response
+  display: none
+
+.wpcf7-not-valid-tip
+  font-size: s(14,20)
+  color: $red
+  font-weight: 500
+  position: absolute
+  bottom s(-20,14)
+  left: 0
+
+.wpcf7-response-output.wpcf7-validation-errors
+  display none
+
+.wpcf7-response-output.wpcf7-mail-sent-ok
+  color: $green
+  font-size: s(16,20)
+  font-weight: 500
+  margin-top: s(20,16)
+
 
 @media screen and (max-width:1024px)
   .contact
