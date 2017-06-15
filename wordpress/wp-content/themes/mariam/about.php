@@ -38,6 +38,15 @@ Template Name: Page A Propos
       <h3 class="about__title" aria-level="3" role="heading"><?= get_field('about__title-content'); ?></h3>
       <p class="about__text about__text--columns"><?= get_field('about__text-content'); ?></p>
     </section>
+    <section class="about__presse">
+      <h3 class="about__title" aria-level="3" role="heading">On parle de nous</h3>
+      <?php if( have_rows('presse') ): ?>
+      <?php while( have_rows('presse') ): the_row(); ?>
+      <div class="about__presse-bloc">
+        <a class="about__presse-link" href="<?= the_sub_field('presse__link'); ?>"><?= the_sub_field('presse__text'); ?></a>
+      </div>
+      <?php endwhile; endif; ?>
+    </section>
     <div class="about__quotation">
       <section class="about__quotation-bloc">
         <h3 class="hidden" aria-level="3" role="heading"><?= __('Citation','ma'); ?></h3>
@@ -57,4 +66,4 @@ Template Name: Page A Propos
     </section>
   </div>
 
-	<?php get_footer(); ?>
+	<?php include('footer.php');  ?>

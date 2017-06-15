@@ -59,4 +59,4 @@ Template Name: Single Evenements
     <?php endwhile; endif; ?>
   </div>
 
-  <?php get_footer(); ?>
+  <?php include('footer.php'); ?>

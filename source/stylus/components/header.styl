@@ -1,12 +1,5 @@
 .header-page
   position: relative
-  &--about
-    background url('../images/header-about.jpg') no-repeat top center/cover
-    background-position: 50% 30%
-  &--actu
-    background url('../images/imgEvent.jpg') no-repeat top center/cover
-    background-position: 50% 20%
-
   &__bloc-header
     text-align: center
     padding: s(50,16)
@@ -74,6 +67,10 @@
 
 .events-page .header-page
   background url('../images/header-event.jpg') no-repeat top center/cover
+
+.actu-page .header-page
+  background url('../images/imgEvent.jpg') no-repeat top center/cover
+  background-position: 50% 20%
 
 @media screen and (max-width: 504px)
   .header-page

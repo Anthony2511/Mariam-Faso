@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9i5ks1');
-  src:  url('fonts/icomoon.eot?9i5ks1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9i5ks1') format('truetype'),
-    url('fonts/icomoon.woff?9i5ks1') format('woff'),
-    url('fonts/icomoon.svg?9i5ks1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?la0r6h');
+  src:  url('fonts/icomoon.eot?la0r6h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?la0r6h') format('truetype'),
+    url('fonts/icomoon.woff?la0r6h') format('woff'),
+    url('fonts/icomoon.svg?la0r6h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,66 +24,75 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-iconFly:before {
+.icon-iconWorldLink:before {
   content: "\e900";
 }
-.icon-iconQuotation:before {
+.icon-iconLieuInscription:before {
   content: "\e901";
 }
-.icon-iconParticipate:before {
+.icon-iconTimeInscription:before {
   content: "\e902";
 }
-.icon-iconMore:before {
+.icon-iconFly:before {
   content: "\e903";
 }
-.icon-iconMail:before {
+.icon-iconQuotation:before {
   content: "\e904";
 }
-.icon-iconHome:before {
+.icon-iconParticipate:before {
   content: "\e905";
 }
-.icon-iconDons:before {
+.icon-iconMore:before {
   content: "\e906";
 }
-.icon-iconDonner:before {
+.icon-iconMail:before {
   content: "\e907";
 }
-.icon-iconTelContact:before {
+.icon-iconHome:before {
   content: "\e908";
 }
-.icon-iconMailContact:before {
+.icon-iconDons:before {
   content: "\e909";
 }
-.icon-iconLieuContact:before {
+.icon-iconDonner:before {
   content: "\e90a";
 }
-.icon-iconArrowTwo:before {
+.icon-iconTelContact:before {
   content: "\e90b";
 }
-.icon-iconDonSolidarit:before {
+.icon-iconMailContact:before {
   content: "\e90c";
 }
-.icon-iconDateTime:before {
+.icon-iconLieuContact:before {
   content: "\e90d";
 }
-.icon-iconConstruire:before {
+.icon-iconArrowTwo:before {
   content: "\e90e";
 }
-.icon-iconCalendar:before {
+.icon-iconDonSolidarit:before {
   content: "\e90f";
 }
-.icon-iconArrowPage:before {
+.icon-iconDateTime:before {
   content: "\e910";
 }
-.icon-iconArrowFil:before {
+.icon-iconConstruire:before {
   content: "\e911";
 }
-.icon-iconApprendre:before {
+.icon-iconCalendar:before {
   content: "\e912";
 }
-.icon-iconDonPartage:before {
+.icon-iconArrowPage:before {
   content: "\e913";
 }
-.icon-iconDonAvenir:before {
+.icon-iconArrowFil:before {
   content: "\e914";
+}
+.icon-iconApprendre:before {
+  content: "\e915";
+}
+.icon-iconDonPartage:before {
+  content: "\e916";
+}
+.icon-iconDonAvenir:before {
+  content: "\e917";
 }

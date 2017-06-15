@@ -193,8 +193,8 @@ img
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/icomoon/icomoon.eot?9i5ks1');
-    src: url('../fonts/icomoon/icomoon.eot?9i5ks1#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?9i5ks1') format('truetype'), url('../fonts/icomoon/icomoon.woff?9i5ks1') format('woff'), url('../fonts/icomoon/icomoon.svg?9i5ks1#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?la0r6h');
+    src: url('../fonts/icomoon/icomoon.eot?la0r6h#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?la0r6h') format('truetype'), url('../fonts/icomoon/icomoon.woff?la0r6h') format('woff'), url('../fonts/icomoon/icomoon.svg?la0r6h#icomoon') format('svg');
 }
 @font-face
 {
@@ -301,7 +301,7 @@ img
 
     display: block;
 
-    content: '\e906';
+    content: '\e909';
     -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
     -webkit-transform: translateY(50px);
@@ -552,7 +552,7 @@ img
 
     margin-right: .625em;
 
-    content: '\e902';
+    content: '\e905';
     -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
     text-transform: none;
@@ -894,7 +894,7 @@ img
 
     margin-top: 1.25em;
 
-    content: '\e903';
+    content: '\e906';
     text-transform: none;
 
     speak: none;
@@ -1213,7 +1213,7 @@ img
 
     margin-bottom: .333333333333333em;
 
-    content: '\e90f';
+    content: '\e912';
     text-transform: none;
 
     speak: none;
@@ -1316,7 +1316,7 @@ img
     font-variant: normal;
     line-height: 1;
 
-    content: '\e910';
+    content: '\e913';
     text-transform: none;
 
     speak: none;
@@ -1331,7 +1331,7 @@ img
     font-variant: normal;
     line-height: 1;
 
-    content: '\e90b';
+    content: '\e90e';
     text-transform: none;
 
     speak: none;
@@ -1482,7 +1482,7 @@ img
 
     margin-right: 1.25em;
 
-    content: '\e90d';
+    content: '\e910';
     text-transform: none;
 
     speak: none;
@@ -1843,7 +1843,7 @@ img
 
     margin-right: 1em;
 
-    content: '\e90a';
+    content: '\e90d';
     text-transform: none;
 
     speak: none;
@@ -1860,7 +1860,7 @@ img
 
     margin-right: 1em;
 
-    content: '\e908';
+    content: '\e90b';
     text-transform: none;
 
     speak: none;
@@ -1877,7 +1877,7 @@ img
 
     margin-right: 1em;
 
-    content: '\e909';
+    content: '\e90c';
     text-transform: none;
 
     speak: none;
@@ -2039,7 +2039,7 @@ img
 
     margin-bottom: 1em;
 
-    content: '\e913';
+    content: '\e916';
     text-transform: none;
 
     speak: none;
@@ -2059,7 +2059,7 @@ img
 
     margin-bottom: 1em;
 
-    content: '\e90c';
+    content: '\e90f';
     text-transform: none;
 
     speak: none;
@@ -2079,7 +2079,7 @@ img
 
     margin-bottom: 1em;
 
-    content: '\e914';
+    content: '\e917';
     text-transform: none;
 
     speak: none;
@@ -2347,7 +2347,7 @@ img
 
     display: inline-block;
 
-    content: '\e900';
+    content: '\e903';
     -webkit-transform: translateX(-150px);
         -ms-transform: translateX(-150px);
             transform: translateX(-150px);
@@ -3045,7 +3045,7 @@ img
 
     margin-left: .8em;
 
-    content: '\e911';
+    content: '\e914';
     -webkit-transition: all .5s cubic-bezier(0, .42, .095, 1.595);
             transition: all .5s cubic-bezier(0, .42, .095, 1.595);
     text-transform: none;
@@ -3558,7 +3558,7 @@ img
 
     margin-right: 1.666666666666667em;
 
-    content: '\e911';
+    content: '\e914';
     text-transform: none;
 
     speak: none;
@@ -3730,6 +3730,60 @@ img
 .single-event__item:last-child
 {
     margin-right: 0;
+}
+.single-event__item--lieu:before
+{
+    font-family: 'icomoon';
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .5em;
+
+    content: '\e901';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.single-event__item--date:before
+{
+    font-family: 'icomoon';
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .5em;
+
+    content: '\e912';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.single-event__item--time:before
+{
+    font-family: 'icomoon';
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .5em;
+
+    content: '\e902';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .single-event__form
 {
@@ -3907,6 +3961,61 @@ img
     margin: 0 auto;
     padding: 6.25em 1.25em;
 }
+.about__presse
+{
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 0 1.25em 6.25em;
+}
+.about__presse-link
+{
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.6em;
+
+    display: block;
+
+    margin-bottom: 1em;
+
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #34495e;
+}
+.about__presse-link:hover:before
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #e5e5e5;
+}
+.about__presse-link:before
+{
+    font-family: 'icomoon';
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .4em;
+
+    content: '\e900';
+    text-transform: none;
+
+    color: #34495e;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.about__presse-link:hover .about__presse-link:before
+{
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+
+    color: #e5e5e5;
+}
 @media screen and (max-width: 1024px)
 {
     .about__bloc-right,
@@ -3940,6 +4049,7 @@ img
         margin: 0 auto;
 
         text-align: left;
+        text-align: center;
     }
     .about__text--columns
     {
@@ -3982,6 +4092,10 @@ img
     .about__bloc-info
     {
         left: 17.5%;
+    }
+    .about__presse-link
+    {
+        font-size: 1.125em;
     }
 }
 @media screen and (max-width: 450px)
@@ -4061,7 +4175,7 @@ img
 
     margin-right: .857142857142857em;
 
-    content: '\e901';
+    content: '\e904';
     text-transform: none;
 
     color: #f1c40f;
@@ -4169,7 +4283,7 @@ img
 
     margin-bottom: .4em;
 
-    content: '\e912';
+    content: '\e915';
     text-transform: none;
 
     speak: none;
@@ -4189,7 +4303,7 @@ img
 
     margin-bottom: .4em;
 
-    content: '\e90e';
+    content: '\e911';
     text-transform: none;
 
     speak: none;
@@ -4209,7 +4323,7 @@ img
 
     margin-bottom: .4em;
 
-    content: '\e907';
+    content: '\e90a';
     text-transform: none;
 
     speak: none;
@@ -4357,7 +4471,7 @@ img
 
     margin-right: 1em;
 
-    content: '\e904';
+    content: '\e907';
     text-transform: none;
 
     speak: none;
@@ -4389,7 +4503,7 @@ img
 
     display: block;
 
-    content: '\e906';
+    content: '\e909';
     -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
     -webkit-transform: translateY(40px);
@@ -4673,7 +4787,7 @@ img
 }
 .with-menu .nav__bloc
 {
-    height: 33.75em;
+    height: 38.125em;
 
     -webkit-transition: height .5s ease;
             transition: height .5s ease;
@@ -4712,9 +4826,9 @@ img
 {
     .nav__item
     {
-        font-size: .9em;
+        font-size: .8em;
 
-        margin-right: 1.111111111111111em;
+        margin-right: 1.25em;
     }
 }
 @media screen and (max-width: 1024px)
@@ -4796,16 +4910,6 @@ img
 .header-page
 {
     position: relative;
-}
-.header-page--about
-{
-    background: url('../images/header-about.jpg') no-repeat top center/cover;
-    background-position: 50% 30%;
-}
-.header-page--actu
-{
-    background: url('../images/imgEvent.jpg') no-repeat top center/cover;
-    background-position: 50% 20%;
 }
 .header-page__bloc-header
 {
@@ -4903,6 +5007,11 @@ img
 {
     background: url('../images/header-event.jpg') no-repeat top center/cover;
 }
+.actu-page .header-page
+{
+    background: url('../images/imgEvent.jpg') no-repeat top center/cover;
+    background-position: 50% 20%;
+}
 @media screen and (max-width: 504px)
 {
     .header-page__title
@@ -4968,7 +5077,7 @@ img
 
     margin-right: 1.25em;
 
-    content: '\e905';
+    content: '\e908';
     text-transform: none;
 
     speak: none;
@@ -4986,7 +5095,7 @@ img
 
     margin-right: 1.666666666666667em;
 
-    content: '\e90b';
+    content: '\e90e';
     text-transform: none;
 
     speak: none;

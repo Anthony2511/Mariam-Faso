@@ -67,6 +67,31 @@
     max-width: s(1140,16)
     margin: 0 auto
     padding: s(100,16) s(20,16)
+  &__presse
+    max-width: s(1140,16)
+    margin: 0 auto
+    padding: 0 s(20,16) s(100,16)
+  &__presse-link
+    display: block
+    font-size: s(20,16)
+    color: $darkBlue
+    font-weight: 300
+    margin-bottom: s(20,20)
+    transition: 0.3s ease-in-out
+    line-height: 1.6em
+    &:hover
+      &:before
+        color: $grey
+        transition: 0.3s ease-in-out
+    &:before
+      icon('iconWorldLink')
+      color: $darkBlue
+      font-size: s(25,16)
+      margin-right: s(10,25)
+
+.about__presse-link:hover .about__presse-link:before
+  color: $grey
+  transition: 0.3s ease-in-out
 
 @media screen and (max-width: 1024px)
   .about
@@ -89,6 +114,7 @@
       text-align: left
       &--columns
         column-count: 1
+      text-align: center
 
 @media screen and (max-width: 760px)
   .about
@@ -113,6 +139,8 @@
   .about
     &__bloc-info
       left: 17.5%
+    &__presse-link
+      font-size: s(18,16)
 
 @media screen and (max-width: 450px)
   .about
