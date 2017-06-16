@@ -55,7 +55,11 @@
     left: 0
     bottom: 0
     top: 0
-
+    width: 100%
+    height: 100%
+    display: block
+    & span
+      hidden()
   &__bloc
     position: relative
     cursor: pointer
@@ -72,55 +76,31 @@
 .actu__bloc:hover .actu__img-title
   opacity: 1
   transition: 0.3s ease-in-out
-
-@media screen and ( max-width:974px)
-  .actu__bloc-left .actu__bloc:last-child
-    margin-bottom: s(40,16)
+@media screen and ( max-width:1024px)
   .actu
-    &__bloc-left
-      float: none
+    &__bloc-gen
+      display: flex
+      flex-direction: column
+    &__bloc
+      margin-right: 0
+      margin-bottom: s(50,16)
+    &__img
       width: 100%
       height: auto
-    &__bloc-right
-      float: none
-      width: 100%
-      height: auto
-    &__img-right
-      height: auto
-@media screen and ( max-width:444px)
+      display: block
+    &__img-title
+      font-size: s(25,16)
+      top: 45%
+
+@media screen and ( max-width:532px)
   .actu
     &__img-title
       font-size: s(20,16)
-      left: s(50,20)
-      &:after
-        margin-top: s(10,20)
-
-@media screen and ( max-width:395px)
-  .actu
-    &__img-title
-      font-size: s(20,16)
-      left: s(30,20)
-@media screen and ( max-width:375px)  // Iphone 6
-  .actu
-    &__title
-      font-size: s(35,16)
-
-@media screen and ( max-width:369px)
-  .actu
-    &__img-title
-      font-size: s(18,16)
     &__link
-      font-size: s(20,16)
+      font-size: s(18,16)
 
-@media screen and ( max-width:352px)
+@media screen and ( max-width:443px)
   .actu
     &__img-title
       font-size: s(16,16)
-      left: s(40,16)
-    &__link
-      font-size: s(18,16)
-
-@media screen and ( max-width:309px)
-  .actu
-    &__img-title
-      font-size: s(14,16)
+      top: 40%

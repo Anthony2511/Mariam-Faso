@@ -7,7 +7,7 @@ Template Name: Page d’accueil
 <?php include('head.php'); ?>
 
 <body>
-  <h1 class="hidden" aria-level="1" role="heading"><?= __('Mariam Faso','ma'); ?></h1>
+  <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
 	<?php include('navigation.php'); ?>
 	<?php include('header-home.php'); ?>
 
@@ -23,13 +23,13 @@ Template Name: Page d’accueil
 			<a class="projet__link" href="<?php the_permalink(111); ?>" title="Vers la page Projets"><?= __('Participer','ma'); ?></a>
 		</section>
     <?php $homeProject = get_field('home__project'); ?>
-		<figure class="projet__bloc-img">
-      <?php if( !empty($homeProject) ): ?>
-        <?php $size = 'thumb-home-project';
-              $thumb = $homeProject['sizes'][ $size ]; ?>
-        <img class="projet__img" src="<?= $thumb; ?>" width="756" height="501" alt="<?= $homeProject['alt']; ?>" />
-      <?php endif; ?>
-		</figure>
+  		<figure class="projet__bloc-img">
+        <?php if( !empty($homeProject) ): ?>
+          <?php $size = 'thumb-home-project';
+                $thumb = $homeProject['sizes'][ $size ]; ?>
+          <img class="projet__img" src="<?= $thumb; ?>" width="756" height="501" alt="<?= $homeProject['alt']; ?>" />
+        <?php endif; ?>
+  		</figure>
 	</div>
   <?php $posts = new WP_Query( ['posts_per_page' => 1, 'post_type' => 'evenements'] ); ?>
   <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
@@ -49,22 +49,22 @@ Template Name: Page d’accueil
         <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
 				<div class="actu__bloc">
           <?php $actuImages = get_field('event__img'); ?>
-					<figure class="actu__bloc-img">
-            <?php if( !empty($actuImages) ): ?>
-              <?php $size = 'thumb-events';
-                    $thumb = $actuImages['sizes'][ $size ]; ?>
-              <img class="actu__img" src="<?= $thumb; ?>" width="440" height="330" alt="<?= $actuImages['alt']; ?>"/>
-            <?php endif; ?>
-					</figure>
+  					<figure class="actu__bloc-img">
+              <?php if( !empty($actuImages) ): ?>
+                <?php $size = 'thumb-events';
+                      $thumb = $actuImages['sizes'][ $size ]; ?>
+                <img class="actu__img" src="<?= $thumb; ?>" width="440" height="330" alt="<?= $actuImages['alt']; ?>"/>
+              <?php endif; ?>
+  					</figure>
 					<section class="actu__opacity">
 						<h4 class="actu__img-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
 					</section>
-					<a class="actu__bloc-link" href="<?php the_permalink(); ?>" title="Vers l'article : <?php the_title(); ?>"></a>
+					<a class="actu__bloc-link" href="<?php the_permalink(); ?>" title="Vers l'article : <?php the_title(); ?>"><span><?= __('Lien vers l\'article','ma'); ?></span></a>
 				</div>
         <?php wp_reset_postdata(); ?>
         <?php endwhile; endif; ?>
 		  </div>
-		<a class="actu__link" href="<?php the_permalink(211); ?>" title="Vers la page Actualités"><?= __('Voir plus d\'articles','ma'); ?></a>
+	  <a class="actu__link" href="<?php the_permalink(211); ?>" title="Vers la page Actualités"><?= __('Voir plus d\'articles','ma'); ?></a>
 	</section>
 	<section class="partenaires">
 		<h3 class="partenaires__title" aria-level="3" role="heading"><?= __('Nos partenaires','ma'); ?></h3>

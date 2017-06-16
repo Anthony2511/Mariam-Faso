@@ -927,6 +927,17 @@ img
     right: 0;
     bottom: 0;
     left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+.actu__bloc-link span
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
 }
 .actu__bloc
 {
@@ -960,89 +971,58 @@ img
 
     opacity: 1;
 }
-@media screen and (max-width: 974px)
+@media screen and (max-width: 1024px)
 {
-    .actu__bloc-left .actu__bloc:last-child
+    .actu__bloc-gen
     {
-        margin-bottom: 2.5em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
     }
-    .actu__bloc-left
+    .actu__bloc
     {
-        float: none;
+        margin-right: 0;
+        margin-bottom: 3.125em;
+    }
+    .actu__img
+    {
+        display: block;
 
         width: 100%;
         height: auto;
     }
-    .actu__bloc-right
+    .actu__img-title
     {
-        float: none;
+        font-size: 1.5625em;
 
-        width: 100%;
-        height: auto;
-    }
-    .actu__img-right
-    {
-        height: auto;
+        top: 45%;
     }
 }
-@media screen and (max-width: 444px)
+@media screen and (max-width: 532px)
 {
     .actu__img-title
     {
         font-size: 1.25em;
-
-        left: 2.5em;
-    }
-    .actu__img-title:after
-    {
-        margin-top: .5em;
-    }
-}
-@media screen and (max-width: 395px)
-{
-    .actu__img-title
-    {
-        font-size: 1.25em;
-
-        left: 1.5em;
-    }
-}
-@media screen and (max-width: 375px)
-{
-    .actu__title
-    {
-        font-size: 2.1875em;
-    }
-}
-@media screen and (max-width: 369px)
-{
-    .actu__img-title
-    {
-        font-size: 1.125em;
     }
     .actu__link
     {
-        font-size: 1.25em;
+        font-size: 1.125em;
     }
 }
-@media screen and (max-width: 352px)
+@media screen and (max-width: 443px)
 {
     .actu__img-title
     {
         font-size: 1em;
 
-        left: 2.5em;
-    }
-    .actu__link
-    {
-        font-size: 1.125em;
-    }
-}
-@media screen and (max-width: 309px)
-{
-    .actu__img-title
-    {
-        font-size: .875em;
+        top: 40%;
     }
 }
 .partenaires
@@ -4598,6 +4578,12 @@ img
     clear: both;
 
     content: '';
+}
+.nav__bloc-link span
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
 }
 .nav__menu
 {
