@@ -3901,6 +3901,79 @@ img
 
     background-color: #3e586d;
 }
+@media screen and (max-width: 1035px)
+{
+    .single-event__champ
+    {
+        display: block;
+
+        margin-bottom: 1.875em;
+    }
+    .single-event__type
+    {
+        padding: 1.875em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .single-event__bloc
+    {
+                flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .single-event__img
+    {
+        width: 100%;
+        margin-bottom: 3.125em;
+    }
+    .single-event__intro
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 819px)
+{
+    .single-event__item
+    {
+        font-size: 1.125em;
+
+        display: block;
+
+        margin-right: 0;
+        margin-bottom: 1.111111111111111em;
+    }
+    .single-event__label
+    {
+        font-size: 1em;
+    }
+    .single-event__input
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+    .wpcf7-form.demo
+    {
+        padding: 0 1.25em;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .single-event__button
+    {
+        font-size: 1.125em;
+
+        width: 100%;
+        padding: .277777777777778em 2.222222222222222em;
+
+        text-align: center;
+    }
+}
 .about
 {
     max-width: 100%;

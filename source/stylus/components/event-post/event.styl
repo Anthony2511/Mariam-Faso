@@ -79,3 +79,45 @@
     &:hover
       background-color: $lightBlue
       transition: all 0.3s ease-in-out
+
+@media screen and (max-width:1035px)
+  .single-event
+    &__champ
+      display: block
+      margin-bottom: s(30,16)
+    &__type
+      padding: s(30,16) s(20,16)
+
+@media screen and (max-width:1024px)
+  .single-event
+    &__bloc
+      flex-direction: column
+    &__img
+      width: 100%
+      margin-bottom: s(50,16)
+    &__intro
+      width: 100%
+      margin-left: 0
+
+@media screen and (max-width:819px)
+  .single-event
+    &__item
+      display: block
+      margin-right: 0
+      font-size: s(18,16)
+      margin-bottom: s(20,18)
+    &__label
+      font-size: s(16,16)
+    &__input
+      width: 100%
+      text-align: center
+  .wpcf7-form.demo
+    padding: 0 s(20,16)
+
+@media screen and (max-width:500px)
+  .single-event
+    &__button
+      width: 100%
+      font-size: s(18,16)
+      padding: s(5,18) s(40,18)
+      text-align: center
