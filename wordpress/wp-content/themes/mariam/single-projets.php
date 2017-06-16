@@ -59,4 +59,4 @@ Template Name: Single Projets
 
     </div>
 
-    <?php get_footer(); ?>
+    <?php include('footer.php'); ?>

@@ -25,7 +25,7 @@ Template Name: Page Evenements
 
       <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
       <div class="page-event__bloc">
-        <time class="page-event__date" datetime="<?php the_time(); ?>"><?= get_field('single__event-date'); ?></time>
+        <span class="page-event__date"><?= get_field('single__event-date'); ?></span>
         <?php $eventImage = get_field('single__image-event'); ?>
         <figure class="page-event__bloc-img">
           <?php if( !empty($eventImage) ): ?>
@@ -37,10 +37,10 @@ Template Name: Page Evenements
         <section class="page-event__infos">
           <h3 class="page-event__title" aria-level="3" role="heading"><?php the_title(); ?></h3>
           <p class="page-event__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula laoreet, efficitur nisi ut, rutrum lectus. Sed sed rhoncus ante. Nulla dictum, lacus sit amet suscipit congue, mauris arcu porta magna, et dapibus urna arcu ut libero. Proin hendrerit, dolor et
+            <?= get_field('single__event-intro'); ?>
           </p>
           <div class="page-event__inscriptions">
-            <a class="page-event__button page-event__button--margin" href="<?php the_permalink(); ?>" title="Vers la page Inscriptions"><?= __('Inscription sur ', 'ma'); ?><span class="page-event__button-hover"><?= __('Mariam Faso', 'ma'); ?></span></a>
+            <a class="page-event__button page-event__button--margin" href="<?php the_permalink(); ?>" title="Vers la page de l'évènement : <?php the_title(); ?>"><?= __('Inscription sur ', 'ma'); ?><span class="page-event__button-hover"><?= __('Mariam Faso', 'ma'); ?></span></a>
             <a class="page-event__button" href="https://www.facebook.com/MariamFaso/?fref=ts" title="Vers la page Facebook Mariam Faso"><?= __('Inscription sur', 'ma'); ?> <span class="page-event__button-hover"><?= __('Facebook', 'ma'); ?></span></a>
           </div>
         </section>

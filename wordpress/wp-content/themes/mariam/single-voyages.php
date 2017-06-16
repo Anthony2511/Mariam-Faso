@@ -66,4 +66,4 @@ Template Name: Single Voyages
 
   </div>
 
-  <<?php get_footer(); ?>
+  <?php include('footer.php'); ?>

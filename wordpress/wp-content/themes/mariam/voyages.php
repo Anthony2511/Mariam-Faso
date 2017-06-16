@@ -23,7 +23,6 @@ Template Name: Page Voyages
 
   <div class="voyages">
     <div class="voyages__futur">
-      <a class="voyages__futur__bloc-link" href="participer.html">
         <h3 class="voyages__title" aria-level="3" role="heading"><?= __('Notre prochain voyage','ma'); ?></h3>
         <?php $voyagesImage = get_field('voyages__futur-image'); ?>
         <figure class="voyages__futur-figure">
@@ -39,9 +38,8 @@ Template Name: Page Voyages
           <h4 class="voyages__futur-title" aria-level="4" role="heading"><?= get_field('voyages__futur-title'); ?></h4>
           <span class="voyages__futur-date"><?= get_field('voyages__futur-date'); ?></span>
           <p class="voyages__futur-text"><?= get_field('voyages__futur-text'); ?></p>
-          <a class="voyages__futur-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage"><span class="voyages__futur-span"><?= __('Participer','ma'); ?></span></a>
+          <a class="voyages__futur-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage : <?php the_title(); ?>"><span class="voyages__futur-span"><?= __('Participer','ma'); ?></span></a>
         </section>
-      </a>
     </div>
     <div class="voyages__finish">
       <h3 class="voyages__title voyages__title--center" aria-level="3" role="heading"><?= __('Voyages terminés','ma'); ?></h3>
@@ -49,7 +47,6 @@ Template Name: Page Voyages
 
         <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="voyages__finish-list">
-          <a class="voyages__finish__bloc-link" href="<?php the_permalink(); ?>">
             <?php $voyageFinish = get_field('single__voyage-image'); ?>
             <figure class="voyages__finish-figure">
 
@@ -64,9 +61,8 @@ Template Name: Page Voyages
               <h4 class="voyages__finish-title" aria-level="4" role="heading"><?php the_title(); ?></h4>
               <span class="voyages__finish-date"><?= get_field('single__date'); ?></span>
               <p class="voyages__finish-text"><?= get_field('single__description'); ?></p>
-              <a class="voyages__finish-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage"><?= __('En savoir plus','ma'); ?></a>
+              <a class="voyages__finish-link" href="<?php the_permalink(); ?>" title="Vers la page du voyage : <?php the_title(); ?>"><?= __('En savoir plus','ma'); ?></a>
             </section>
-          </a>
         </div>
         <?php endwhile; endif; ?>
 
@@ -74,4 +70,4 @@ Template Name: Page Voyages
     </div>
   </div>
 
-  <?php get_footer(); ?>
+  <?php include('footer.php'); ?>

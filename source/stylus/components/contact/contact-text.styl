@@ -32,25 +32,30 @@
   .contact
     &__intro
       text-align: center
+      & p
+        width: 100%
+        margin: 0 auto
+        text-align: center
     &__title
       &:after
         margin: 0 auto
-    &__text
-      width: 100%
+
 
 @media screen and (max-width:619px)
   .contact
     &__title
       font-size: s(40,16)
-    &__text
-        font-size: s(20,16)
+    &__intro
+      & p
+        font-size: s(14,16)
         line-height: 1.5em
 
 @media screen and (max-width:400px)
   .contact
     &__title
       font-size: s(30,16)
-    &__text
+    &__intro
+      & p
         font-size: s(18,16)
 
 @media screen and (max-width:293px)

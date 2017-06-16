@@ -14,7 +14,7 @@ Template Name: Page Contact
     <div class="contact">
       <section class="contact__intro">
         <h3 class="contact__title" aria-level="3" role="heading"><?= __('Besoin de réponse ?','ma'); ?></h3>
-        <p class="contact__text"><?= get_field('contact__text-intro'); ?></p>
+        <?= get_field('contact__text-intro'); ?>
       </section>
       <section class="contact__bloc">
         <div class="contact__form">
