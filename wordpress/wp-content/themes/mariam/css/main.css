@@ -3257,6 +3257,12 @@ img
 
     display: block;
 }
+.projets__realize-link span
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
 .projets__realize-figure
 {
     max-width: 21.875em;
@@ -5023,6 +5029,12 @@ img
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.fil-ariane__ariane-home span
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
 }
 .fil-ariane__ariane-link:before
 {

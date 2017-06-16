@@ -12,6 +12,7 @@ add_image_size( 'thumb-galerie', 356, 236, true );
 add_image_size( 'thumb-partenaires', 260, 153, true );
 add_image_size( 'thumb-events', 440, 330, true );
 add_image_size( 'thumb-actu', 495, 371, true );
+add_image_size( 'thumb-video', 1098, 615, true );
 
 // Define shortcut path
 $css =  get_template_directory_uri() . '/css/main.css';

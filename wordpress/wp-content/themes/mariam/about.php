@@ -30,20 +30,20 @@ Template Name: Page A Propos
         </div>
       </div>
       <section class="about__bloc-right">
-        <h3 class="about__title" aria-level="3" role="heading"><?= get_field('about__title-intro'); ?></h3>
+        <h3 class="about__title" aria-level="3" role="heading"><?= __('Un peu d\'histoire&hellip;','ma'); ?></h3>
         <p class="about__text"><?= get_field('about__text-intro'); ?></p>
       </section>
     </div>
     <section class="about__relations">
-      <h3 class="about__title" aria-level="3" role="heading"><?= get_field('about__title-content'); ?></h3>
+      <h3 class="about__title" aria-level="3" role="heading"><?= __('Relations Nord-Sud','ma'); ?></h3>
       <p class="about__text about__text--columns"><?= get_field('about__text-content'); ?></p>
     </section>
     <section class="about__presse">
-      <h3 class="about__title" aria-level="3" role="heading">On parle de nous</h3>
+      <h3 class="about__title" aria-level="3" role="heading"><?= __('On parle de nous','ma'); ?></h3>
       <?php if( have_rows('presse') ): ?>
       <?php while( have_rows('presse') ): the_row(); ?>
       <div class="about__presse-bloc">
-        <a class="about__presse-link" href="<?= the_sub_field('presse__link'); ?>"><?= the_sub_field('presse__text'); ?></a>
+        <a class="about__presse-link" href="<?= the_sub_field('presse__link'); ?>" title="Vers le site de l'article"><?= the_sub_field('presse__text'); ?></a>
       </div>
       <?php endwhile; endif; ?>
     </section>
@@ -55,7 +55,7 @@ Template Name: Page A Propos
       </section>
     </div>
     <section class="about__do">
-      <h3 class="about__do-title" aria-level="3" role="heading"><?= get_field('about__title-do'); ?></h3>
+      <h3 class="about__do-title" aria-level="3" role="heading"><?= __('Que faisons-nous ?','ma'); ?></h3>
       <div class="about__do-action">
         <span class="about__do-logo about__do-logo--learn"><?= __('apprendre','ma'); ?></span>
         <span class="about__do-logo about__do-logo--build"><?= __('construire','ma'); ?></span>

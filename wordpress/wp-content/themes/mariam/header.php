@@ -4,7 +4,7 @@
 
     <?php if (is_single()): ?>
         <ul class="fil-ariane__navigation">
-          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?= get_home_url(); ?>" title="Vers la page d'accueil"></a></li>
+          <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?= get_home_url(); ?>" title="Vers la page d'accueil"><span>Accueil</span></a></li>
           <?php if(is_singular('voyages')): ?>
           <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(35); ?>" title="Vers la page Voyages"><?= __('Voyages','ma'); ?></a></li>
           <?php endif; ?>
@@ -21,7 +21,7 @@
         </ul>
         <?php else : ?>
           <ul class="fil-ariane__navigation">
-            <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?= get_home_url(); ?>" title="Vers la page d'accueil"></a></li>
+            <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-home" href="<?= get_home_url(); ?>" title="Vers la page d'accueil"><span>Accueil</span></a></li>
             <li class="fil-ariane__ariane-item"><a class="fil-ariane__ariane-link" href="<?php the_permalink(); ?>" title="Vers la page <?php the_title(); ?>"><?php the_title(); ?></a></li>
           </ul>
         <?php endif; ?>
