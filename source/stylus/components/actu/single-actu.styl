@@ -30,3 +30,28 @@
     color: $lightBlue
     font-weight: bold
     margin-bottom: s(20,50)
+
+@media screen and (max-width:1024px)
+  .single-actu
+    &__bloc-one
+      display: flex
+      flex-direction: column
+    &__text
+      margin-left: 0
+      width: 100%
+
+@media screen and (max-width:750px)
+  .single-actu
+    &__bloc-two
+      & p
+        column-count: 1
+
+@media screen and (max-width:500px)
+  .single-actu
+    &__text
+      font-size: s(18,16)
+    &__bloc-two
+      & p
+        font-size: s(18,16)
+    &__title
+      font-size: s(40,16)
